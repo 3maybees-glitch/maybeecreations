@@ -4,11 +4,13 @@ import { CheckSquare, Heart, Music, Sparkles, Brain, Calendar, Book, Smile } fro
 const apps = [
   {
     title: "Snackers - Virtual Bites",
-    description: "Streamline your day with intelligent task management and productivity insights.",
+    description: "Experience virtual dining with our innovative food ordering and delivery platform.",
     icon: CheckSquare,
-    category: "Productivity",
+    category: "Food & Dining",
     link: "https://snackers.lovable.app",
     comingSoon: false,
+    hasPayment: true,
+    price: "$2.99",
   },
   {
     title: "Wellness Compass",
@@ -78,6 +80,8 @@ export const AppsShowcase = () => {
               category={app.category}
               comingSoon={app.comingSoon ?? true}
               link={app.link}
+              hasPayment={app.hasPayment}
+              price={app.price}
             />
           ))}
         </div>
