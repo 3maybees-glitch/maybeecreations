@@ -3,7 +3,7 @@ import { CheckSquare, Heart, Music, Sparkles, Brain, Calendar, Book, Smile } fro
 
 const apps = [
   {
-    title: "TaskFlow Pro",
+    title: "Snackers - Virtual Bites",
     description: "Streamline your day with intelligent task management and productivity insights.",
     icon: CheckSquare,
     category: "Productivity",
