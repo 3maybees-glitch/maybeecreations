@@ -7,6 +7,8 @@ const apps = [
     description: "Streamline your day with intelligent task management and productivity insights.",
     icon: CheckSquare,
     category: "Productivity",
+    link: "https://snackers.lovable.app",
+    comingSoon: false,
   },
   {
     title: "Wellness Compass",
@@ -74,7 +76,8 @@ export const AppsShowcase = () => {
               description={app.description}
               icon={app.icon}
               category={app.category}
-              comingSoon={true}
+              comingSoon={app.comingSoon ?? true}
+              link={app.link}
             />
           ))}
         </div>

@@ -8,9 +8,10 @@ interface AppCardProps {
   icon: LucideIcon;
   category: string;
   comingSoon?: boolean;
+  link?: string;
 }
 
-export const AppCard = ({ title, description, icon: Icon, category, comingSoon = true }: AppCardProps) => {
+export const AppCard = ({ title, description, icon: Icon, category, comingSoon = true, link }: AppCardProps) => {
   return (
     <Card className="group hover:shadow-[var(--shadow-soft)] transition-all duration-300 hover:scale-[1.02] border-border/50 bg-card/80 backdrop-blur-sm overflow-hidden relative">
       {/* Gradient overlay on hover */}
@@ -36,6 +37,13 @@ export const AppCard = ({ title, description, icon: Icon, category, comingSoon =
               <span className="text-xs font-medium text-muted-foreground">Coming Soon</span>
             </div>
           </div>
+        ) : link ? (
+          <Button variant="ghost" className="group/btn" asChild>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              Open App
+              <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+            </a>
+          </Button>
         ) : (
           <Button variant="ghost" className="group/btn">
             Learn More
