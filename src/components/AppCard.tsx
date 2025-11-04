@@ -1,9 +1,11 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, LucideIcon } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { User, Session } from '@supabase/supabase-js';
+import { useNavigate } from "react-router-dom";
 
 interface AppCardProps {
   title: string;
@@ -18,13 +20,63 @@ interface AppCardProps {
 
 export const AppCard = ({ title, description, icon: Icon, category, comingSoon = true, link, hasPayment = false, price }: AppCardProps) => {
   const [isProcessing, setIsProcessing] = useState(false);
+  const [user, setUser] = useState<User | null>(null);
+  const [session, setSession] = useState<Session | null>(null);
+  const [hasPurchased, setHasPurchased] = useState(false);
   const { toast } = useToast();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(
+      (event, session) => {
+        setSession(session);
+        setUser(session?.user ?? null);
+      }
+    );
+
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+      setUser(session?.user ?? null);
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
+
+  useEffect(() => {
+    if (user && hasPayment) {
+      checkPurchaseStatus();
+    }
+  }, [user, hasPayment]);
+
+  const checkPurchaseStatus = async () => {
+    if (!user) return;
+    
+    const { data, error } = await supabase
+      .from('purchases')
+      .select('id')
+      .eq('user_id', user.id)
+      .eq('product_name', title)
+      .single();
+
+    if (data) {
+      setHasPurchased(true);
+    }
+  };
 
   const handlePayment = async () => {
+    if (!user) {
+      toast({
+        title: "Sign in required",
+        description: "Please sign in to purchase this app.",
+      });
+      navigate('/auth');
+      return;
+    }
+
     setIsProcessing(true);
     try {
       const { data, error } = await supabase.functions.invoke('create-payment', {
-        body: { email: '' }
+        body: { productName: title }
       });
 
       if (error) throw error;
@@ -73,13 +125,21 @@ export const AppCard = ({ title, description, icon: Icon, category, comingSoon =
             {hasPayment && price && (
               <div className="flex items-center justify-between w-full">
                 <span className="text-2xl font-bold text-primary">{price}</span>
-                <Button 
-                  variant="default" 
-                  onClick={handlePayment}
-                  disabled={isProcessing}
-                >
-                  {isProcessing ? "Processing..." : "Purchase Access"}
-                </Button>
+                {hasPurchased ? (
+                  <Button variant="default" asChild>
+                    <a href={link} target="_blank" rel="noopener noreferrer">
+                      Open App
+                    </a>
+                  </Button>
+                ) : (
+                  <Button 
+                    variant="default" 
+                    onClick={handlePayment}
+                    disabled={isProcessing}
+                  >
+                    {isProcessing ? "Processing..." : "Purchase Access"}
+                  </Button>
+                )}
               </div>
             )}
             {link && (

@@ -23,50 +23,46 @@ serve(async (req) => {
     const { data } = await supabaseClient.auth.getUser(token);
     const user = data.user;
     
-    if (!user?.email) {
+    if (!user) {
       throw new Error("User not authenticated");
+    }
+
+    const { sessionId } = await req.json();
+    
+    if (!sessionId) {
+      throw new Error("Session ID is required");
     }
 
     const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") || "", {
       apiVersion: "2025-08-27.basil",
     });
 
-    const { productName } = await req.json();
+    const session = await stripe.checkout.sessions.retrieve(sessionId);
 
-    console.log("Creating payment session for user:", user.email);
-
-    const customers = await stripe.customers.list({ email: user.email, limit: 1 });
-    let customerId;
-    if (customers.data.length > 0) {
-      customerId = customers.data[0].id;
+    if (session.payment_status !== "paid") {
+      throw new Error("Payment not completed");
     }
 
-    const session = await stripe.checkout.sessions.create({
-      customer: customerId,
-      customer_email: customerId ? undefined : user.email,
-      line_items: [
-        {
-          price: "price_1SOn9oAqbn8IDR9vasAfweQO",
-          quantity: 1,
-        },
-      ],
-      mode: "payment",
-      success_url: `${req.headers.get("origin")}/payment-success?session_id={CHECKOUT_SESSION_ID}`,
-      cancel_url: `${req.headers.get("origin")}/`,
-      metadata: {
+    const { error } = await supabaseClient
+      .from('purchases')
+      .insert({
         user_id: user.id,
-        product_name: productName,
-      }
-    });
+        product_name: session.metadata?.product_name || "Unknown Product",
+        stripe_session_id: sessionId,
+        amount: session.amount_total || 0,
+        currency: session.currency || "usd"
+      });
 
-    console.log("Payment session created:", session.id);
+    if (error) throw error;
 
-    return new Response(JSON.stringify({ url: session.url }), {
+    console.log("Purchase recorded for user:", user.id);
+
+    return new Response(JSON.stringify({ success: true }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
       status: 200,
     });
   } catch (error) {
-    console.error("Error creating payment session:", error);
+    console.error("Error recording purchase:", error);
     const message = error instanceof Error ? error.message : "Unknown error occurred";
     return new Response(JSON.stringify({ error: message }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },

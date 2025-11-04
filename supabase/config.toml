@@ -1,4 +1,10 @@
 project_id = "cisplrfuyarzhtdttiuy"
 
 [functions.create-payment]
-verify_jwt = false
+verify_jwt = true
+
+[functions.record-purchase]
+verify_jwt = true
+
+[functions.verify-access]
+verify_jwt = true
