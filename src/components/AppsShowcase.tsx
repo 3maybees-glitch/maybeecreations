@@ -7,9 +7,9 @@ const apps = [
     description: "Experience virtual dining with our innovative food ordering and delivery platform.",
     icon: CheckSquare,
     category: "Food & Dining",
-    link: "https://snackers.lovable.app",
+    link: "/snackers",
     comingSoon: false,
-    hasPayment: true,
+    hasPayment: false,
     price: "$2.99",
   },
   {

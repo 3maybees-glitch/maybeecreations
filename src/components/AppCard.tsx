@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 import { User, Session } from '@supabase/supabase-js';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 interface AppCardProps {
   title: string;
@@ -142,12 +142,19 @@ export const AppCard = ({ title, description, icon: Icon, category, comingSoon =
                 )}
               </div>
             )}
-            {link && (
+            {link && !hasPayment && (
               <Button variant="ghost" className="group/btn w-full" asChild>
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                  Open App
-                  <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
-                </a>
+                {link.startsWith('/') ? (
+                  <Link to={link}>
+                    View Details
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </Link>
+                ) : (
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    Open App
+                    <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                  </a>
+                )}
               </Button>
             )}
             {!link && !hasPayment && (

@@ -9,6 +9,7 @@ import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
 import PaymentSuccess from "./pages/PaymentSuccess";
 import Auth from "./pages/Auth";
+import SnackersProduct from "./pages/SnackersProduct";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/auth" element={<Auth />} />
+          <Route path="/snackers" element={<SnackersProduct />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/payment-success" element={<PaymentSuccess />} />
