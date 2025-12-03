@@ -2,6 +2,11 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Check, Zap, Clock, Heart, Shield, Star } from "lucide-react";
+import snackersMenu from "@/assets/snackers-menu.png";
+import snackersDesserts from "@/assets/snackers-desserts.png";
+import snackersItem from "@/assets/snackers-item.png";
+import snackersResults from "@/assets/snackers-results.png";
+import snackersEncouragement from "@/assets/snackers-encouragement.png";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
@@ -146,20 +151,53 @@ const SnackersProduct = () => {
             </div>
             
             <div className="relative">
-              <div className="aspect-square bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-8xl mb-4">🍕</div>
-                  <p className="text-2xl font-bold">Virtual Dining</p>
-                  <p className="text-muted-foreground">Experience Preview</p>
-                </div>
+              <div className="aspect-[9/16] max-w-xs mx-auto bg-gradient-to-br from-primary/20 to-primary/5 rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src={snackersItem} 
+                  alt="Snackers app food item detail view" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Benefits Section */}
+      {/* Screenshots Gallery */}
       <section className="py-20 px-4 bg-muted/30">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-4">See It In Action</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Browse through actual screenshots from the Snackers app
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+            {[
+              { src: snackersMenu, alt: "Snackers menu categories" },
+              { src: snackersDesserts, alt: "Snackers dessert selection" },
+              { src: snackersItem, alt: "Snackers food item detail" },
+              { src: snackersResults, alt: "Snackers nutrition results" },
+              { src: snackersEncouragement, alt: "Snackers encouragement screen" },
+            ].map((screenshot, index) => (
+              <div 
+                key={index} 
+                className="aspect-[9/16] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow border border-border"
+              >
+                <img 
+                  src={screenshot.src} 
+                  alt={screenshot.alt} 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Why Choose Snackers?</h2>
