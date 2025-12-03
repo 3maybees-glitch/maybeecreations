@@ -1,7 +1,8 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Check, Zap, Clock, Heart, Shield, Star } from "lucide-react";
+import { Check, Clock, Heart, Shield, Star, Zap } from "lucide-react";
+import { SnackersDemo } from "@/components/SnackersDemo";
 import snackersMenu from "@/assets/snackers-menu.png";
 import snackersDesserts from "@/assets/snackers-desserts.png";
 import snackersItem from "@/assets/snackers-item.png";
@@ -231,12 +232,7 @@ const SnackersProduct = () => {
           
           <div className="space-y-16">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4">🍩</div>
-                  <p className="text-xl font-semibold">Bite by Bite Fun</p>
-                </div>
-              </div>
+              <SnackersDemo />
               <div>
                 <h3 className="text-3xl font-bold mb-4">Virtual Eating Experience</h3>
                 <p className="text-lg text-muted-foreground mb-4">
