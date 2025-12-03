@@ -81,29 +81,29 @@ const SnackersProduct = () => {
 
   const benefits = [
     {
-      icon: Zap,
-      title: "Lightning Fast Delivery",
-      description: "Get your favorite meals delivered in under 30 minutes"
-    },
-    {
       icon: Heart,
-      title: "Healthy Options",
-      description: "Curated selection of nutritious and delicious meals"
+      title: "Satisfy Cravings Guilt-Free",
+      description: "Virtually indulge in your favorite treats without the calories or consequences"
     },
     {
-      icon: Shield,
-      title: "Secure Payments",
-      description: "Safe and encrypted payment processing"
+      icon: Zap,
+      title: "See Your Savings Instantly",
+      description: "Track calories, fat, carbs, and money saved with every virtual bite"
     },
     {
       icon: Clock,
-      title: "24/7 Availability",
-      description: "Order anytime, day or night"
+      title: "Skip the Workout",
+      description: "See how much exercise you just avoided by not eating that snack"
     },
     {
       icon: Star,
-      title: "Premium Quality",
-      description: "Only partner with top-rated restaurants"
+      title: "Daily Encouragement",
+      description: "Uplifting quotes and Bible verses to keep you motivated"
+    },
+    {
+      icon: Shield,
+      title: "Extensive Menu",
+      description: "Appetizers, entrees, sides, snacks, and desserts to virtually enjoy"
     },
   ];
 
@@ -117,14 +117,15 @@ const SnackersProduct = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-6">
-                <span className="text-sm font-semibold text-primary">Food & Dining</span>
+                <span className="text-sm font-semibold text-primary">Health & Wellness</span>
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
                 Snackers - Virtual Bites
               </h1>
               <p className="text-xl text-muted-foreground mb-8">
-                Experience the future of food ordering with our innovative platform. 
-                Virtual dining made real, delicious, and delivered right to your door.
+                Satisfy your cravings without the guilt! Virtually "eat" your favorite unhealthy 
+                snacks, watch them disappear bite by bite, and see exactly how much you saved 
+                by not eating them in real life.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button 
@@ -169,7 +170,7 @@ const SnackersProduct = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">See It In Action</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Browse through actual screenshots from the Snackers app
+              Browse menus, virtually eat your cravings, and celebrate your health wins
             </p>
           </div>
           
@@ -202,7 +203,7 @@ const SnackersProduct = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Why Choose Snackers?</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We've reimagined food delivery from the ground up
+              A fun, positive way to build healthier habits
             </p>
           </div>
           
@@ -232,28 +233,28 @@ const SnackersProduct = () => {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="text-6xl mb-4">📱</div>
-                  <p className="text-xl font-semibold">Intuitive Interface</p>
+                  <div className="text-6xl mb-4">🍩</div>
+                  <p className="text-xl font-semibold">Bite by Bite Fun</p>
                 </div>
               </div>
               <div>
-                <h3 className="text-3xl font-bold mb-4">Easy to Use</h3>
+                <h3 className="text-3xl font-bold mb-4">Virtual Eating Experience</h3>
                 <p className="text-lg text-muted-foreground mb-4">
-                  Our streamlined interface makes ordering food a breeze. Browse menus, 
-                  customize orders, and track delivery in real-time.
+                  Watch your food photo shrink with every virtual bite! Hear satisfying 
+                  crunch sounds and delicious "mmms" as you enjoy your guilt-free snack.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Smart search and filtering</span>
+                    <span>Food shrinks with each tap</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Saved favorites and recent orders</span>
+                    <span>Satisfying sound effects</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Real-time order tracking</span>
+                    <span>Fun, interactive experience</span>
                   </li>
                 </ul>
               </div>
@@ -261,30 +262,30 @@ const SnackersProduct = () => {
 
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
-                <h3 className="text-3xl font-bold mb-4">Wide Selection</h3>
+                <h3 className="text-3xl font-bold mb-4">See Your Health Wins</h3>
                 <p className="text-lg text-muted-foreground mb-4">
-                  Choose from hundreds of restaurants and thousands of menu items. 
-                  From comfort food to healthy options, we've got it all.
+                  After each virtual snack, see exactly what you saved: money, calories, 
+                  fat, carbs, and the exercise you didn't have to do to burn it off.
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Multiple cuisine types</span>
+                    <span>Money saved tracking</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Dietary preferences supported</span>
+                    <span>Calories, fat & carbs avoided</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
-                    <span>Top-rated restaurants only</span>
+                    <span>Encouraging quotes & Bible verses</span>
                   </li>
                 </ul>
               </div>
               <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 rounded-xl flex items-center justify-center order-1 lg:order-2">
                 <div className="text-center p-8">
-                  <div className="text-6xl mb-4">🍔</div>
-                  <p className="text-xl font-semibold">Diverse Menu</p>
+                  <div className="text-6xl mb-4">💪</div>
+                  <p className="text-xl font-semibold">Track Your Wins</p>
                 </div>
               </div>
             </div>
@@ -296,10 +297,10 @@ const SnackersProduct = () => {
       <section className="py-20 px-4 bg-gradient-to-br from-primary/10 to-background">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Ready to Start Your Virtual Dining Experience?
+            Ready to Snack Smarter?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Join thousands of satisfied users. One-time payment, lifetime access.
+            Satisfy cravings, build healthier habits, and feel great. One-time payment, lifetime access.
           </p>
           <Button 
             size="lg" 
