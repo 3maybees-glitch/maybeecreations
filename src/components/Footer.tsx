@@ -9,7 +9,7 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Sparkles className="h-5 w-5 text-primary" />
-              <span className="text-lg font-bold bg-gradient-to-r from-primary to-primary-glow bg-clip-text text-transparent">
+              <span className="text-lg font-bold text-primary">
                 Maybee Creations
               </span>
             </div>
