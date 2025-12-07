@@ -12,13 +12,24 @@ serve(async (req) => {
     return new Response(null, { headers: corsHeaders });
   }
 
+  // Use anon key for auth verification
   const supabaseClient = createClient(
     Deno.env.get("SUPABASE_URL") ?? "",
     Deno.env.get("SUPABASE_ANON_KEY") ?? ""
   );
 
+  // Use service role for database operations (bypasses RLS)
+  const supabaseAdmin = createClient(
+    Deno.env.get("SUPABASE_URL") ?? "",
+    Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? ""
+  );
+
   try {
-    const authHeader = req.headers.get("Authorization")!;
+    const authHeader = req.headers.get("Authorization");
+    if (!authHeader) {
+      throw new Error("Authorization header required");
+    }
+    
     const token = authHeader.replace("Bearer ", "");
     const { data } = await supabaseClient.auth.getUser(token);
     const user = data.user;
@@ -29,8 +40,8 @@ serve(async (req) => {
 
     const { sessionId } = await req.json();
     
-    if (!sessionId) {
-      throw new Error("Session ID is required");
+    if (!sessionId || typeof sessionId !== "string") {
+      throw new Error("Valid session ID is required");
     }
 
     const stripe = new Stripe(Deno.env.get("STRIPE_SECRET_KEY") || "", {
@@ -43,7 +54,17 @@ serve(async (req) => {
       throw new Error("Payment not completed");
     }
 
-    const { error } = await supabaseClient
+    // CRITICAL: Verify session belongs to authenticated user
+    if (session.metadata?.user_id !== user.id) {
+      console.error("Session ownership mismatch:", { 
+        sessionUserId: session.metadata?.user_id, 
+        authenticatedUserId: user.id 
+      });
+      throw new Error("Session does not belong to authenticated user");
+    }
+
+    // Use admin client to bypass RLS for insert
+    const { error } = await supabaseAdmin
       .from('purchases')
       .insert({
         user_id: user.id,
@@ -63,8 +84,7 @@ serve(async (req) => {
     });
   } catch (error) {
     console.error("Error recording purchase:", error);
-    const message = error instanceof Error ? error.message : "Unknown error occurred";
-    return new Response(JSON.stringify({ error: message }), {
+    return new Response(JSON.stringify({ error: "Failed to record purchase" }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
       status: 500,
     });
