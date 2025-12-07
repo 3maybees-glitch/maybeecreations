@@ -35,7 +35,7 @@ export const Navigation = () => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
           <Sparkles className="h-6 w-6 text-primary group-hover:rotate-12 transition-transform" />
-          <span className="text-xl font-bold text-primary">
+          <span className="text-xl font-bold text-primary animate-twinkle">
             Maybee Creations
           </span>
         </Link>
