@@ -80,10 +80,21 @@ export default {
             height: "0",
           },
         },
+        "twinkle": {
+          "0%, 100%": {
+            opacity: "1",
+            textShadow: "0 0 4px hsl(var(--primary) / 0.3), 0 0 8px hsl(var(--primary) / 0.2)",
+          },
+          "50%": {
+            opacity: "0.85",
+            textShadow: "0 0 12px hsl(var(--primary) / 0.6), 0 0 24px hsl(var(--primary) / 0.4), 0 0 36px hsl(var(--primary) / 0.2)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "twinkle": "twinkle 2s ease-in-out infinite",
       },
     },
   },
