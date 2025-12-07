@@ -12,48 +12,6 @@ const apps = [
     hasPayment: false,
     price: "$2.99",
   },
-  {
-    title: "Wellness Compass",
-    description: "Track your health journey with personalized wellness recommendations and habit tracking.",
-    icon: Heart,
-    category: "Health",
-  },
-  {
-    title: "MindfulMoments",
-    description: "Guided meditation and spiritual reflection tools for your daily practice.",
-    icon: Sparkles,
-    category: "Spiritual",
-  },
-  {
-    title: "FocusZone",
-    description: "Eliminate distractions and enter deep work states with science-backed techniques.",
-    icon: Brain,
-    category: "Productivity",
-  },
-  {
-    title: "JoyPlayer",
-    description: "Curated entertainment experiences tailored to your mood and preferences.",
-    icon: Music,
-    category: "Entertainment",
-  },
-  {
-    title: "LifePlanner",
-    description: "Visualize and achieve your goals with intuitive planning and progress tracking.",
-    icon: Calendar,
-    category: "Productivity",
-  },
-  {
-    title: "Gratitude Journal",
-    description: "Cultivate thankfulness and positivity through daily reflective journaling.",
-    icon: Book,
-    category: "Spiritual",
-  },
-  {
-    title: "MoodLift",
-    description: "Boost your spirits with personalized activities and motivational content.",
-    icon: Smile,
-    category: "Entertainment",
-  },
 ];
 
 export const AppsShowcase = () => {
