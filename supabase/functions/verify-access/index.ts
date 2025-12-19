@@ -31,21 +31,37 @@ serve(async (req) => {
 
     const { productName } = await req.json();
 
-    const { data: purchase, error } = await supabaseClient
+    // Check for purchase via Stripe
+    const { data: purchase, error: purchaseError } = await supabaseClient
       .from('purchases')
       .select('id')
       .eq('user_id', user.id)
       .eq('product_name', productName)
-      .single();
+      .maybeSingle();
 
-    if (error && error.code !== 'PGRST116') {
-      throw error;
+    if (purchaseError && purchaseError.code !== 'PGRST116') {
+      throw purchaseError;
     }
 
+    // Check for redeemed access code
+    const { data: accessCode, error: codeError } = await supabaseClient
+      .from('access_codes')
+      .select('id')
+      .eq('redeemed_by', user.id)
+      .eq('product_name', productName)
+      .maybeSingle();
+
+    if (codeError && codeError.code !== 'PGRST116') {
+      throw codeError;
+    }
+
+    const hasAccess = !!purchase || !!accessCode;
+
     return new Response(JSON.stringify({ 
-      hasAccess: !!purchase,
+      hasAccess,
       userId: user.id,
-      email: user.email 
+      email: user.email,
+      accessType: purchase ? 'purchase' : accessCode ? 'code' : null
     }), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
       status: 200,
