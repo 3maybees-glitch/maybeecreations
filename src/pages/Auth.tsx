@@ -8,6 +8,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { useToast } from "@/hooks/use-toast";
 import { User, Session } from '@supabase/supabase-js';
 
+const ADMIN_EMAIL = "3maybees@gmail.com";
+
 const Auth = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [isForgotPassword, setIsForgotPassword] = useState(false);
@@ -25,7 +27,8 @@ const Auth = () => {
         setSession(session);
         setUser(session?.user ?? null);
         if (session?.user) {
-          navigate('/');
+          const redirectPath = session.user.email === ADMIN_EMAIL ? '/admin' : '/';
+          navigate(redirectPath);
         }
       }
     );
@@ -34,7 +37,8 @@ const Auth = () => {
       setSession(session);
       setUser(session?.user ?? null);
       if (session?.user) {
-        navigate('/');
+        const redirectPath = session.user.email === ADMIN_EMAIL ? '/admin' : '/';
+        navigate(redirectPath);
       }
     });
 
