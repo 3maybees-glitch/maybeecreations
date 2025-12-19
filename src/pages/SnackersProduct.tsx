@@ -141,6 +141,14 @@ const SnackersProduct = () => {
                   size="lg" 
                   variant="outline" 
                   className="text-lg"
+                  onClick={() => navigate("/redeem")}
+                >
+                  Redeem Code
+                </Button>
+                <Button 
+                  size="lg" 
+                  variant="ghost" 
+                  className="text-lg"
                   onClick={() => navigate("/")}
                 >
                   Back to Apps
