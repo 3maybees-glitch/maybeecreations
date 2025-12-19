@@ -10,6 +10,8 @@ import NotFound from "./pages/NotFound";
 import PaymentSuccess from "./pages/PaymentSuccess";
 import Auth from "./pages/Auth";
 import SnackersProduct from "./pages/SnackersProduct";
+import RedeemCode from "./pages/RedeemCode";
+import AdminCodes from "./pages/AdminCodes";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +25,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/auth" element={<Auth />} />
           <Route path="/snackers" element={<SnackersProduct />} />
+          <Route path="/redeem" element={<RedeemCode />} />
+          <Route path="/admin/codes" element={<AdminCodes />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/payment-success" element={<PaymentSuccess />} />
