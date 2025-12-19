@@ -11,7 +11,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 
 // Admin email - you can change this to your email
-const ADMIN_EMAIL = "maybee.creations@gmail.com";
+const ADMIN_EMAIL = "3maybees@gmail.com";
 
 interface AccessCode {
   id: string;
