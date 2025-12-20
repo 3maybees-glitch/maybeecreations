@@ -1,7 +1,8 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Check, Clock, Heart, Shield, Star, Zap } from "lucide-react";
+import { Check, Clock, Download, Heart, Shield, Star, Zap } from "lucide-react";
+import snackersAppIcon from "@/assets/snackers-app-icon.png";
 import { SnackersDemo } from "@/components/SnackersDemo";
 import snackersMenu from "@/assets/snackers-menu.png";
 import snackersDesserts from "@/assets/snackers-desserts.png";
@@ -314,6 +315,18 @@ const SnackersProduct = () => {
           >
             {hasPurchased ? "Open Snackers App" : isProcessing ? "Processing..." : "Get Started for $2.99"}
           </Button>
+          
+          <div className="mt-8 pt-8 border-t border-border/50">
+            <p className="text-sm text-muted-foreground mb-4">Download the app icon</p>
+            <a 
+              href={snackersAppIcon} 
+              download="snackers-app-icon.png"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-muted hover:bg-muted/80 transition-colors text-sm font-medium"
+            >
+              <Download className="w-4 h-4" />
+              Download Icon
+            </a>
+          </div>
         </div>
       </section>
 
