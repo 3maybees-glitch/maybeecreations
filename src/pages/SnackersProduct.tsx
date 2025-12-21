@@ -8,6 +8,7 @@ import snackersDesserts from "@/assets/snackers-desserts.png";
 import snackersItem from "@/assets/snackers-item.png";
 import snackersResults from "@/assets/snackers-results.png";
 import snackersEncouragement from "@/assets/snackers-encouragement.png";
+import snackersAppIcon from "@/assets/snackers-app-icon.png";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
@@ -117,8 +118,15 @@ const SnackersProduct = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-6">
-                <span className="text-sm font-semibold text-primary">Health & Wellness</span>
+              <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src={snackersAppIcon} 
+                  alt="Snackers app icon" 
+                  className="w-16 h-16 rounded-xl shadow-lg"
+                />
+                <div className="inline-block px-4 py-2 bg-primary/10 rounded-full">
+                  <span className="text-sm font-semibold text-primary">Health & Wellness</span>
+                </div>
               </div>
               <h1 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
                 Snackers - Virtual Bites

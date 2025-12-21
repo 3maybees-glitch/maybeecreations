@@ -10,7 +10,8 @@ import { useNavigate, Link } from "react-router-dom";
 interface AppCardProps {
   title: string;
   description: string;
-  icon: LucideIcon;
+  icon?: LucideIcon;
+  iconImage?: string;
   category: string;
   comingSoon?: boolean;
   link?: string;
@@ -18,7 +19,7 @@ interface AppCardProps {
   price?: string;
 }
 
-export const AppCard = ({ title, description, icon: Icon, category, comingSoon = true, link, hasPayment = false, price }: AppCardProps) => {
+export const AppCard = ({ title, description, icon: Icon, iconImage, category, comingSoon = true, link, hasPayment = false, price }: AppCardProps) => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [user, setUser] = useState<User | null>(null);
   const [session, setSession] = useState<Session | null>(null);
@@ -101,8 +102,14 @@ export const AppCard = ({ title, description, icon: Icon, category, comingSoon =
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
       
       <CardHeader className="relative">
-        <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-          <Icon className="h-6 w-6 text-primary-foreground" />
+        <div className="w-12 h-12 rounded-lg overflow-hidden mb-4 group-hover:scale-110 transition-transform">
+          {iconImage ? (
+            <img src={iconImage} alt={title} className="w-full h-full object-cover" />
+          ) : Icon ? (
+            <div className="w-full h-full bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center">
+              <Icon className="h-6 w-6 text-primary-foreground" />
+            </div>
+          ) : null}
         </div>
         <div className="inline-block mb-2">
           <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
