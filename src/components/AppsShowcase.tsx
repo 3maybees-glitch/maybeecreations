@@ -1,11 +1,11 @@
 import { AppCard } from "@/components/AppCard";
-import { CheckSquare, Heart, Music, Sparkles, Brain, Calendar, Book, Smile } from "lucide-react";
+import snackersAppIcon from "@/assets/snackers-app-icon.png";
 
 const apps = [
   {
     title: "Snackers - Virtual Bites",
     description: "Experience virtual dining with our innovative food ordering and delivery platform.",
-    icon: CheckSquare,
+    iconImage: snackersAppIcon,
     category: "Food & Dining",
     link: "/snackers",
     comingSoon: false,
@@ -34,7 +34,7 @@ export const AppsShowcase = () => {
               key={index}
               title={app.title}
               description={app.description}
-              icon={app.icon}
+              iconImage={app.iconImage}
               category={app.category}
               comingSoon={app.comingSoon ?? true}
               link={app.link}
