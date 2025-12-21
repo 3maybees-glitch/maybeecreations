@@ -1,9 +1,9 @@
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { User, Session } from '@supabase/supabase-js';
+import maybeeCreationsLogo from "@/assets/maybee-creations-logo.png";
 
 export const Navigation = () => {
   const [user, setUser] = useState<User | null>(null);
@@ -34,7 +34,11 @@ export const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <Sparkles className="h-6 w-6 text-primary group-hover:rotate-12 transition-transform" />
+          <img 
+            src={maybeeCreationsLogo} 
+            alt="Maybee Creations Logo" 
+            className="h-10 w-10 group-hover:scale-105 transition-transform"
+          />
           <span className="text-xl font-bold text-primary animate-twinkle">
             Maybee Creations
           </span>
