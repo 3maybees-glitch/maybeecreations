@@ -1,5 +1,6 @@
 import { AppCard } from "@/components/AppCard";
 import snackersAppIcon from "@/assets/snackers-app-icon.png";
+// Using app icon for Snackers card
 
 const apps = [
   {
