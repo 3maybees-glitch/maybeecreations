@@ -44,7 +44,7 @@ const JesusWeptSupport = () => {
                 Send us an email and we'll respond as soon as possible.
               </p>
               <Button variant="outline" asChild>
-                <a href="mailto:support@maybeecreations.com">support@maybeecreations.com</a>
+                <a href="mailto:3maybees@gmail.com">3maybees@gmail.com</a>
               </Button>
             </div>
             <div className="p-6 rounded-lg bg-card border border-border flex flex-col items-center text-center gap-3">
@@ -92,7 +92,7 @@ const JesusWeptSupport = () => {
             <AccordionItem value="item-5">
               <AccordionTrigger>How do I report a bug or suggest a feature?</AccordionTrigger>
               <AccordionContent>
-                Email us at <a href="mailto:support@maybeecreations.com" className="text-primary underline">support@maybeecreations.com</a> with a description of the issue or your idea. Screenshots are always helpful!
+                Email us at <a href="mailto:3maybees@gmail.com" className="text-primary underline">3maybees@gmail.com</a> with a description of the issue or your idea. Screenshots are always helpful!
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-6">

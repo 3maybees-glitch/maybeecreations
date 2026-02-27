@@ -83,7 +83,7 @@ const Terms = () => {
               <p className="text-muted-foreground leading-relaxed">
                 Refund eligibility depends on the specific application and purchase type. Generally, refunds may be 
                 available within 14 days of purchase if the application has not been substantially used. Contact 
-                support@maybeecreations.com for refund requests.
+                3maybees@gmail.com for refund requests.
               </p>
             </section>
             
