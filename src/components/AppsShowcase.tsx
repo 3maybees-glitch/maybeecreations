@@ -1,5 +1,6 @@
 import { AppCard } from "@/components/AppCard";
 import snackersAppIcon from "@/assets/snackers-app-icon.png";
+import jesusWeptAppIcon from "@/assets/jesus-wept-app-icon.png";
 
 const apps = [
   {
@@ -14,6 +15,7 @@ const apps = [
   {
     title: "Jesus Wept",
     description: "Discover the power of Scripture through its most impactful two-word phrases.",
+    iconImage: jesusWeptAppIcon,
     category: "Faith & Inspiration",
     link: "/jesus-wept",
     comingSoon: false,

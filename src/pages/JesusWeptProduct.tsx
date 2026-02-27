@@ -1,15 +1,16 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Check, BookOpen, Heart, Star, Sparkles } from "lucide-react";
+import { Check, Heart, Star, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import jesusWeptAppIcon from "@/assets/jesus-wept-app-icon.png";
 
 const JesusWeptProduct = () => {
   const navigate = useNavigate();
 
   const benefits = [
     {
-      icon: BookOpen,
+      icon: Star,
       title: "Two-Word Scripture",
       description: "Explore the Bible through powerful two-word phrases that carry deep meaning"
     },
@@ -39,10 +40,12 @@ const JesusWeptProduct = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-16 h-16 rounded-xl shadow-lg bg-gradient-to-br from-primary to-primary-foreground/20 flex items-center justify-center">
-                  <BookOpen className="w-8 h-8 text-primary-foreground" />
-                </div>
+                <div className="flex items-center gap-4 mb-6">
+                <img 
+                  src={jesusWeptAppIcon} 
+                  alt="Jesus Wept app icon" 
+                  className="w-16 h-16 rounded-xl shadow-lg"
+                />
                 <div className="inline-block px-4 py-2 bg-primary/10 rounded-full">
                   <span className="text-sm font-semibold text-primary">Faith & Inspiration</span>
                 </div>
