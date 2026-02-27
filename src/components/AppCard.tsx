@@ -10,11 +10,12 @@ interface AppCardProps {
   iconImage?: string;
   category: string;
   comingSoon?: boolean;
+  pending?: boolean;
   link?: string;
   appStoreLink?: string;
 }
 
-export const AppCard = ({ title, description, icon: Icon, iconImage, category, comingSoon = true, link, appStoreLink }: AppCardProps) => {
+export const AppCard = ({ title, description, icon: Icon, iconImage, category, comingSoon = true, pending = false, link, appStoreLink }: AppCardProps) => {
   return (
     <Card className="group hover:shadow-[var(--shadow-soft)] transition-all duration-300 hover:scale-[1.02] border-border/50 bg-card/80 backdrop-blur-sm overflow-hidden relative">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -34,7 +35,14 @@ export const AppCard = ({ title, description, icon: Icon, iconImage, category, c
             {category}
           </span>
         </div>
-        <CardTitle className="text-2xl">{title}</CardTitle>
+        <div className="flex items-center gap-2">
+          <CardTitle className="text-2xl">{title}</CardTitle>
+          {pending && (
+            <span className="px-2 py-0.5 text-xs font-semibold uppercase tracking-wider bg-accent text-accent-foreground rounded-full">
+              Pending
+            </span>
+          )}
+        </div>
         <CardDescription className="text-base">{description}</CardDescription>
       </CardHeader>
       

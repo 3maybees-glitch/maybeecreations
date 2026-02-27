@@ -9,6 +9,7 @@ const apps = [
     category: "Food & Dining",
     link: "/snackers",
     comingSoon: false,
+    pending: true,
   },
 ];
 
@@ -35,6 +36,7 @@ export const AppsShowcase = () => {
               iconImage={app.iconImage}
               category={app.category}
               comingSoon={app.comingSoon}
+              pending={app.pending}
               link={app.link}
             />
           ))}
