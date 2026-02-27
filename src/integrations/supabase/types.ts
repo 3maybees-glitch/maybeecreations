@@ -14,36 +14,6 @@ export type Database = {
   }
   public: {
     Tables: {
-      access_codes: {
-        Row: {
-          code: string
-          created_at: string
-          id: string
-          is_active: boolean
-          product_name: string
-          redeemed_at: string | null
-          redeemed_by: string | null
-        }
-        Insert: {
-          code: string
-          created_at?: string
-          id?: string
-          is_active?: boolean
-          product_name: string
-          redeemed_at?: string | null
-          redeemed_by?: string | null
-        }
-        Update: {
-          code?: string
-          created_at?: string
-          id?: string
-          is_active?: boolean
-          product_name?: string
-          redeemed_at?: string | null
-          redeemed_by?: string | null
-        }
-        Relationships: []
-      }
       purchases: {
         Row: {
           amount: number
