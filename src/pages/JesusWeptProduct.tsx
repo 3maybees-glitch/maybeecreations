@@ -88,15 +88,9 @@ const JesusWeptProduct = () => {
                   Back to Apps
                 </Button>
               </div>
-              <div className="flex items-center gap-4 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <Check className="w-4 h-4 text-primary" />
-                  <span>Coming soon to the App Store</span>
-                </div>
-                <span>·</span>
-                <a href="/jesus-wept/support" className="text-primary underline hover:text-primary/80 transition-colors">
-                  Support
-                </a>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <Check className="w-4 h-4 text-primary" />
+                <span>Coming soon to the App Store</span>
               </div>
             </div>
             
