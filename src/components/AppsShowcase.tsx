@@ -11,6 +11,14 @@ const apps = [
     comingSoon: false,
     pending: true,
   },
+  {
+    title: "Jesus Wept",
+    description: "Discover the power of Scripture through its most impactful two-word phrases.",
+    category: "Faith & Inspiration",
+    link: "/jesus-wept",
+    comingSoon: false,
+    pending: true,
+  },
 ];
 
 export const AppsShowcase = () => {
