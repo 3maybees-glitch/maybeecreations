@@ -38,7 +38,7 @@ export const Footer = () => {
               </li>
               <li>
                 <Link to="/jesus-wept/support" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Jesus Wept Support
+                  Support
                 </Link>
               </li>
             </ul>
