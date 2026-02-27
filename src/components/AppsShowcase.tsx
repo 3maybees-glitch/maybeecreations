@@ -1,6 +1,5 @@
 import { AppCard } from "@/components/AppCard";
 import snackersAppIcon from "@/assets/snackers-app-icon.png";
-// Using app icon for Snackers card
 
 const apps = [
   {
@@ -10,8 +9,6 @@ const apps = [
     category: "Food & Dining",
     link: "/snackers",
     comingSoon: false,
-    hasPayment: false,
-    price: "$2.99",
   },
 ];
 
@@ -37,10 +34,8 @@ export const AppsShowcase = () => {
               description={app.description}
               iconImage={app.iconImage}
               category={app.category}
-              comingSoon={app.comingSoon ?? true}
+              comingSoon={app.comingSoon}
               link={app.link}
-              hasPayment={app.hasPayment}
-              price={app.price}
             />
           ))}
         </div>

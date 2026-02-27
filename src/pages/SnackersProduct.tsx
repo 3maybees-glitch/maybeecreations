@@ -10,76 +10,9 @@ import snackersResults from "@/assets/snackers-results.png";
 import snackersEncouragement from "@/assets/snackers-encouragement.png";
 import snackersAppIcon from "@/assets/snackers-app-icon.png";
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
-import { supabase } from "@/integrations/supabase/client";
-import { toast } from "sonner";
 
 const SnackersProduct = () => {
   const navigate = useNavigate();
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [user, setUser] = useState<any>(null);
-  const [hasPurchased, setHasPurchased] = useState(false);
-
-  useEffect(() => {
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setUser(session?.user ?? null);
-      if (session?.user) {
-        checkPurchaseStatus(session.user.id);
-      }
-    });
-
-    const {
-      data: { subscription },
-    } = supabase.auth.onAuthStateChange((_event, session) => {
-      setUser(session?.user ?? null);
-      if (session?.user) {
-        checkPurchaseStatus(session.user.id);
-      }
-    });
-
-    return () => subscription.unsubscribe();
-  }, []);
-
-  const checkPurchaseStatus = async (userId: string) => {
-    const { data, error } = await supabase
-      .from("purchases")
-      .select("*")
-      .eq("user_id", userId)
-      .eq("product_name", "Snackers - Virtual Bites")
-      .maybeSingle();
-
-    if (!error && data) {
-      setHasPurchased(true);
-    }
-  };
-
-  const handlePurchase = async () => {
-    if (!user) {
-      navigate("/auth");
-      return;
-    }
-
-    if (hasPurchased) {
-      window.open("https://snackers.lovable.app", "_blank");
-      return;
-    }
-
-    setIsProcessing(true);
-    try {
-      const { data, error } = await supabase.functions.invoke("create-payment", {
-        body: { productName: "Snackers - Virtual Bites" },
-      });
-
-      if (error) throw error;
-
-      if (data?.url) {
-        window.location.href = data.url;
-      }
-    } catch (error: any) {
-      toast.error(error.message || "Payment failed");
-      setIsProcessing(false);
-    }
-  };
 
   const benefits = [
     {
@@ -140,18 +73,11 @@ const SnackersProduct = () => {
                 <Button 
                   size="lg" 
                   className="text-lg"
-                  onClick={handlePurchase}
-                  disabled={isProcessing}
+                  asChild
                 >
-                  {hasPurchased ? "Open App" : isProcessing ? "Processing..." : "Get Access for $2.99"}
-                </Button>
-                <Button 
-                  size="lg" 
-                  variant="outline" 
-                  className="text-lg"
-                  onClick={() => navigate("/redeem")}
-                >
-                  Redeem Code
+                  <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+                    Download on App Store
+                  </a>
                 </Button>
                 <Button 
                   size="lg" 
@@ -164,7 +90,7 @@ const SnackersProduct = () => {
               </div>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Check className="w-4 h-4 text-primary" />
-                <span>One-time payment • Lifetime access</span>
+                <span>Available on the App Store</span>
               </div>
             </div>
             
@@ -312,15 +238,16 @@ const SnackersProduct = () => {
             Ready to Snack Smarter?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Satisfy cravings, build healthier habits, and feel great. One-time payment, lifetime access.
+            Satisfy cravings, build healthier habits, and feel great. Download now from the App Store.
           </p>
           <Button 
             size="lg" 
             className="text-lg"
-            onClick={handlePurchase}
-            disabled={isProcessing}
+            asChild
           >
-            {hasPurchased ? "Open Snackers App" : isProcessing ? "Processing..." : "Get Started for $2.99"}
+            <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+              Download on App Store
+            </a>
           </Button>
         </div>
       </section>
