@@ -4,20 +4,20 @@ import jesusWeptAppIcon from "@/assets/jesus-wept-app-icon.png";
 
 const apps = [
   {
-    title: "Snackers - Virtual Bites",
-    description: "Experience virtual dining with our innovative food ordering and delivery platform.",
-    iconImage: snackersAppIcon,
-    category: "Food & Dining",
-    link: "/snackers",
-    comingSoon: false,
-    pending: true,
-  },
-  {
     title: "Jesus Wept",
     description: "Discover the power of Scripture through its most impactful two-word phrases.",
     iconImage: jesusWeptAppIcon,
     category: "Faith & Inspiration",
     link: "/jesus-wept",
+    comingSoon: false,
+    pending: false,
+  },
+  {
+    title: "Snackers - Virtual Bites",
+    description: "Experience virtual dining with our innovative food ordering and delivery platform.",
+    iconImage: snackersAppIcon,
+    category: "Food & Dining",
+    link: "/snackers",
     comingSoon: false,
     pending: true,
   },
