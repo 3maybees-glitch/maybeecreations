@@ -1,18 +1,15 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Check, Heart, Star, Sparkles, BookOpen } from "lucide-react";
+import { Check, Heart, Star, Sparkles, BookOpen, Palette } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import jesusWeptAppIcon from "@/assets/jesus-wept-app-icon.png";
-import jwShot1 from "@/assets/jw-shot1.png";
-import jwShot2 from "@/assets/jw-shot2.png";
-import jwShot3 from "@/assets/jw-shot3.png";
-import jwShot4 from "@/assets/jw-shot4.png";
-import jwShot5 from "@/assets/jw-shot5.png";
-import jwShot6 from "@/assets/jw-shot6.png";
-import jwShot7 from "@/assets/jw-shot7.png";
-import jwShot9 from "@/assets/jw-shot9.png";
-import jwShot10 from "@/assets/jw-shot10.png";
+import jwScreenshot1 from "@/assets/jw-screenshot-1.png";
+import jwScreenshot2 from "@/assets/jw-screenshot-2.png";
+import jwScreenshot3 from "@/assets/jw-screenshot-3.png";
+import jwScreenshot4 from "@/assets/jw-screenshot-4.png";
+import jwScreenshot5 from "@/assets/jw-screenshot-5.png";
+import jwScreenshot6 from "@/assets/jw-screenshot-6.png";
 
 const JesusWeptProduct = () => {
   const navigate = useNavigate();
@@ -34,9 +31,9 @@ const JesusWeptProduct = () => {
       description: "Tap any word to explore its original language, transliteration, and deeper meaning"
     },
     {
-      icon: Sparkles,
-      title: "Beautiful Experience",
-      description: "A thoughtfully designed app that makes Scripture feel fresh and alive"
+      icon: Palette,
+      title: "50 Hidden Easter Eggs",
+      description: "Discover classical Biblical paintings and art masterpieces hidden throughout Scripture"
     },
   ];
 
@@ -95,8 +92,8 @@ const JesusWeptProduct = () => {
             </div>
             
             <div className="relative">
-              <div className="aspect-[9/16] max-w-xs mx-auto rounded-[2rem] overflow-hidden shadow-2xl border-4 border-muted/30">
-                <img src={jwShot1} alt="Jesus Wept app - New Testament books view" className="w-full h-full object-cover" />
+              <div className="aspect-[9/19] max-w-xs mx-auto rounded-[2rem] overflow-hidden shadow-2xl border-4 border-muted/30">
+                <img src={jwScreenshot1} alt="Jesus Wept app - The Whole Bible, Two Words at a Time" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -128,16 +125,16 @@ const JesusWeptProduct = () => {
         </div>
       </section>
 
-      {/* Feature: Browse Books & Chapters */}
+      {/* Feature: Browse the Entire Bible */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="flex gap-6 justify-center">
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
-                <img src={jwShot1} alt="Browse New Testament books" className="w-full h-full object-cover" />
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
+                <img src={jwScreenshot1} alt="Browse the entire Bible - Old and New Testament" className="w-full h-full object-cover" />
               </div>
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
-                <img src={jwShot2} alt="Browse chapters in Matthew" className="w-full h-full object-cover" />
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
+                <img src={jwScreenshot6} alt="Full KJV Scripture with beautiful backgrounds" className="w-full h-full object-cover" />
               </div>
             </div>
             <div>
@@ -146,57 +143,54 @@ const JesusWeptProduct = () => {
                 Navigate through all 66 books of the Bible — both Old and New Testament — organized by category. Each book displays its chapter count and a unique two-word theme.
               </p>
               <p className="text-lg text-muted-foreground">
-                Select any chapter to dive into verse-by-verse Scripture, each paired with its own two-word phrase to guide your reading.
+                Full KJV Scripture with beautiful backgrounds unique to each book, creating an immersive reading experience.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Feature: Two-Word Phrases */}
+      {/* Feature: Hebrew & Greek Exploration */}
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-4xl font-bold mb-6">Two Words Per Verse</h2>
-              <p className="text-lg text-muted-foreground mb-4">
-                Every verse is distilled into two powerful keywords — highlighted right in the Scripture text. These words capture the essence of each verse, giving you a fresh lens to read and meditate on God's Word.
-              </p>
-              <p className="text-lg text-muted-foreground">
-                From "begat · Jesus" to "grace · peace," each pair invites you to pause, reflect, and explore deeper meaning.
-              </p>
-            </div>
-            <div className="order-1 lg:order-2 flex gap-6 justify-center">
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
-                <img src={jwShot3} alt="Two-word phrases in Matthew 1" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
-                <img src={jwShot5} alt="Two-word phrases in Luke 2" className="w-full h-full object-cover" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Feature: Word Exploration */}
-      <section className="py-20 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="flex gap-6 justify-center">
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
-                <img src={jwShot4} alt="Greek word exploration - begat" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
-                <img src={jwShot7} alt="Greek word exploration - joy" className="w-full h-full object-cover" />
-              </div>
-            </div>
-            <div>
               <h2 className="text-4xl font-bold mb-6">Explore Original Languages</h2>
               <p className="text-lg text-muted-foreground mb-4">
                 Tap any highlighted word to uncover its original Greek or Hebrew root. See the Strong's number, transliteration, and a concise definition — all without leaving the verse.
               </p>
               <p className="text-lg text-muted-foreground">
-                Discover that "joy" comes from <em>chara</em> — "gladness rooted in God" — or that "begat" is <em>gennaō</em> — "to bring forth, emphasizing lineage and divine continuity."
+                Discover that "God" comes from <em>elohim</em> — "God; the supreme God" — or that "created" is <em>bara'</em> — "to create, shape, or form."
+              </p>
+            </div>
+            <div className="order-1 lg:order-2 flex gap-6 justify-center">
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
+                <img src={jwScreenshot2} alt="Genesis 1:1 - God Created with Hebrew definitions" className="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Feature: Hidden Easter Eggs */}
+      <section className="py-20 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="flex gap-6 justify-center">
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
+                <img src={jwScreenshot4} alt="Tap the hidden cross to reveal a masterwork" className="w-full h-full object-cover" />
+              </div>
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
+                <img src={jwScreenshot3} alt="50 hidden masterpieces - The Raising of Lazarus by Caravaggio" className="w-full h-full object-cover" />
+              </div>
+            </div>
+            <div>
+              <h2 className="text-4xl font-bold mb-6">50 Hidden Easter Eggs</h2>
+              <p className="text-lg text-muted-foreground mb-4">
+                Tap the hidden cross icons scattered throughout Scripture to reveal classical Biblical paintings and art masterpieces by Michelangelo, Rembrandt, Caravaggio, and more.
+              </p>
+              <p className="text-lg text-muted-foreground">
+                Each hidden masterpiece includes the artist name, year, and the Bible verse it illustrates. Can you find all 50?
               </p>
             </div>
           </div>
@@ -208,20 +202,17 @@ const JesusWeptProduct = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-4xl font-bold mb-6">Book Themes & Deep Dives</h2>
+              <h2 className="text-4xl font-bold mb-6">Book & Testament Themes</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                Each book of the Bible has its own two-word theme — like "Kingdom Heaven" for Matthew or "Rejoice Lord" for Philippians. Tap the theme badge to explore both words with their original language roots and meanings.
+                Every book and testament has its own insightful two-word theme — like "Divine Creation" for Genesis or "Covenant LORD" for the Old Testament. Tap any theme to explore both words with their original Hebrew or Greek roots and definitions.
               </p>
               <p className="text-lg text-muted-foreground">
-                Beautiful background imagery sets the tone for each book, creating an immersive reading experience.
+                Three layers of themes — Bible, Testament, and Book — give you a bird's-eye view of Scripture's grand narrative.
               </p>
             </div>
             <div className="order-1 lg:order-2 flex gap-6 justify-center">
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
-                <img src={jwShot9} alt="Philippians chapters with theme" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
-                <img src={jwShot10} alt="Book theme exploration - Rejoice Lord" className="w-full h-full object-cover" />
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
+                <img src={jwScreenshot5} alt="Chapter, Book & Testament Themes with Hebrew & Greek definitions" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
@@ -238,8 +229,8 @@ const JesusWeptProduct = () => {
             </p>
           </div>
           <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
-            {[jwShot1, jwShot2, jwShot3, jwShot5, jwShot6, jwShot4, jwShot7, jwShot9, jwShot10].map((shot, i) => (
-              <div key={i} className="aspect-[9/16] min-w-[200px] w-[200px] flex-shrink-0 rounded-2xl overflow-hidden shadow-lg border-2 border-muted/20 snap-center">
+            {[jwScreenshot1, jwScreenshot2, jwScreenshot3, jwScreenshot4, jwScreenshot5, jwScreenshot6].map((shot, i) => (
+              <div key={i} className="aspect-[9/19] min-w-[200px] w-[200px] flex-shrink-0 rounded-2xl overflow-hidden shadow-lg border-2 border-muted/20 snap-center">
                 <img src={shot} alt={`App screenshot ${i + 1}`} className="w-full h-full object-cover" />
               </div>
             ))}
