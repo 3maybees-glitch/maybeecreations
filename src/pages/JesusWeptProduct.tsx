@@ -64,10 +64,10 @@ const JesusWeptProduct = () => {
               </h1>
               <p className="text-xl text-muted-foreground mb-4">
                 Discover the power of Scripture through its most impactful two-word phrases. 
-                A simple, beautiful way to connect with the Bible every day.
+                Now covering the entire Bible — both Old and New Testament — a simple, beautiful way to connect with God's Word every day.
               </p>
               <p className="text-sm text-muted-foreground mb-8 inline-flex items-center gap-2 px-3 py-1.5 bg-accent/50 rounded-full">
-                ✨ Currently featuring the complete New Testament — Old Testament coming in a future release!
+                🎨 Includes 50 hidden Easter Eggs — tap special verses to reveal classical Biblical paintings and art masterpieces!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button 
