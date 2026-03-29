@@ -150,25 +150,22 @@ const JesusWeptProduct = () => {
         </div>
       </section>
 
-      {/* Feature: Two-Word Phrases */}
+      {/* Feature: Hebrew & Greek Exploration */}
       <section className="py-20 px-4 bg-muted/30">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-4xl font-bold mb-6">Two Words Per Verse</h2>
+              <h2 className="text-4xl font-bold mb-6">Explore Original Languages</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                Every verse is distilled into two powerful keywords — highlighted right in the Scripture text. These words capture the essence of each verse, giving you a fresh lens to read and meditate on God's Word.
+                Tap any highlighted word to uncover its original Greek or Hebrew root. See the Strong's number, transliteration, and a concise definition — all without leaving the verse.
               </p>
               <p className="text-lg text-muted-foreground">
-                From "begat · Jesus" to "grace · peace," each pair invites you to pause, reflect, and explore deeper meaning.
+                Discover that "God" comes from <em>elohim</em> — "God; the supreme God" — or that "created" is <em>bara'</em> — "to create, shape, or form."
               </p>
             </div>
             <div className="order-1 lg:order-2 flex gap-6 justify-center">
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
-                <img src={jwShot3} alt="Two-word phrases in Matthew 1" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
-                <img src={jwShot5} alt="Two-word phrases in Luke 2" className="w-full h-full object-cover" />
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
+                <img src={jwScreenshot2} alt="Genesis 1:1 - God Created with Hebrew definitions" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
