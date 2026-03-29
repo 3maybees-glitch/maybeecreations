@@ -229,8 +229,8 @@ const JesusWeptProduct = () => {
             </p>
           </div>
           <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
-            {[jwShot1, jwShot2, jwShot3, jwShot5, jwShot6, jwShot4, jwShot7, jwShot9, jwShot10].map((shot, i) => (
-              <div key={i} className="aspect-[9/16] min-w-[200px] w-[200px] flex-shrink-0 rounded-2xl overflow-hidden shadow-lg border-2 border-muted/20 snap-center">
+            {[jwScreenshot1, jwScreenshot2, jwScreenshot3, jwScreenshot4, jwScreenshot5, jwScreenshot6].map((shot, i) => (
+              <div key={i} className="aspect-[9/19] min-w-[200px] w-[200px] flex-shrink-0 rounded-2xl overflow-hidden shadow-lg border-2 border-muted/20 snap-center">
                 <img src={shot} alt={`App screenshot ${i + 1}`} className="w-full h-full object-cover" />
               </div>
             ))}
