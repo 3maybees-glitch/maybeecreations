@@ -141,12 +141,9 @@ const JesusWeptProduct = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-4xl font-bold mb-6">Browse the New Testament</h2>
+              <h2 className="text-4xl font-bold mb-6">Browse the Entire Bible</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                Navigate through all 27 New Testament books organized by category — Gospels, History, Pauline Epistles, and more. Each book displays its chapter count and a unique two-word theme.
-              </p>
-              <p className="text-sm text-muted-foreground italic">
-                Old Testament support is coming in a future release.
+                Navigate through all 66 books of the Bible — both Old and New Testament — organized by category. Each book displays its chapter count and a unique two-word theme.
               </p>
               <p className="text-lg text-muted-foreground">
                 Select any chapter to dive into verse-by-verse Scripture, each paired with its own two-word phrase to guide your reading.
