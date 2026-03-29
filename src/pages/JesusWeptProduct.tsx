@@ -64,10 +64,10 @@ const JesusWeptProduct = () => {
               </h1>
               <p className="text-xl text-muted-foreground mb-4">
                 Discover the power of Scripture through its most impactful two-word phrases. 
-                A simple, beautiful way to connect with the Bible every day.
+                Now covering the entire Bible — both Old and New Testament — a simple, beautiful way to connect with God's Word every day.
               </p>
               <p className="text-sm text-muted-foreground mb-8 inline-flex items-center gap-2 px-3 py-1.5 bg-accent/50 rounded-full">
-                ✨ Currently featuring the complete New Testament — Old Testament coming in a future release!
+                🎨 Includes 50 hidden Easter Eggs — tap special verses to reveal classical Biblical paintings and art masterpieces!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button 
@@ -141,12 +141,9 @@ const JesusWeptProduct = () => {
               </div>
             </div>
             <div>
-              <h2 className="text-4xl font-bold mb-6">Browse the New Testament</h2>
+              <h2 className="text-4xl font-bold mb-6">Browse the Entire Bible</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                Navigate through all 27 New Testament books organized by category — Gospels, History, Pauline Epistles, and more. Each book displays its chapter count and a unique two-word theme.
-              </p>
-              <p className="text-sm text-muted-foreground italic">
-                Old Testament support is coming in a future release.
+                Navigate through all 66 books of the Bible — both Old and New Testament — organized by category. Each book displays its chapter count and a unique two-word theme.
               </p>
               <p className="text-lg text-muted-foreground">
                 Select any chapter to dive into verse-by-verse Scripture, each paired with its own two-word phrase to guide your reading.
