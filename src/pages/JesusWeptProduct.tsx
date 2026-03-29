@@ -92,8 +92,8 @@ const JesusWeptProduct = () => {
             </div>
             
             <div className="relative">
-              <div className="aspect-[9/16] max-w-xs mx-auto rounded-[2rem] overflow-hidden shadow-2xl border-4 border-muted/30">
-                <img src={jwShot1} alt="Jesus Wept app - New Testament books view" className="w-full h-full object-cover" />
+              <div className="aspect-[9/19] max-w-xs mx-auto rounded-[2rem] overflow-hidden shadow-2xl border-4 border-muted/30">
+                <img src={jwScreenshot1} alt="Jesus Wept app - The Whole Bible, Two Words at a Time" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
