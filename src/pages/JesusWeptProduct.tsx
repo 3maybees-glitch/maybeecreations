@@ -31,9 +31,9 @@ const JesusWeptProduct = () => {
       description: "Tap any word to explore its original language, transliteration, and deeper meaning"
     },
     {
-      icon: Sparkles,
-      title: "Beautiful Experience",
-      description: "A thoughtfully designed app that makes Scripture feel fresh and alive"
+      icon: Palette,
+      title: "50 Hidden Easter Eggs",
+      description: "Discover classical Biblical paintings and art masterpieces hidden throughout Scripture"
     },
   ];
 
