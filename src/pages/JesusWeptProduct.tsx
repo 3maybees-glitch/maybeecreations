@@ -172,25 +172,25 @@ const JesusWeptProduct = () => {
         </div>
       </section>
 
-      {/* Feature: Word Exploration */}
+      {/* Feature: Hidden Easter Eggs */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="flex gap-6 justify-center">
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
-                <img src={jwShot4} alt="Greek word exploration - begat" className="w-full h-full object-cover" />
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
+                <img src={jwScreenshot4} alt="Tap the hidden cross to reveal a masterwork" className="w-full h-full object-cover" />
               </div>
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
-                <img src={jwShot7} alt="Greek word exploration - joy" className="w-full h-full object-cover" />
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
+                <img src={jwScreenshot3} alt="50 hidden masterpieces - The Raising of Lazarus by Caravaggio" className="w-full h-full object-cover" />
               </div>
             </div>
             <div>
-              <h2 className="text-4xl font-bold mb-6">Explore Original Languages</h2>
+              <h2 className="text-4xl font-bold mb-6">50 Hidden Easter Eggs</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                Tap any highlighted word to uncover its original Greek or Hebrew root. See the Strong's number, transliteration, and a concise definition — all without leaving the verse.
+                Tap the hidden cross icons scattered throughout Scripture to reveal classical Biblical paintings and art masterpieces by Michelangelo, Rembrandt, Caravaggio, and more.
               </p>
               <p className="text-lg text-muted-foreground">
-                Discover that "joy" comes from <em>chara</em> — "gladness rooted in God" — or that "begat" is <em>gennaō</em> — "to bring forth, emphasizing lineage and divine continuity."
+                Each hidden masterpiece includes the artist name, year, and the Bible verse it illustrates. Can you find all 50?
               </p>
             </div>
           </div>
@@ -202,20 +202,17 @@ const JesusWeptProduct = () => {
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-4xl font-bold mb-6">Book Themes & Deep Dives</h2>
+              <h2 className="text-4xl font-bold mb-6">Book & Testament Themes</h2>
               <p className="text-lg text-muted-foreground mb-4">
-                Each book of the Bible has its own two-word theme — like "Kingdom Heaven" for Matthew or "Rejoice Lord" for Philippians. Tap the theme badge to explore both words with their original language roots and meanings.
+                Every book and testament has its own insightful two-word theme — like "Divine Creation" for Genesis or "Covenant LORD" for the Old Testament. Tap any theme to explore both words with their original Hebrew or Greek roots and definitions.
               </p>
               <p className="text-lg text-muted-foreground">
-                Beautiful background imagery sets the tone for each book, creating an immersive reading experience.
+                Three layers of themes — Bible, Testament, and Book — give you a bird's-eye view of Scripture's grand narrative.
               </p>
             </div>
             <div className="order-1 lg:order-2 flex gap-6 justify-center">
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
-                <img src={jwShot9} alt="Philippians chapters with theme" className="w-full h-full object-cover" />
-              </div>
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
-                <img src={jwShot10} alt="Book theme exploration - Rejoice Lord" className="w-full h-full object-cover" />
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
+                <img src={jwScreenshot5} alt="Chapter, Book & Testament Themes with Hebrew & Greek definitions" className="w-full h-full object-cover" />
               </div>
             </div>
           </div>
