@@ -66,13 +66,13 @@ const JesusWeptSupport = () => {
             <AccordionItem value="item-1">
               <AccordionTrigger>What is Jesus Wept: Two Word Bible App?</AccordionTrigger>
               <AccordionContent>
-                Jesus Wept distills every verse of Scripture into two powerful keywords, giving you a fresh and focused way to read, reflect on, and explore the Bible daily.
+                Jesus Wept distills every verse of Scripture into two powerful keywords, giving you a fresh and focused way to read, reflect on, and explore the entire Bible — both Old and New Testament — daily.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>Does the app include the Old Testament?</AccordionTrigger>
+              <AccordionTrigger>Does the app cover the entire Bible?</AccordionTrigger>
               <AccordionContent>
-                The app currently features the complete New Testament. Old Testament support is planned for a future release.
+                Yes! The app covers all 66 books of the Bible, including both the Old and New Testament.
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-3">
