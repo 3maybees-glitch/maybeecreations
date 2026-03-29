@@ -1,18 +1,15 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Check, Heart, Star, Sparkles, BookOpen } from "lucide-react";
+import { Check, Heart, Star, Sparkles, BookOpen, Palette } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import jesusWeptAppIcon from "@/assets/jesus-wept-app-icon.png";
-import jwShot1 from "@/assets/jw-shot1.png";
-import jwShot2 from "@/assets/jw-shot2.png";
-import jwShot3 from "@/assets/jw-shot3.png";
-import jwShot4 from "@/assets/jw-shot4.png";
-import jwShot5 from "@/assets/jw-shot5.png";
-import jwShot6 from "@/assets/jw-shot6.png";
-import jwShot7 from "@/assets/jw-shot7.png";
-import jwShot9 from "@/assets/jw-shot9.png";
-import jwShot10 from "@/assets/jw-shot10.png";
+import jwScreenshot1 from "@/assets/jw-screenshot-1.png";
+import jwScreenshot2 from "@/assets/jw-screenshot-2.png";
+import jwScreenshot3 from "@/assets/jw-screenshot-3.png";
+import jwScreenshot4 from "@/assets/jw-screenshot-4.png";
+import jwScreenshot5 from "@/assets/jw-screenshot-5.png";
+import jwScreenshot6 from "@/assets/jw-screenshot-6.png";
 
 const JesusWeptProduct = () => {
   const navigate = useNavigate();
