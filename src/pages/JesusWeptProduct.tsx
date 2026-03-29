@@ -125,16 +125,16 @@ const JesusWeptProduct = () => {
         </div>
       </section>
 
-      {/* Feature: Browse Books & Chapters */}
+      {/* Feature: Browse the Entire Bible */}
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="flex gap-6 justify-center">
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
-                <img src={jwShot1} alt="Browse New Testament books" className="w-full h-full object-cover" />
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20">
+                <img src={jwScreenshot1} alt="Browse the entire Bible - Old and New Testament" className="w-full h-full object-cover" />
               </div>
-              <div className="aspect-[9/16] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
-                <img src={jwShot2} alt="Browse chapters in Matthew" className="w-full h-full object-cover" />
+              <div className="aspect-[9/19] w-52 rounded-[1.5rem] overflow-hidden shadow-xl border-2 border-muted/20 mt-8">
+                <img src={jwScreenshot6} alt="Full KJV Scripture with beautiful backgrounds" className="w-full h-full object-cover" />
               </div>
             </div>
             <div>
@@ -143,7 +143,7 @@ const JesusWeptProduct = () => {
                 Navigate through all 66 books of the Bible — both Old and New Testament — organized by category. Each book displays its chapter count and a unique two-word theme.
               </p>
               <p className="text-lg text-muted-foreground">
-                Select any chapter to dive into verse-by-verse Scripture, each paired with its own two-word phrase to guide your reading.
+                Full KJV Scripture with beautiful backgrounds unique to each book, creating an immersive reading experience.
               </p>
             </div>
           </div>
