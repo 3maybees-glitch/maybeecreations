@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import SnackersProduct from "./pages/SnackersProduct";
 import JesusWeptProduct from "./pages/JesusWeptProduct";
 import JesusWeptSupport from "./pages/JesusWeptSupport";
+import IntellicityProduct from "./pages/IntellicityProduct";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/snackers" element={<SnackersProduct />} />
           <Route path="/jesus-wept" element={<JesusWeptProduct />} />
           <Route path="/jesus-wept/support" element={<JesusWeptSupport />} />
+          <Route path="/intellicity" element={<IntellicityProduct />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<NotFound />} />

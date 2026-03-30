@@ -1,6 +1,7 @@
 import { AppCard } from "@/components/AppCard";
 import snackersAppIcon from "@/assets/snackers-app-icon.png";
 import jesusWeptAppIcon from "@/assets/jesus-wept-app-icon.png";
+import intellicityAppIcon from "@/assets/intellicity-app-icon.png";
 
 const apps = [
   {
@@ -9,6 +10,15 @@ const apps = [
     iconImage: jesusWeptAppIcon,
     category: "Faith & Inspiration",
     link: "/jesus-wept",
+    comingSoon: false,
+    pending: false,
+  },
+  {
+    title: "Intellicity",
+    description: "Strategic city intelligence — explore geopolitical, economic, security, and spiritual dimensions of 60+ world cities.",
+    iconImage: intellicityAppIcon,
+    category: "Education & Intelligence",
+    link: "/intellicity",
     comingSoon: false,
     pending: false,
   },
