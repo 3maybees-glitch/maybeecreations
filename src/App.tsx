@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import SnackersProduct from "./pages/SnackersProduct";
 import JesusWeptProduct from "./pages/JesusWeptProduct";
 import JesusWeptSupport from "./pages/JesusWeptSupport";
+import IntellicityProduct from "./pages/IntellicityProduct";
 
 const queryClient = new QueryClient();
 
