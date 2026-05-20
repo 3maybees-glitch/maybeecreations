@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Compass, Scroll, ExternalLink } from "lucide-react";
 import clawgardMap from "@/assets/clawgard-map.png";
+import manusMap from "@/assets/manus-map.png";
 
 interface Realm {
   name: string;
