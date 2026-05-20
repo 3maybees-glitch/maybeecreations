@@ -14,8 +14,7 @@ export const Footer = () => {
               </span>
             </div>
             <p className="text-sm text-muted-foreground italic leading-relaxed">
-              Cartographers of the AI age. Hand-drawn fantasy world maps and tutorial
-              Adventure Packs for every major AI brand.
+              Where AI becomes adventure. Discover fantasy world maps and tutorial packs inspired by the leading AI platforms.
             </p>
           </div>
 
