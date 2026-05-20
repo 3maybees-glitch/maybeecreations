@@ -13,7 +13,7 @@ export const Footer = () => {
                 Maybee Creations
               </span>
             </div>
-            <p className="text-sm text-muted-foreground italic leading-relaxed">
+            <p className="text-lg text-muted-foreground italic leading-relaxed">
               Where AI becomes adventure. Discover fantasy world maps and tutorial packs inspired by the leading AI platforms.
             </p>
           </div>
@@ -24,7 +24,7 @@ export const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <Link to="/" className="text-lg text-muted-foreground hover:text-accent transition-colors">
                   Home
                 </Link>
               </li>
@@ -33,18 +33,18 @@ export const Footer = () => {
                   href="https://payhip.com/MaybeeCreations"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                  className="text-lg text-muted-foreground hover:text-accent transition-colors"
                 >
                   Payhip Storefront
                 </a>
               </li>
               <li>
-                <Link to="/privacy" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <Link to="/privacy" className="text-lg text-muted-foreground hover:text-accent transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/terms" className="text-sm text-muted-foreground hover:text-accent transition-colors">
+                <Link to="/terms" className="text-lg text-muted-foreground hover:text-accent transition-colors">
                   Terms of Service
                 </Link>
               </li>
@@ -55,7 +55,7 @@ export const Footer = () => {
             <h3 className="font-display text-sm uppercase tracking-widest text-primary mb-4">
               The Realms
             </h3>
-            <ul className="space-y-2 text-sm text-muted-foreground italic">
+            <ul className="space-y-2 text-lg text-muted-foreground italic">
               <li>Starrealm Atlas of ChatGPT</li>
               <li>Saffron Desert of Claude</li>
               <li>Frostbound Realm of Gemini</li>
