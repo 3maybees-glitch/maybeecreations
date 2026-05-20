@@ -1,62 +1,74 @@
 import { Link } from "react-router-dom";
-import { Sparkles } from "lucide-react";
+import { Compass } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border py-12">
+    <footer className="bg-card border-t-2 border-primary/30 py-14 mt-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Sparkles className="h-5 w-5 text-primary" />
-              <span className="text-lg font-bold text-primary animate-twinkle">
+              <Compass className="h-5 w-5 text-accent" />
+              <span className="font-display text-xl font-bold text-primary">
                 Maybee Creations
               </span>
             </div>
-            <p className="text-sm text-muted-foreground">
-              Crafting apps that empower your productivity, wellness, entertainment, and spiritual growth.
+            <p className="text-sm text-muted-foreground italic leading-relaxed">
+              Cartographers of the AI age. Hand-drawn fantasy world maps and tutorial
+              Adventure Packs for every major AI brand.
             </p>
           </div>
-          
+
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-display text-sm uppercase tracking-widest text-primary mb-4">
+              Wayfaring
+            </h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <a
+                  href="https://payhip.com/MaybeeCreations"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-accent transition-colors"
+                >
+                  Payhip Storefront
+                </a>
+              </li>
+              <li>
+                <Link to="/privacy" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                <Link to="/terms" className="text-sm text-muted-foreground hover:text-accent transition-colors">
                   Terms of Service
                 </Link>
               </li>
-              <li>
-                <Link to="/jesus-wept/support" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Support
-                </Link>
-              </li>
             </ul>
           </div>
-          
+
           <div>
-            <h3 className="font-semibold mb-4">Categories</h3>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Productivity Apps</li>
-              <li>Health & Wellness</li>
-              <li>Entertainment</li>
-              <li>Spiritual Growth</li>
+            <h3 className="font-display text-sm uppercase tracking-widest text-primary mb-4">
+              The Realms
+            </h3>
+            <ul className="space-y-2 text-sm text-muted-foreground italic">
+              <li>Starrealm Atlas of ChatGPT</li>
+              <li>Saffron Desert of Claude</li>
+              <li>Frostbound Realm of Gemini</li>
+              <li>Robotropolis Grid of Perplexity</li>
+              <li>…and four more kingdoms</li>
             </ul>
           </div>
         </div>
-        
-        <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Maybee Creations. All rights reserved.</p>
+
+        <div className="ink-divider mb-6" />
+        <div className="text-center text-xs uppercase tracking-widest text-muted-foreground">
+          <p>© {new Date().getFullYear()} Maybee Creations · maybeecreations.com</p>
         </div>
       </div>
     </footer>
