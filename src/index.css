@@ -27,7 +27,7 @@
     --secondary-foreground: 28 45% 12%;
 
     --muted: 36 30% 82%;
-    --muted-foreground: 28 25% 32%;
+    --muted-foreground: 28 45% 15%;
 
     /* Burnished copper accent */
     --accent: 18 65% 42%;
@@ -120,6 +120,8 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+    font-size: 1.0625rem;
+    font-weight: 500;
     background-image:
       radial-gradient(ellipse at top, hsl(38 55% 95% / 0.6), transparent 60%),
       radial-gradient(ellipse at bottom, hsl(28 35% 70% / 0.25), transparent 60%);

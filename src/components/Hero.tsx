@@ -32,10 +32,15 @@ export const Hero = () => {
 
         <div className="ink-divider w-48 mx-auto mb-8" />
 
-        <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-10 italic leading-relaxed">
+        <p className="text-xl md:text-2xl text-foreground/90 max-w-3xl mx-auto mb-6 italic leading-relaxed font-medium">
           Unfurl fantasy world maps charting the kingdoms of ChatGPT, Claude, Gemini,
           Perplexity and more — each paired with a tutorial Adventure Pack that turns
           learning AI into a journey worth taking.
+        </p>
+        <p className="text-lg md:text-xl text-foreground/85 max-w-3xl mx-auto mb-10 leading-relaxed font-medium">
+          Built for <span className="font-semibold text-primary">families</span> juggling schedules, chores, and household life — and{" "}
+          <span className="font-semibold text-primary">students</span> mastering study plans, deadlines, and daily productivity.
+          Turn every AI tool into a trusted companion for assistant management and time mastery.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
