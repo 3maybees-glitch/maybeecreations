@@ -72,7 +72,7 @@ const realms: Realm[] = [
     name: "The Realm of Clawgard — OpenClaw",
     brand: "OpenClaw",
     tagline: "Stone fortresses guarding the wild frontier of open AI tools.",
-    image: "https://pe56d.s3.amazonaws.com/o_1jovltocgvme1gl5guu85gska17.jpg",
+    image: clawgardMap,
     mapUrl: "https://payhip.com/b/mC1gd",
     bundleUrl: "https://payhip.com/b/KARkD",
   },
