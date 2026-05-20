@@ -26,12 +26,8 @@ export const Hero = () => {
           </span>
         </div>
 
-        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-primary mb-6 leading-[1.05]">
-          Hand-Drawn Realms
-          <br />
-          <span className="italic font-bold" style={{ color: "hsl(var(--accent))" }}>
-            of every AI Brand
-          </span>
+        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-primary mb-6 leading-[1.05] uppercase tracking-wide">
+          EXPLORE THE REALMS OF AI
         </h1>
 
         <div className="ink-divider w-48 mx-auto mb-8" />
