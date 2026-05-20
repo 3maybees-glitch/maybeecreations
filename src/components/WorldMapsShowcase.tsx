@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Compass, Scroll, ExternalLink } from "lucide-react";
 import clawgardMap from "@/assets/clawgard-map.png";
+import manusMap from "@/assets/manus-map.png";
 
 interface Realm {
   name: string;
@@ -48,7 +49,7 @@ const realms: Realm[] = [
     name: "The Manus Mermaid Automation Kingdom",
     brand: "Manus",
     tagline: "Sunken halls where autonomous agents weave tides of automation.",
-    image: "https://pe56d.s3.amazonaws.com/o_1jp1l8pl0pio1jva1kcrbpu1a71193.png",
+    image: manusMap,
     mapUrl: "https://payhip.com/b/pzx5Q",
     bundleUrl: "https://payhip.com/b/0VbIk",
   },
