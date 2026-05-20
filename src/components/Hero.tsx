@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Compass, ScrollText } from "lucide-react";
+import mcWatermark from "@/assets/mc-watermark.png";
 
 export const Hero = () => {
   return (
@@ -7,10 +8,11 @@ export const Hero = () => {
       {/* Parchment gradient backdrop */}
       <div className="absolute inset-0" style={{ background: "var(--gradient-parchment)" }} />
 
-      {/* Subtle compass-rose decorative element */}
-      <div className="absolute inset-0 opacity-[0.08] pointer-events-none flex items-center justify-center">
-        <Compass className="w-[80vmin] h-[80vmin] text-primary" strokeWidth={0.5} />
-      </div>
+      {/* Maybee Creations watermark */}
+      <div
+        className="absolute inset-0 pointer-events-none bg-center bg-no-repeat bg-cover opacity-90"
+        style={{ backgroundImage: `url(${mcWatermark})` }}
+      />
 
       {/* Decorative ink blots */}
       <div className="absolute top-10 left-10 w-72 h-72 rounded-full blur-3xl opacity-20"
