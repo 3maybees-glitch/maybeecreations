@@ -28,9 +28,13 @@ export const Hero = () => {
           </span>
         </div>
 
-        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-primary mb-6 leading-[1.05] uppercase tracking-wide">
+        <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-primary mb-4 leading-[1.05] uppercase tracking-wide">
           EXPLORE THE REALMS OF AI
         </h1>
+
+        <p className="text-base sm:text-lg md:text-xl text-foreground font-semibold max-w-2xl mx-auto mb-4 leading-snug">
+          Printable digital AI world maps and beginner-friendly tutorial packs for learning today's top AI tools. Instant download via Payhip.
+        </p>
 
         <div className="ink-divider w-48 mx-auto mb-8" />
 
