@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Compass, Scroll, ExternalLink } from "lucide-react";
+import { Compass, Scroll, ExternalLink, Check } from "lucide-react";
 import clawgardMap from "@/assets/clawgard-map.png";
 import manusMap from "@/assets/manus-map.png";
 
