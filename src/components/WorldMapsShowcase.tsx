@@ -140,6 +140,30 @@ export const WorldMapsShowcase = () => {
           </p>
         </div>
 
+        <div className="max-w-2xl mx-auto mb-16 p-8 parchment rounded-sm border border-border">
+          <h3 className="text-2xl md:text-3xl font-bold text-primary text-center mb-6">
+            What's Included?
+          </h3>
+          <p className="text-center text-muted-foreground italic mb-6">
+            Each Adventure Pack includes:
+          </p>
+          <ul className="space-y-3">
+            {[
+              "Printable fantasy AI world map",
+              "Beginner tutorial PDF",
+              "Copy-and-paste prompts",
+              "Practice missions",
+              "Real-life use cases for families, students, and creators",
+              "Instant digital download",
+            ].map((item) => (
+              <li key={item} className="flex items-start gap-3 text-foreground">
+                <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                <span className="text-base">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {realms.map((realm) => (
             <RealmCard key={realm.brand} realm={realm} />
