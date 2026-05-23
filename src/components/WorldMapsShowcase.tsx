@@ -104,22 +104,16 @@ const RealmCard = ({ realm }: { realm: Realm }) => (
       <div className="ink-divider mb-4" />
 
       <div className="flex flex-col gap-2">
-        <Button asChild variant="outline" className="justify-between border-primary/40 hover:bg-primary/5">
+        <Button asChild variant="outline" className="justify-start border-primary/40 hover:bg-primary/5">
           <a href={realm.mapUrl} target="_blank" rel="noopener noreferrer">
-            <span className="flex items-center gap-2">
-              <Compass className="h-4 w-4" />
-              World Map
-            </span>
-            <span className="font-bold">$4.99</span>
+            <Compass className="h-4 w-4 mr-2" />
+            Get World Map — $4.99
           </a>
         </Button>
-        <Button asChild className="justify-between bg-primary text-primary-foreground hover:bg-primary/90">
+        <Button asChild className="justify-start bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
           <a href={realm.bundleUrl} target="_blank" rel="noopener noreferrer">
-            <span className="flex items-center gap-2">
-              <Scroll className="h-4 w-4" />
-              Map + Tutorial Pack
-            </span>
-            <span className="font-bold">$9.99</span>
+            <Scroll className="h-4 w-4 mr-2" />
+            Get Adventure Pack — $9.99
           </a>
         </Button>
       </div>
