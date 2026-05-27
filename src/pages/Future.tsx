@@ -1,12 +1,9 @@
 import { CategoryPageLayout, CategorySection } from "@/components/CategoryPageLayout";
-import { AppCard } from "@/components/AppCard";
 import { MapCard } from "@/components/MapCard";
 import { Button } from "@/components/ui/button";
 import { Check, ExternalLink } from "lucide-react";
 import { categories } from "@/data/categories";
 import { realms } from "@/data/realms";
-import intellicityIcon from "@/assets/intellicity-app-icon.png";
-import snackersIcon from "@/assets/snackers-app-icon.png";
 
 const meta = categories.find((c) => c.key === "future")!;
 
@@ -23,7 +20,7 @@ const Future = () => {
   return (
     <CategoryPageLayout
       category={meta}
-      intro="AI fantasy world maps and Adventure Pack tutorials — plus apps that turn frontier intelligence into everyday tools."
+      intro="AI fantasy world maps and Adventure Pack tutorials that turn learning AI into a journey worth taking."
     >
       <section className="py-12 px-4">
         <div className="container mx-auto max-w-3xl text-center">
@@ -39,28 +36,6 @@ const Future = () => {
           </p>
         </div>
       </section>
-
-      <CategorySection eyebrow="Apps" title="AI-Era Apps">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <AppCard
-            title="Intellicity"
-            description="Strategic city intelligence — explore geopolitical, economic, security, and spiritual dimensions of 60+ world cities."
-            iconImage={intellicityIcon}
-            category="Education & Intelligence"
-            link="/intellicity"
-            comingSoon={false}
-          />
-          <AppCard
-            title="Snackers - Virtual Bites"
-            description="Experience virtual dining with our innovative food ordering and delivery platform."
-            iconImage={snackersIcon}
-            category="Food & Dining"
-            link="/snackers"
-            comingSoon={false}
-            pending={true}
-          />
-        </div>
-      </CategorySection>
 
       <section className="py-12 px-4">
         <div className="container mx-auto max-w-2xl">
