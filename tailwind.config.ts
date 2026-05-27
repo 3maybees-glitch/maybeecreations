@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        category: "hsl(var(--category))",
+        faith: "hsl(var(--faith))",
+        freedom: "hsl(var(--freedom))",
+        "freedom-glow": "hsl(var(--freedom-glow))",
+        fans: "hsl(var(--fans))",
+        future: "hsl(var(--future))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
