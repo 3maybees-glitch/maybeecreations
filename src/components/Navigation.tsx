@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Compass, ChevronDown } from "lucide-react";
-import maybeeCreationsLogo from "@/assets/maybee-creations-logo.png";
+import maybeeCreationsBanner from "@/assets/maybee-creations-banner.png";
 import {
   DropdownMenu,
   DropdownMenuContent,
