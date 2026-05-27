@@ -49,7 +49,6 @@ export const Navigation = () => {
             Shop
           </a>
         </div>
-      </div>
     </nav>
   );
 };
