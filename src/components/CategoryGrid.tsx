@@ -14,11 +14,12 @@ export const CategoryGrid = () => {
           </h2>
           <div className="ink-divider w-32 mx-auto mb-6" />
           <p className="text-lg text-muted-foreground leading-relaxed">
-            Maybee Creations builds apps, maps, and learning tools across four
-            worlds — each shaped by the same values: clarity, learning,
-            reflection, purpose, and thoughtful technology.
+            Maybee Creations builds creative apps, visual maps, and digital learning tools
+            for faith, freedom, sports fans, and the AI future — making complex ideas easier
+            to explore.
           </p>
         </div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {categories.map((cat) => (
