@@ -25,24 +25,11 @@ const Faith = () => {
         </div>
       </CategorySection>
 
-      <CategorySection eyebrow="Maps" title="Bible Fantasy World Maps">
+      <CategorySection eyebrow="Maps" title="Bible Book Category World Maps">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ComingSoonCard
-            title="The Holy Land Atlas"
-            description="Hand-illustrated maps of biblical lands rendered as fantasy cartography."
-          />
-          <ComingSoonCard
-            title="Journeys of the Apostles"
-            description="Trace Paul's voyages and the spread of the early church."
-          />
-        </div>
-      </CategorySection>
-
-      <CategorySection eyebrow="Lessons" title="Lesson Plans">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ComingSoonCard
-            title="Family Devotional Packs"
-            description="Printable lessons paired with each Bible map."
+            title="Bible Book Category World Maps"
+            description="Fantasy cartography of Scripture organized by book category — Law, History, Wisdom, Prophets, Gospels, Epistles, and Revelation."
           />
         </div>
       </CategorySection>
