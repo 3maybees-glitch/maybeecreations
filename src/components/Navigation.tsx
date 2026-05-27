@@ -1,6 +1,13 @@
 import { Link } from "react-router-dom";
-import { Compass } from "lucide-react";
+import { Compass, ChevronDown } from "lucide-react";
 import maybeeCreationsLogo from "@/assets/maybee-creations-logo.png";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { categories } from "@/data/categories";
 
 export const Navigation = () => {
   return (
@@ -18,12 +25,33 @@ export const Navigation = () => {
         </Link>
 
         <div className="flex items-center gap-5 md:gap-7">
-          <a
-            href="#realms"
-            className="hidden sm:inline text-xs uppercase tracking-widest font-semibold text-foreground/80 hover:text-accent transition-colors"
-          >
-            Realms
-          </a>
+          <DropdownMenu>
+            <DropdownMenuTrigger className="inline-flex items-center gap-1 text-xs uppercase tracking-widest font-semibold text-foreground/80 hover:text-accent transition-colors focus:outline-none">
+              Explore
+              <ChevronDown className="h-3.5 w-3.5" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="min-w-[12rem]">
+              {categories.map((c) => (
+                <DropdownMenuItem key={c.key} asChild>
+                  <Link
+                    to={c.path}
+                    className="cursor-pointer flex flex-col items-start gap-0.5 py-2"
+                  >
+                    <span
+                      className="text-sm font-semibold uppercase tracking-wider"
+                      style={{ color: `hsl(var(--${c.accentVar}))` }}
+                    >
+                      {c.name}
+                    </span>
+                    <span className="text-xs text-muted-foreground">
+                      {c.tagline}
+                    </span>
+                  </Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+
           <a
             href="https://payhip.com/MaybeeCreations"
             target="_blank"

@@ -59,6 +59,16 @@
     --sidebar-accent-foreground: 28 35% 14%;
     --sidebar-border: 32 30% 65%;
     --sidebar-ring: 24 55% 22%;
+
+    /* Category accents (HSL triplets) */
+    --faith: 42 78% 48%;
+    --freedom: 218 65% 28%;
+    --freedom-glow: 358 72% 48%;
+    --fans: 22 92% 52%;
+    --future: 24 55% 22%;
+
+    /* Per-page category accent (defaults to primary; pages override) */
+    --category: var(--primary);
   }
 
   .dark {

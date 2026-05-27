@@ -11,6 +11,10 @@ import SnackersProduct from "./pages/SnackersProduct";
 import JesusWeptProduct from "./pages/JesusWeptProduct";
 import JesusWeptSupport from "./pages/JesusWeptSupport";
 import IntellicityProduct from "./pages/IntellicityProduct";
+import Faith from "./pages/Faith";
+import Freedom from "./pages/Freedom";
+import Fans from "./pages/Fans";
+import Future from "./pages/Future";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +30,10 @@ const App = () => (
           <Route path="/jesus-wept" element={<JesusWeptProduct />} />
           <Route path="/jesus-wept/support" element={<JesusWeptSupport />} />
           <Route path="/intellicity" element={<IntellicityProduct />} />
+          <Route path="/faith" element={<Faith />} />
+          <Route path="/freedom" element={<Freedom />} />
+          <Route path="/fans" element={<Fans />} />
+          <Route path="/future" element={<Future />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="*" element={<NotFound />} />
