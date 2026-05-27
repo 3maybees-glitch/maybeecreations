@@ -37,28 +37,6 @@ const Future = () => {
         </div>
       </section>
 
-      <CategorySection eyebrow="Apps" title="AI-Era Apps">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <AppCard
-            title="Intellicity"
-            description="Strategic city intelligence — explore geopolitical, economic, security, and spiritual dimensions of 60+ world cities."
-            iconImage={intellicityIcon}
-            category="Education & Intelligence"
-            link="/intellicity"
-            comingSoon={false}
-          />
-          <AppCard
-            title="Snackers - Virtual Bites"
-            description="Experience virtual dining with our innovative food ordering and delivery platform."
-            iconImage={snackersIcon}
-            category="Food & Dining"
-            link="/snackers"
-            comingSoon={false}
-            pending={true}
-          />
-        </div>
-      </CategorySection>
-
       <section className="py-12 px-4">
         <div className="container mx-auto max-w-2xl">
           <div className="parchment p-8 rounded-sm">
