@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Compass, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
 import mcWatermark from "@/assets/mc-watermark.png";
-import maybeeCreationsBanner from "@/assets/maybee-creations-banner.png";
+
 
 export const Hero = () => {
   return (
@@ -30,17 +29,10 @@ export const Hero = () => {
           </span>
         </div>
 
-        <Link to="/" className="inline-block mb-4 group">
-          <img
-            src={maybeeCreationsBanner}
-            alt="Maybee Creations"
-            className="h-16 sm:h-20 md:h-24 w-auto group-hover:scale-[1.02] transition-transform"
-          />
-        </Link>
-
         <h1 className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-primary mb-4 leading-[1.05] uppercase tracking-wide">
           CREATIVE APPS<br className="hidden sm:block" /> & VISUAL MAPS
         </h1>
+
 
         <p className="text-base sm:text-lg md:text-xl text-foreground font-semibold max-w-2xl mx-auto mb-6 leading-snug">
           Building digital experiences for faith, freedom, sports fans, and the AI future.
