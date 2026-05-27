@@ -25,7 +25,7 @@ export const Hero = () => {
         <div className="inline-flex items-center gap-2 bg-background/70 backdrop-blur-sm border border-primary/30 rounded-sm px-4 py-1.5 mb-8">
           <Sparkles className="h-4 w-4 text-accent" />
           <span className="text-xs uppercase tracking-[0.25em] font-semibold text-primary">
-            Maybee Creations
+            Faith • Freedom • Fans • Future
           </span>
         </div>
 
@@ -35,15 +35,16 @@ export const Hero = () => {
 
 
         <p className="text-base sm:text-lg md:text-xl text-foreground font-semibold max-w-2xl mx-auto mb-6 leading-snug">
-          Building digital experiences for faith, freedom, sports fans, and the AI future.
+          Apps and maps for faith, freedom, fans, and the future.
         </p>
 
         <div className="ink-divider w-48 mx-auto mb-8" />
 
         <p className="text-xl md:text-2xl text-foreground/90 max-w-3xl mx-auto mb-10 italic leading-relaxed font-medium">
-          Explore four realms of creativity — from Bible-rooted apps and maps, to freedom tools,
-          fan experiences, and AI fantasy worlds with beginner-friendly tutorials.
+          Maybee Creations builds creative apps, visual maps, and digital learning tools
+          for faith, freedom, sports fans, and the AI future.
         </p>
+
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
