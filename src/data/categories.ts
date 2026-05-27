@@ -57,7 +57,7 @@ export const categories: CategoryMeta[] = [
     blurb:
       "Eight hand-illustrated realms of artificial wonder, paired with Adventure Pack tutorials.",
     count: "2 apps · 8 maps · 8 adventure packs",
-    image: futureImg,
+    image: "https://pe56d.s3.amazonaws.com/o_1jp1pv8rpggmjvr1ohj1s3r14rk1c.png",
     accentVar: "future",
   },
 ];
