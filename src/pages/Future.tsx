@@ -20,7 +20,7 @@ const Future = () => {
   return (
     <CategoryPageLayout
       category={meta}
-      intro="AI fantasy world maps and Adventure Pack tutorials — plus apps that turn frontier intelligence into everyday tools."
+      intro="AI fantasy world maps and Adventure Pack tutorials that turn learning AI into a journey worth taking."
     >
       <section className="py-12 px-4">
         <div className="container mx-auto max-w-3xl text-center">
