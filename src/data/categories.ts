@@ -1,7 +1,6 @@
 import faithImg from "@/assets/category-faith.jpg";
 import freedomImg from "@/assets/category-freedom.jpg";
 import fansImg from "@/assets/category-fans.jpg";
-import futureImg from "@/assets/category-future.jpg";
 
 export type CategoryKey = "faith" | "freedom" | "fans" | "future";
 
