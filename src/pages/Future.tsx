@@ -25,6 +25,21 @@ const Future = () => {
       category={meta}
       intro="AI fantasy world maps and Adventure Pack tutorials — plus apps that turn frontier intelligence into everyday tools."
     >
+      <section className="py-12 px-4">
+        <div className="container mx-auto max-w-3xl text-center">
+          <p className="text-xl md:text-2xl text-foreground/90 mb-6 italic leading-relaxed font-medium">
+            Unfurl fantasy world maps charting the kingdoms of ChatGPT, Claude, Gemini,
+            Perplexity and more — each paired with a tutorial Adventure Pack that turns
+            learning AI into a journey worth taking.
+          </p>
+          <p className="text-lg md:text-xl text-foreground/85 leading-relaxed font-medium">
+            Built for <span className="font-semibold text-primary">families</span> juggling schedules, chores, and household life — and{" "}
+            <span className="font-semibold text-primary">students</span> mastering study plans, deadlines, and daily productivity.
+            Turn every AI tool into a trusted companion for assistant management and time mastery.
+          </p>
+        </div>
+      </section>
+
       <CategorySection eyebrow="Apps" title="AI-Era Apps">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <AppCard
