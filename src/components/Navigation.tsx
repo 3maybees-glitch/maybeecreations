@@ -12,19 +12,17 @@ import { categories } from "@/data/categories";
 export const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b-2 border-primary/20">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-3 group">
+      <div className="container mx-auto px-4 py-3 grid grid-cols-[1fr_auto_1fr] items-center gap-4">
+        <div />
+        <Link to="/" className="flex justify-center group">
           <img
-            src={maybeeCreationsLogo}
+            src={maybeeCreationsBanner}
             alt="Maybee Creations"
-            className="h-9 w-9 group-hover:scale-105 transition-transform"
+            className="h-14 md:h-20 w-auto group-hover:scale-[1.02] transition-transform"
           />
-          <span className="font-display text-lg md:text-xl font-bold text-primary tracking-wide">
-            Maybee Creations
-          </span>
         </Link>
 
-        <div className="flex items-center gap-5 md:gap-7">
+        <div className="flex items-center justify-end gap-5 md:gap-7">
           <DropdownMenu>
             <DropdownMenuTrigger className="inline-flex items-center gap-1 text-xs uppercase tracking-widest font-semibold text-foreground/80 hover:text-accent transition-colors focus:outline-none">
               Explore
