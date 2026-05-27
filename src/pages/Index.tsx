@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
-import { WorldMapsShowcase } from "@/components/WorldMapsShowcase";
+import { CategoryGrid } from "@/components/CategoryGrid";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -8,7 +8,7 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <WorldMapsShowcase />
+      <CategoryGrid />
       <Footer />
     </div>
   );
