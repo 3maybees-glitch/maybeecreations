@@ -1,12 +1,9 @@
 import { CategoryPageLayout, CategorySection } from "@/components/CategoryPageLayout";
-import { AppCard } from "@/components/AppCard";
 import { MapCard } from "@/components/MapCard";
 import { Button } from "@/components/ui/button";
 import { Check, ExternalLink } from "lucide-react";
 import { categories } from "@/data/categories";
 import { realms } from "@/data/realms";
-import intellicityIcon from "@/assets/intellicity-app-icon.png";
-import snackersIcon from "@/assets/snackers-app-icon.png";
 
 const meta = categories.find((c) => c.key === "future")!;
 
