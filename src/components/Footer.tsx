@@ -14,8 +14,10 @@ export const Footer = () => {
               </span>
             </div>
             <p className="text-lg text-muted-foreground italic leading-relaxed">
-              Where AI becomes adventure. Discover fantasy world maps and tutorial packs inspired by the leading AI platforms.
+              Apps and maps for faith, freedom, fans, and the future — creative apps,
+              visual maps, and digital learning tools across Bible, civic, sports, and AI worlds.
             </p>
+
           </div>
 
           <div>
