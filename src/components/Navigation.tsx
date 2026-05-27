@@ -57,6 +57,7 @@ export const Navigation = () => {
             <Compass className="h-4 w-4" />
             Shop
           </a>
+          </div>
         </div>
     </nav>
   );
