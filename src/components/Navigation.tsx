@@ -7,11 +7,20 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { categories } from "@/data/categories";
+import maybeeCreationsBanner from "@/assets/maybee-creations-banner.png";
 
 export const Navigation = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b-2 border-primary/20">
-      <div className="container mx-auto px-4 py-3 flex items-center justify-end gap-5 md:gap-7">
+      <div className="container mx-auto px-4 py-2 flex items-center justify-between gap-4">
+          <Link to="/" className="group inline-flex items-center shrink-0">
+            <img
+              src={maybeeCreationsBanner}
+              alt="Maybee Creations"
+              className="h-10 sm:h-12 w-auto group-hover:scale-[1.03] transition-transform"
+            />
+          </Link>
+          <div className="flex items-center gap-5 md:gap-7">
           <DropdownMenu>
             <DropdownMenuTrigger className="inline-flex items-center gap-1 text-xs uppercase tracking-widest font-semibold text-foreground/80 hover:text-accent transition-colors focus:outline-none">
               Explore
