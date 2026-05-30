@@ -67,4 +67,20 @@ export const realms: Realm[] = [
     mapUrl: "https://payhip.com/b/mC1gd",
     bundleUrl: "https://payhip.com/b/KARkD",
   },
+  {
+    name: "The Wild West Frontierland of Grok",
+    brand: "Grok",
+    tagline: "Dusty saloons and lawless plains where unfiltered AI rides at high noon.",
+    image: "https://pe56d.s3.amazonaws.com/o_1jprteqbb140b1b2t17ot35i1baf1c.png",
+    mapUrl: "https://payhip.com/b/eZc6i",
+    bundleUrl: "https://payhip.com/b/shw8Z",
+  },
+  {
+    name: "The Skyborne Cloudspire of Hermes Agent",
+    brand: "Hermes",
+    tagline: "Lofty cloud spires where messenger agents soar between APIs and apps.",
+    image: "https://pe56d.s3.amazonaws.com/o_1jprr766l1vf21kosp7c1loc1ucm1c.png",
+    mapUrl: "https://payhip.com/b/9QZno",
+    bundleUrl: "https://payhip.com/b/M4gTL",
+  },
 ];
