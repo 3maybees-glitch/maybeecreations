@@ -5,7 +5,7 @@ import mcWatermark from "@/assets/mc-watermark.png";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[70vh] md:min-h-[92vh] flex items-center justify-center overflow-hidden pt-16 md:pt-20 pb-8 md:pb-0">
+    <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden pt-20">
       {/* Parchment gradient backdrop */}
       <div className="absolute inset-0" style={{ background: "var(--gradient-parchment)" }} />
 
@@ -22,25 +22,25 @@ export const Hero = () => {
            style={{ background: "hsl(var(--primary))" }} />
 
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="inline-flex items-center gap-2 bg-background/70 backdrop-blur-sm border border-primary/30 rounded-sm px-4 py-1.5 mb-4 md:mb-8">
+        <div className="inline-flex items-center gap-2 bg-background/70 backdrop-blur-sm border border-primary/30 rounded-sm px-4 py-1.5 mb-8">
           <Sparkles className="h-4 w-4 text-accent" />
           <span className="text-xs uppercase tracking-[0.25em] font-semibold text-primary">
             Faith • Freedom • Fans • Future
           </span>
         </div>
 
-        <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-primary mb-3 md:mb-4 leading-[1.05] uppercase tracking-wide">
+        <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-primary mb-4 leading-[1.05] uppercase tracking-wide">
           CREATIVE APPS<br className="hidden sm:block" /> & VISUAL MAPS
         </h1>
 
 
-        <p className="text-base sm:text-lg md:text-xl text-foreground font-semibold max-w-2xl mx-auto mb-4 md:mb-6 leading-snug">
+        <p className="text-base sm:text-lg md:text-xl text-foreground font-semibold max-w-2xl mx-auto mb-6 leading-snug">
           Apps and maps for faith, freedom, fans, and the future.
         </p>
 
-        <div className="ink-divider w-48 mx-auto mb-4 md:mb-8" />
+        <div className="ink-divider w-48 mx-auto mb-8" />
 
-        <p className="text-base md:text-2xl text-foreground/90 max-w-3xl mx-auto mb-6 md:mb-10 italic leading-relaxed font-medium">
+        <p className="text-base md:text-2xl text-foreground/90 max-w-3xl mx-auto mb-10 italic leading-relaxed font-medium">
           Maybee Creations builds creative apps, visual maps, and digital learning tools
           for faith, freedom, sports fans, and the AI future.
         </p>

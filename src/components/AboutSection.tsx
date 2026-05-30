@@ -1,12 +1,12 @@
 export const AboutSection = () => {
   return (
-    <section id="about" className="py-10 md:py-20 px-4 relative">
+    <section id="about" className="py-20 px-4 relative">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-6 md:mb-10">
-          <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-accent font-semibold mb-2 md:mb-4">
+        <div className="text-center mb-10">
+          <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-accent font-semibold mb-4">
             ✦ About Us ✦
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-3 md:mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">
             Creative Apps & Visual Maps
           </h2>
           <div className="ink-divider w-32 mx-auto" />
