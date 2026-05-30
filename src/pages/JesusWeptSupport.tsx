@@ -16,7 +16,7 @@ const JesusWeptSupport = () => {
       <Navigation />
 
       {/* Hero */}
-      <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-primary/10 via-background to-background">
+      <section className="pt-20 pb-10 px-4 bg-gradient-to-br from-primary/10 via-background to-background">
         <div className="container mx-auto max-w-3xl text-center">
           <img
             src={jesusWeptAppIcon}
