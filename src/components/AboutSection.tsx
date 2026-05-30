@@ -12,7 +12,7 @@ export const AboutSection = () => {
           <div className="ink-divider w-32 mx-auto" />
         </div>
 
-        <div className="space-y-4 md:space-y-6 text-base md:text-lg text-foreground/90 leading-relaxed">
+        <div className="space-y-6 text-base md:text-lg text-foreground/90 leading-relaxed">
           <p>
             Maybee Creations is a digital creation company focused on building apps, maps,
             and learning tools that make complex ideas easier to explore. The brand combines
