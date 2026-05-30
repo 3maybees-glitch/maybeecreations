@@ -5,7 +5,7 @@ import mcWatermark from "@/assets/mc-watermark.png";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-[70vh] md:min-h-[92vh] flex items-center justify-center overflow-hidden pt-16 md:pt-20 pb-8 md:pb-0">
       {/* Parchment gradient backdrop */}
       <div className="absolute inset-0" style={{ background: "var(--gradient-parchment)" }} />
 
