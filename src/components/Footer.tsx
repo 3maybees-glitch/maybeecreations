@@ -3,9 +3,9 @@ import { Compass } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-card border-t-2 border-primary/30 py-14 mt-12">
+    <footer className="bg-card border-t-2 border-primary/30 py-8 md:py-14 mt-6 md:mt-12">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 mb-6 md:mb-10">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Compass className="h-5 w-5 text-accent" />
