@@ -7,7 +7,7 @@ const Privacy = () => {
     <div className="min-h-screen flex flex-col">
       <Navigation />
       
-      <main className="flex-1 pt-24 pb-16">
+      <main className="flex-1 pt-16 pb-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center">

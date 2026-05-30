@@ -17,7 +17,7 @@ export const CategoryPageLayout = ({ category, intro, children }: Props) => {
     >
       <Navigation />
 
-      <section className="relative pt-16 md:pt-20 pb-4 md:pb-8 overflow-hidden">
+      <section className="relative pt-10 md:pt-14 pb-2 md:pb-4 overflow-hidden">
 ...
         <div className="container mx-auto px-4 relative">
           <div className="max-w-3xl">

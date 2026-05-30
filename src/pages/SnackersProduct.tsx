@@ -47,7 +47,7 @@ const SnackersProduct = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-primary/10 via-background to-background">
+      <section className="pt-20 pb-12 px-4 bg-gradient-to-br from-primary/10 via-background to-background">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
