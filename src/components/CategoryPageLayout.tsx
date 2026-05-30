@@ -17,7 +17,7 @@ export const CategoryPageLayout = ({ category, intro, children }: Props) => {
     >
       <Navigation />
 
-      <section className="relative pt-28 pb-16 overflow-hidden">
+      <section className="relative pt-20 pb-8 overflow-hidden">
         <div
           className="absolute inset-0 opacity-25"
           style={{
@@ -77,19 +77,19 @@ export const CategorySection = ({
   eyebrow?: string;
   children: ReactNode;
 }) => (
-  <section className="py-16 px-4">
+  <section className="py-8 px-4">
     <div className="container mx-auto">
-      <div className="mb-10">
+      <div className="mb-6">
         {eyebrow && (
           <p
-            className="text-xs uppercase tracking-[0.3em] font-semibold mb-3"
+            className="text-xs uppercase tracking-[0.3em] font-semibold mb-2"
             style={{ color: "hsl(var(--category))" }}
           >
             {eyebrow}
           </p>
         )}
         <h2 className="text-3xl md:text-4xl font-bold text-primary">{title}</h2>
-        <div className="ink-divider w-24 mt-4" />
+        <div className="ink-divider w-24 mt-3" />
       </div>
       {children}
     </div>
