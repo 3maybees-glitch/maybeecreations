@@ -63,19 +63,19 @@ export const CategorySection = ({
   eyebrow?: string;
   children: ReactNode;
 }) => (
-  <section className="py-8 px-4">
+  <section className="py-4 md:py-8 px-4">
     <div className="container mx-auto">
-      <div className="mb-6">
+      <div className="mb-4 md:mb-6">
         {eyebrow && (
           <p
-            className="text-xs uppercase tracking-[0.3em] font-semibold mb-2"
+            className="text-xs uppercase tracking-[0.3em] font-semibold mb-1 md:mb-2"
             style={{ color: "hsl(var(--category))" }}
           >
             {eyebrow}
           </p>
         )}
-        <h2 className="text-3xl md:text-4xl font-bold text-primary">{title}</h2>
-        <div className="ink-divider w-24 mt-3" />
+        <h2 className="text-2xl md:text-4xl font-bold text-primary">{title}</h2>
+        <div className="ink-divider w-24 mt-2 md:mt-3" />
       </div>
       {children}
     </div>
