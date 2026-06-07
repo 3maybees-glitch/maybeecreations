@@ -46,8 +46,8 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/terms" className="text-lg text-muted-foreground hover:text-accent transition-colors">
-                  Terms of Service
+                <Link to="/sitemap" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                  Sitemap
                 </Link>
               </li>
             </ul>
