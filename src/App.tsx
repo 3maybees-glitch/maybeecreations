@@ -15,6 +15,7 @@ import Faith from "./pages/Faith";
 import Freedom from "./pages/Freedom";
 import Fans from "./pages/Fans";
 import Future from "./pages/Future";
+import SitemapPage from "./pages/SitemapPage";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/future" element={<Future />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/sitemap" element={<SitemapPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
