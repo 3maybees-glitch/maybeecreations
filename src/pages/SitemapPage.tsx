@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { Map, Home, BookOpen, Globe, Gamepad2, CrossedSwords, Brain, FileText, Shield, Sitemap } from "lucide-react";
+import { Map, Home, BookOpen, Globe, Gamepad2, Brain, FileText, Shield, List } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface SitemapSection {
@@ -54,7 +54,7 @@ const SitemapPage = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="flex items-center gap-3 mb-8">
             <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-primary-glow flex items-center justify-center">
-              <Sitemap className="h-6 w-6 text-primary-foreground" />
+              <List className="h-6 w-6 text-primary-foreground" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold">Sitemap</h1>
           </div>
