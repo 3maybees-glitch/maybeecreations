@@ -34,7 +34,7 @@ export const categories: CategoryMeta[] = [
     tagline: "Tools celebrating liberty, civics, and conservative values.",
     blurb:
       "Freedom-first apps and learning tools that honor the principles of a self-governing people.",
-    count: "Coming soon",
+    count: "10 Baseball Legend Land maps · apps coming soon",
     image: freedomImg,
     accentVar: "freedom",
   },
