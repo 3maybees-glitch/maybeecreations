@@ -17,10 +17,28 @@ export const CategoryPageLayout = ({ category, intro, children }: Props) => {
     >
       <Navigation />
 
-      <section className="relative pt-10 md:pt-14 pb-2 md:pb-4 overflow-hidden">
-...
+      <section className="relative pt-24 md:pt-28 pb-8 md:pb-12 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ backgroundImage: `url(${category.image})` }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, hsl(var(--background) / 0.4) 0%, hsl(var(--background)) 85%)",
+          }}
+        />
+        <div
+          className="absolute bottom-0 left-0 right-0 h-px"
+          style={{
+            background:
+              "linear-gradient(to right, transparent, hsl(var(--category) / 0.5), transparent)",
+          }}
+        />
+
         <div className="container mx-auto px-4 relative">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl animate-fade-up">
             <p
               className="text-xs md:text-sm uppercase tracking-[0.3em] font-semibold mb-2 md:mb-4"
               style={{ color: "hsl(var(--category))" }}
