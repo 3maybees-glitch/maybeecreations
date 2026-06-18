@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Compass } from "lucide-react";
+import { categories } from "@/data/categories";
 
 export const Footer = () => {
   return (
@@ -9,15 +10,12 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <Compass className="h-5 w-5 text-accent" />
-              <span className="font-display text-xl font-bold text-primary">
-                Maybee Creations
-              </span>
+              <span className="font-display text-xl font-bold text-primary">Maybee Creations</span>
             </div>
             <p className="text-lg text-muted-foreground italic leading-relaxed">
-              Apps and maps for faith, freedom, fans, and the future — creative apps,
-              visual maps, and digital learning tools across Bible, civic, sports, and AI worlds.
+              Apps and maps for faith, freedom, fans, and the future — creative apps, visual maps,
+              and digital learning tools across Bible, civic, sports, and AI worlds.
             </p>
-
           </div>
 
           <div>
@@ -26,7 +24,10 @@ export const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="/"
+                  className="text-lg text-muted-foreground hover:text-accent transition-colors"
+                >
                   Home
                 </Link>
               </li>
@@ -41,12 +42,26 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <Link to="/privacy" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="/privacy"
+                  className="text-lg text-muted-foreground hover:text-accent transition-colors"
+                >
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link to="/sitemap" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                <Link
+                  to="/terms"
+                  className="text-lg text-muted-foreground hover:text-accent transition-colors"
+                >
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/sitemap"
+                  className="text-lg text-muted-foreground hover:text-accent transition-colors"
+                >
                   Sitemap
                 </Link>
               </li>
@@ -55,14 +70,20 @@ export const Footer = () => {
 
           <div>
             <h3 className="font-display text-sm uppercase tracking-widest text-primary mb-4">
-              The Realms
+              The Four Realms
             </h3>
-            <ul className="space-y-2 text-lg text-muted-foreground italic">
-              <li>Starrealm Atlas of ChatGPT</li>
-              <li>Saffron Desert of Claude</li>
-              <li>Frostbound Realm of Gemini</li>
-              <li>Robotropolis Grid of Perplexity</li>
-              <li>…and four more kingdoms</li>
+            <ul className="space-y-2">
+              {categories.map((c) => (
+                <li key={c.key}>
+                  <Link
+                    to={c.path}
+                    className="text-lg text-muted-foreground hover:text-accent transition-colors"
+                  >
+                    {c.name}
+                    <span className="text-sm italic"> — {c.count}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

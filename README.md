@@ -62,7 +62,16 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/fd402555-0885-43ea-ac4d-d410fcad0d3a) and click on Share -> Publish.
+### Vercel (recommended)
+
+1. Push this repo to GitHub.
+2. Go to [vercel.com](https://vercel.com) and import the repository.
+3. Vercel auto-detects Vite — no extra config needed (`vercel.json` handles SPA routing).
+4. Add your custom domain (`maybeecreations.com`) under Project Settings → Domains.
+
+### Lovable
+
+You can also deploy via [Lovable](https://lovable.dev/projects/fd402555-0885-43ea-ac4d-d410fcad0d3a) — click Share → Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 

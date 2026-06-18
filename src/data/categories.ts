@@ -23,7 +23,7 @@ export const categories: CategoryMeta[] = [
     tagline: "Bible-rooted apps, maps, and lessons.",
     blurb:
       "Tools that help families and students engage Scripture with clarity, reflection, and wonder.",
-    count: "1 app · maps & lessons coming soon",
+    count: "1 app · 10 Bible maps",
     image: faithImg,
     accentVar: "faith",
   },
@@ -34,7 +34,7 @@ export const categories: CategoryMeta[] = [
     tagline: "Tools celebrating liberty, civics, and conservative values.",
     blurb:
       "Freedom-first apps and learning tools that honor the principles of a self-governing people.",
-    count: "10 Baseball Legend Land maps · apps coming soon",
+    count: "2 apps · LibertyID coming soon",
     image: freedomImg,
     accentVar: "freedom",
   },
@@ -45,7 +45,7 @@ export const categories: CategoryMeta[] = [
     tagline: "Apps built for sports fans and the people who live the game.",
     blurb:
       "Stadium-energy experiences for fans who track every play, every season, every dynasty.",
-    count: "Coming soon",
+    count: "10 Legend Land maps · 3 apps coming soon",
     image: fansImg,
     accentVar: "fans",
   },
@@ -55,8 +55,8 @@ export const categories: CategoryMeta[] = [
     path: "/future",
     tagline: "AI fantasy world maps + tutorials for the AI era.",
     blurb:
-      "Eight hand-illustrated realms of artificial wonder, paired with Adventure Pack tutorials.",
-    count: "2 apps · 8 maps · 8 adventure packs",
+      "Ten hand-illustrated realms of artificial wonder, paired with Adventure Pack tutorials.",
+    count: "10 AI realm maps · Adventure Packs",
     image: "https://pe56d.s3.amazonaws.com/o_1jp1pv8rpggmjvr1ohj1s3r14rk1c.png",
     accentVar: "future",
   },
