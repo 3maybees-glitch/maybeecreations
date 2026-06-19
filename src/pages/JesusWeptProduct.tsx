@@ -10,8 +10,11 @@ import jwScreenshot3 from "@/assets/jw-screenshot-3.png";
 import jwScreenshot4 from "@/assets/jw-screenshot-4.png";
 import jwScreenshot5 from "@/assets/jw-screenshot-5.png";
 import jwScreenshot6 from "@/assets/jw-screenshot-6.png";
+import { usePageMeta } from "@/hooks/usePageMeta";
+import { pageMeta } from "@/lib/pageMeta";
 
 const JesusWeptProduct = () => {
+  usePageMeta(pageMeta.jesusWept);
   const navigate = useNavigate();
 
   const benefits = [

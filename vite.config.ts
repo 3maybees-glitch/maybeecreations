@@ -17,14 +17,14 @@ export default defineConfig(({ mode }) => ({
       registerType: "autoUpdate",
       includeAssets: ["favicon.png", "apple-touch-icon.png"],
       manifest: {
-        name: "Snackers - Smart Snack Decisions",
-        short_name: "Snackers",
-        description: "Make smarter snack decisions with AI-powered nutritional guidance",
-        theme_color: "#f8b4c4",
-        background_color: "#ffffff",
+        name: "Maybee Creations",
+        short_name: "Maybee",
+        description: "Creatively Crafted educational discovery world maps for faith, freedom, fans, and the future",
+        theme_color: "#3a2a14",
+        background_color: "#f5eedc",
         display: "standalone",
         orientation: "portrait",
-        start_url: "/snackers",
+        start_url: "/",
         icons: [
           {
             src: "/pwa-192x192.png",

@@ -13,8 +13,11 @@ import icScreenshot6 from "@/assets/ic-screenshot-6.png";
 import icScreenshot7 from "@/assets/ic-screenshot-7.png";
 import icScreenshot8 from "@/assets/ic-screenshot-8.png";
 import icScreenshot9 from "@/assets/ic-screenshot-9.png";
+import { usePageMeta } from "@/hooks/usePageMeta";
+import { pageMeta } from "@/lib/pageMeta";
 
 const IntellicityProduct = () => {
+  usePageMeta(pageMeta.intellicity);
   const navigate = useNavigate();
 
   const benefits = [

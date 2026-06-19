@@ -25,7 +25,7 @@ export const CategoryPageLayout = ({ category, intro, children }: Props) => {
               className="text-xs md:text-sm uppercase tracking-[0.3em] font-semibold mb-2 md:mb-4"
               style={{ color: "hsl(var(--category))" }}
             >
-              ✦ The {category.name} Realm ✦
+              ✦ {category.explorerName} ✦
             </p>
             <h1
               className="font-display text-4xl md:text-7xl font-black uppercase tracking-wide mb-3 md:mb-6"

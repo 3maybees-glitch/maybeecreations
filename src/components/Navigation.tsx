@@ -42,8 +42,8 @@ export const Navigation = () => {
                     >
                       {c.name}
                     </span>
-                    <span className="text-xs text-muted-foreground">
-                      {c.tagline}
+                    <span className="text-xs text-muted-foreground italic">
+                      {c.explorerName}
                     </span>
                   </Link>
                 </DropdownMenuItem>

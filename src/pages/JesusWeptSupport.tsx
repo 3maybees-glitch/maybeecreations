@@ -9,8 +9,12 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import jesusWeptAppIcon from "@/assets/jesus-wept-app-icon.png";
+import { usePageMeta } from "@/hooks/usePageMeta";
+import { pageMeta } from "@/lib/pageMeta";
 
 const JesusWeptSupport = () => {
+  usePageMeta(pageMeta.jesusWeptSupport);
+
   return (
     <div className="min-h-screen">
       <Navigation />

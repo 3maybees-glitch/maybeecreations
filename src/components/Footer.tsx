@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { Compass } from "lucide-react";
+import { categories } from "@/data/categories";
+import { DEFAULT_DESCRIPTION } from "@/lib/siteCopy";
 
 export const Footer = () => {
   return (
@@ -14,10 +16,8 @@ export const Footer = () => {
               </span>
             </div>
             <p className="text-lg text-muted-foreground italic leading-relaxed">
-              Apps and maps for faith, freedom, fans, and the future — creative apps,
-              visual maps, and digital learning tools across Bible, civic, sports, and AI worlds.
+              {DEFAULT_DESCRIPTION}
             </p>
-
           </div>
 
           <div>
@@ -46,6 +46,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/terms" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                  Terms of Service
+                </Link>
+              </li>
+              <li>
                 <Link to="/sitemap" className="text-lg text-muted-foreground hover:text-accent transition-colors">
                   Sitemap
                 </Link>
@@ -55,14 +60,20 @@ export const Footer = () => {
 
           <div>
             <h3 className="font-display text-sm uppercase tracking-widest text-primary mb-4">
-              The Realms
+              Explore
             </h3>
-            <ul className="space-y-2 text-lg text-muted-foreground italic">
-              <li>Starrealm Atlas of ChatGPT</li>
-              <li>Saffron Desert of Claude</li>
-              <li>Frostbound Realm of Gemini</li>
-              <li>Robotropolis Grid of Perplexity</li>
-              <li>…and four more kingdoms</li>
+            <ul className="space-y-2">
+              {categories.map((category) => (
+                <li key={category.key}>
+                  <Link
+                    to={category.path}
+                    className="text-lg text-muted-foreground hover:text-accent transition-colors inline-flex flex-col"
+                  >
+                    <span>{category.name}</span>
+                    <span className="text-xs italic">{category.explorerName}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

@@ -17,7 +17,7 @@ export const MapCard = ({ realm }: { realm: Realm }) => (
         src={realm.image}
         alt={`${realm.name} fantasy map illustration`}
         loading="lazy"
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700"
       />
       <div className="absolute top-3 left-3 px-3 py-1 bg-background/80 backdrop-blur-sm border border-border text-xs uppercase tracking-widest font-semibold text-primary">
         {realm.brand}

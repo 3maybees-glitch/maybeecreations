@@ -1,0 +1,72 @@
+import freedomImg from "@/assets/category-freedom.jpg";
+import madisonMap from "@/assets/madison-map.png";
+
+export interface FreedomMap {
+  name: string;
+  category: string;
+  subtitle: string;
+  tagline: string;
+  image: string;
+  /** Set when the map is live on Payhip */
+  url?: string;
+  price?: string;
+}
+
+export const freedomMaps: FreedomMap[] = [
+  {
+    name: "George Washington",
+    category: "Founding Era",
+    subtitle: "The World of George Washington",
+    tagline:
+      "Trace the life of the indispensable man — from Mount Vernon and Valley Forge to Yorktown and the presidency.",
+    image: "https://pe56d.s3.amazonaws.com/o_1jr7fu7ldg6v1kec2rqd61o9s15.png",
+  },
+  {
+    name: "Thomas Jefferson",
+    category: "Founding Era",
+    subtitle: "The World of Thomas Jefferson",
+    tagline:
+      "Explore liberty, learning, and the early republic — from Monticello to the Declaration and beyond.",
+    image: "https://pe56d.s3.amazonaws.com/o_1jr7kt71119pk9vtkug1s2ict515.png",
+  },
+  {
+    name: "James Madison",
+    category: "Founding Era",
+    subtitle: "The World of James Madison",
+    tagline:
+      "Walk the story of the Constitution’s architect — public service, republican government, and civic principle.",
+    image: madisonMap,
+  },
+  {
+    name: "Alexander Hamilton",
+    category: "Founding Era",
+    subtitle: "The World of Alexander Hamilton",
+    tagline:
+      "Chart the rise of a founding visionary — finance, federalism, and the fight to shape a new nation.",
+    image: "https://pe56d.s3.amazonaws.com/o_1jr7h9csl1o401l2b1a901dl41oi315.png",
+  },
+  {
+    name: "Benjamin Franklin",
+    category: "Founding Era",
+    subtitle: "The World of Benjamin Franklin",
+    tagline:
+      "Follow the polymath patriot — invention, diplomacy, virtue, and the spirit of American ingenuity.",
+    image: "https://pe56d.s3.amazonaws.com/o_1jr7jcuru1gq21ki91p0c17gojff15.png",
+  },
+  {
+    name: "Revolutionary War",
+    category: "American History",
+    subtitle: "Liberty Explorer Revolutionary War Map",
+    tagline:
+      "Journey through the birth of a nation — colonies, campaigns, and the fight for independence.",
+    image: freedomImg,
+  },
+  {
+    name: "Civil War",
+    category: "American History",
+    subtitle: "Liberty Explorer Civil War Discovery Map",
+    tagline:
+      "Explore the divided republic — battle lines, turning points, and the struggle to preserve the Union.",
+    image: freedomImg,
+  },
+];

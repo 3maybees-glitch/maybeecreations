@@ -1,63 +1,75 @@
-import faithImg from "@/assets/category-faith.jpg";
-import freedomImg from "@/assets/category-freedom.jpg";
-import fansImg from "@/assets/category-fans.jpg";
+import { bibleMaps } from "@/data/bibleMaps";
+import { freedomMaps } from "@/data/freedomMaps";
+import { realms } from "@/data/realms";
+import {
+  faithPreviews,
+  freedomPreviewMaps,
+  fansPreviews,
+  futurePreviews,
+  type MapPreview,
+} from "@/data/realmPreviews";
 
 export type CategoryKey = "faith" | "freedom" | "fans" | "future";
 
 export interface CategoryMeta {
   key: CategoryKey;
   name: string;
+  explorerName: string;
   path: string;
   tagline: string;
   blurb: string;
   count: string;
-  image: string;
-  accentVar: string; // CSS var name without -- prefix used for --category override
+  mapPreviews: MapPreview[];
+  accentVar: string;
 }
 
 export const categories: CategoryMeta[] = [
   {
     key: "faith",
     name: "Faith",
+    explorerName: "Soul Explorer",
     path: "/faith",
-    tagline: "Bible-rooted apps, maps, and lessons.",
+    tagline: "Walk the lands of Scripture — map by map, book by book.",
     blurb:
-      "Tools that help families and students engage Scripture with clarity, reflection, and wonder.",
-    count: "1 app · maps & lessons coming soon",
-    image: faithImg,
+      "Soul Explorer adventure guides paired with Bible discovery maps from Genesis to Revelation.",
+    count: `${bibleMaps.length} Bible maps & guides`,
+    mapPreviews: faithPreviews,
     accentVar: "faith",
   },
   {
     key: "freedom",
     name: "Freedom",
+    explorerName: "Liberty Explorer",
     path: "/freedom",
-    tagline: "Tools celebrating liberty, civics, and conservative values.",
+    tagline: "Chart the birth of a republic and the fight to keep it free.",
     blurb:
-      "Freedom-first apps and learning tools that honor the principles of a self-governing people.",
-    count: "10 Baseball Legend Land maps · apps coming soon",
-    image: freedomImg,
+      "Liberty Explorer maps honoring founders, turning points, and the principles of self-government.",
+    count: `${freedomMaps.length} Liberty Explorer maps & guides`,
+    mapPreviews: freedomPreviewMaps,
     accentVar: "freedom",
   },
   {
     key: "fans",
     name: "Fans",
+    explorerName: "Legend Explorer",
     path: "/fans",
-    tagline: "Apps built for sports fans and the people who live the game.",
+    tagline: "Step into legendary ballparks and the dynasties you grew up cheering.",
     blurb:
-      "Stadium-energy experiences for fans who track every play, every season, every dynasty.",
-    count: "Coming soon",
-    image: fansImg,
+      "Baseball Legend Lands — printable fan adventure maps for the teams that own your heart.",
+    count: "10 Baseball Legend Lands",
+    mapPreviews: fansPreviews,
     accentVar: "fans",
   },
   {
     key: "future",
     name: "Future",
+    explorerName: "Tomorrow Explorer",
     path: "/future",
-    tagline: "AI fantasy world maps + tutorials for the AI era.",
+    tagline: "Venture into AI kingdoms where every tool is a world to conquer.",
     blurb:
-      "Eight hand-illustrated realms of artificial wonder, paired with Adventure Pack tutorials.",
-    count: "2 apps · 8 maps · 8 adventure packs",
-    image: "https://pe56d.s3.amazonaws.com/o_1jp1pv8rpggmjvr1ohj1s3r14rk1c.png",
+      "Tomorrow Explorer AI realm maps with Adventure Pack tutorials for ChatGPT, Claude, Gemini, and more.",
+    count: `${realms.length} maps · ${realms.length} adventure packs`,
+    mapPreviews: futurePreviews,
     accentVar: "future",
   },
 ];

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const AboutSection = () => {
   return (
     <section id="about" className="py-20 px-4 relative">
@@ -20,24 +22,44 @@ export const AboutSection = () => {
             and beginner-friendly AI education into practical digital products.
           </p>
           <p>
-            Our work includes Bible-centered apps such as <strong>Jesus Wept</strong>,
-            Bible book world maps that help learners see Scripture in a visual and memorable
-            way, and Christian learning concepts designed to encourage reflection, study,
-            and growth. We also develop freedom-focused projects such as{" "}
-            <strong>LibertyID</strong>, built around conservative politics, civic
-            understanding, and organized public-issue learning.
+            Our work includes Bible-centered apps such as{" "}
+            <Link to="/jesus-wept" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
+              Jesus Wept
+            </Link>
+            ,{" "}
+            <Link to="/faith" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
+              Bible book world maps
+            </Link>{" "}
+            that help learners see Scripture in a visual and memorable way, and Christian
+            learning concepts designed to encourage reflection, study, and growth. We also
+            develop freedom-focused projects such as{" "}
+            <Link to="/freedom" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
+              LibertyID
+            </Link>
+            , built around conservative politics, civic understanding, and organized
+            public-issue learning.
           </p>
           <p>
             Maybee Creations also creates sports and fan-focused products, including
-            basketball stat tools like <strong>StatSpeak</strong>, an Oklahoma Sooners
-            college football app, and a Washington Nationals stat webpage — simple, useful,
-            and engaging ways to follow teams, track stats, and enjoy the games fans care
-            about.
+            basketball stat tools like{" "}
+            <Link to="/fans" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
+              StatSpeak
+            </Link>
+            , an Oklahoma Sooners college football app, and Baseball Legend Land maps
+            for teams like the{" "}
+            <Link to="/fans" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
+              Washington Nationals
+            </Link>{" "}
+            — simple, useful, and engaging ways to follow teams, track stats, and enjoy
+            the games fans care about.
           </p>
           <p>
-            A growing part of the company is focused on AI education through colorful
-            tutorial world maps and practical guidebooks that turn AI tools, workflows,
-            and app-building concepts into creative learning worlds.
+            A growing part of the company is focused on AI education through{" "}
+            <Link to="/future" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
+              colorful tutorial world maps
+            </Link>{" "}
+            and practical guidebooks that turn AI tools, workflows, and app-building
+            concepts into creative learning worlds.
           </p>
           <p className="italic text-primary font-medium">
             Across every project, the mission is the same: create digital tools that help

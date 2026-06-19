@@ -7,10 +7,6 @@ import Index from "./pages/Index";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import NotFound from "./pages/NotFound";
-import SnackersProduct from "./pages/SnackersProduct";
-import JesusWeptProduct from "./pages/JesusWeptProduct";
-import JesusWeptSupport from "./pages/JesusWeptSupport";
-import IntellicityProduct from "./pages/IntellicityProduct";
 import Faith from "./pages/Faith";
 import Freedom from "./pages/Freedom";
 import Fans from "./pages/Fans";
@@ -27,10 +23,6 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/snackers" element={<SnackersProduct />} />
-          <Route path="/jesus-wept" element={<JesusWeptProduct />} />
-          <Route path="/jesus-wept/support" element={<JesusWeptSupport />} />
-          <Route path="/intellicity" element={<IntellicityProduct />} />
           <Route path="/faith" element={<Faith />} />
           <Route path="/freedom" element={<Freedom />} />
           <Route path="/fans" element={<Fans />} />

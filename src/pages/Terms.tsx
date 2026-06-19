@@ -1,8 +1,12 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { FileText } from "lucide-react";
+import { usePageMeta } from "@/hooks/usePageMeta";
+import { pageMeta } from "@/lib/pageMeta";
 
 const Terms = () => {
+  usePageMeta(pageMeta.terms);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Navigation />

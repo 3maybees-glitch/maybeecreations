@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Check, ExternalLink } from "lucide-react";
 import { categories } from "@/data/categories";
 import { realms } from "@/data/realms";
+import { usePageMeta } from "@/hooks/usePageMeta";
+import { pageMeta } from "@/lib/pageMeta";
 
 const meta = categories.find((c) => c.key === "future")!;
 
@@ -17,18 +19,15 @@ const included = [
 ];
 
 const Future = () => {
+  usePageMeta(pageMeta.future);
+
   return (
     <CategoryPageLayout
       category={meta}
-      intro="AI fantasy world maps and Adventure Pack tutorials that turn learning AI into a journey worth taking."
+      intro="Creatively Crafted educational discovery world maps charting the kingdoms of ChatGPT, Claude, Gemini, Perplexity and more — each paired with a Tomorrow Explorer Adventure Pack."
     >
       <section className="py-12 px-4">
         <div className="container mx-auto max-w-3xl text-center">
-          <p className="text-lg md:text-2xl text-foreground/90 mb-6 italic leading-relaxed font-medium">
-            Unfurl fantasy world maps charting the kingdoms of ChatGPT, Claude, Gemini,
-            Perplexity and more — each paired with a tutorial Adventure Pack that turns
-            learning AI into a journey worth taking.
-          </p>
           <p className="text-base md:text-xl text-foreground/85 leading-relaxed font-medium">
             Built for <span className="font-semibold text-primary">families</span> juggling schedules, chores, and household life — and{" "}
             <span className="font-semibold text-primary">students</span> mastering study plans, deadlines, and daily productivity.
@@ -59,8 +58,8 @@ const Future = () => {
       </section>
 
       <CategorySection
-        eyebrow="The Cartographer's Collection"
-        title="Eight Realms of Artificial Wonder"
+        eyebrow="Tomorrow Explorer Collection"
+        title={`${realms.length} Realms of Artificial Wonder`}
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {realms.map((realm) => (

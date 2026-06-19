@@ -10,8 +10,11 @@ import snackersResults from "@/assets/snackers-results.png";
 import snackersEncouragement from "@/assets/snackers-encouragement.png";
 import snackersAppIcon from "@/assets/snackers-app-icon.png";
 import { useNavigate } from "react-router-dom";
+import { usePageMeta } from "@/hooks/usePageMeta";
+import { pageMeta } from "@/lib/pageMeta";
 
 const SnackersProduct = () => {
+  usePageMeta(pageMeta.snackers);
   const navigate = useNavigate();
 
   const benefits = [
