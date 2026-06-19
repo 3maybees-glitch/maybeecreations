@@ -7,7 +7,7 @@ export const PILLARS = "faith, freedom, fans, and the future";
 export const HERO_EYEBROW = "Your expedition begins here";
 export const HERO_HEADLINE = "Unfold the Map. Begin the Adventure.";
 export const HERO_SUBHEADLINE =
-  "Printable discovery maps and adventure guides across four worlds — Scripture, liberty, ballparks, and AI frontiers.";
+  "Printable discovery maps and adventure guides across four worlds — Scripture, Liberty, Sports History, and AI Frontiers.";
 
 export const DEFAULT_DESCRIPTION =
   "Creatively Crafted educational discovery world maps and adventure guides for faith, freedom, sports fans, and the AI future.";
