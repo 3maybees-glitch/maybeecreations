@@ -34,7 +34,7 @@ export const pageMeta: Record<string, PageMeta> = {
   freedom: {
     title: `Freedom — Liberty Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
     description:
-      "Seven Creatively Crafted Liberty Explorer educational discovery world maps celebrating civics, founding figures, and American history.",
+      "Creatively Crafted Liberty Explorer educational discovery world maps celebrating civics, founding figures, and American and world history.",
     path: "/freedom",
   },
   fans: {

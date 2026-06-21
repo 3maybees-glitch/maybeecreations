@@ -74,4 +74,15 @@ export const freedomMaps: FreedomMap[] = [
     url: "https://payhip.com/b/nseRl",
     price: "$7.77",
   },
+  {
+    name: "World War II — European Theater",
+    category: "World History",
+    subtitle: "Liberty Explorer WWII European Theater Map",
+    tagline:
+      "Trace the sweep of the war in Europe — from the Battle of Britain and North Africa through D-Day, the Rhine, Berlin, and V-E Day.",
+    image:
+      "https://pe56d.s3.amazonaws.com/cover-images/23887df344ab42e683a06db5cbdcacfd_01_wwii_europe_desk_mockup_watermarked.jpg",
+    url: "https://payhip.com/b/4xbse",
+    price: "$7.77",
+  },
 ];
