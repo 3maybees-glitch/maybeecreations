@@ -32,9 +32,8 @@ const Freedom = () => {
 
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground mb-4">
-            Revolutionary War, Civil War, and World War II European Theater maps are
-            available now on Payhip. Additional Liberty Explorer founder maps are coming to
-            the shop soon.
+            Revolutionary War, Civil War, and World War II maps are available now on
+            Payhip. Additional Liberty Explorer founder maps are coming to the shop soon.
           </p>
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
             <a

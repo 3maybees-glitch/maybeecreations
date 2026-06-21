@@ -85,4 +85,15 @@ export const freedomMaps: FreedomMap[] = [
     url: "https://payhip.com/b/4xbse",
     price: "$7.77",
   },
+  {
+    name: "World War II — Pacific Theater",
+    category: "World History",
+    subtitle: "Liberty Explorer WWII Pacific Theater Map",
+    tagline:
+      "Cross the Pacific from Pearl Harbor through Midway, Guadalcanal, Leyte Gulf, Iwo Jima, Okinawa, and Japan’s surrender.",
+    image:
+      "https://pe56d.s3.amazonaws.com/cover-images/5ed6b8b660a549f6800c3163b677a86f_01_wwii_pacific_desk_mockup_watermarked.jpg",
+    url: "https://payhip.com/b/Z3yho",
+    price: "$7.77",
+  },
 ];
