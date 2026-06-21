@@ -21,7 +21,7 @@ const Freedom = () => {
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
           Fantasy cartography of American liberty — each map paired with a Liberty Explorer
           guidebook of historical stops, reflection prompts, and discovery activities for
-          families and students. Freedom maps are coming to the shop soon.
+          families and students.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -32,8 +32,8 @@ const Freedom = () => {
 
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground mb-4">
-            Faith, Fans, and Future maps are available now on Payhip. Liberty Explorer maps
-            will be added to the shop soon.
+            The Civil War Discovery Map is available now on Payhip. Additional Liberty Explorer
+            founder maps are coming to the shop soon.
           </p>
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
             <a

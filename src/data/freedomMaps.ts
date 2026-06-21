@@ -66,7 +66,10 @@ export const freedomMaps: FreedomMap[] = [
     category: "American History",
     subtitle: "Liberty Explorer Civil War Discovery Map",
     tagline:
-      "Explore the divided republic — battle lines, turning points, and the struggle to preserve the Union.",
-    image: freedomImg,
+      "Follow the River of Time from Fort Sumter to Appomattox — secession, emancipation, turning points, and the fight to preserve the Union.",
+    image:
+      "https://pe56d.s3.amazonaws.com/cover-images/b042b65a77cb44e5848f97c328a91f0b_01_civil_war_desk_mockup_watermarked.jpg",
+    url: "https://payhip.com/b/nseRl",
+    price: "$7.77",
   },
 ];
