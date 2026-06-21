@@ -1,4 +1,3 @@
-import freedomImg from "@/assets/category-freedom.jpg";
 import madisonMap from "@/assets/madison-map.png";
 
 export interface FreedomMap {
@@ -58,8 +57,11 @@ export const freedomMaps: FreedomMap[] = [
     category: "American History",
     subtitle: "Liberty Explorer Revolutionary War Map",
     tagline:
-      "Journey through the birth of a nation — colonies, campaigns, and the fight for independence.",
-    image: freedomImg,
+      "Follow the fight for independence from Lexington and Concord through Valley Forge, Yorktown, and the Treaty of Paris.",
+    image:
+      "https://pe56d.s3.amazonaws.com/cover-images/66563ad8d8424fe985f0076698b8c56b_01_revolutionary_war_desk_mockup_watermarked.jpg",
+    url: "https://payhip.com/b/7LFgy",
+    price: "$7.77",
   },
   {
     name: "Civil War",

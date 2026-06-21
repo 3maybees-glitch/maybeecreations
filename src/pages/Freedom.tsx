@@ -32,8 +32,8 @@ const Freedom = () => {
 
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground mb-4">
-            The Civil War Discovery Map is available now on Payhip. Additional Liberty Explorer
-            founder maps are coming to the shop soon.
+            Revolutionary War and Civil War Discovery Maps are available now on Payhip.
+            Additional Liberty Explorer founder maps are coming to the shop soon.
           </p>
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
             <a
