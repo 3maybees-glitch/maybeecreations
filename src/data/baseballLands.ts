@@ -63,9 +63,21 @@ export const baseballLegendLands: BaseballLegendLand[] = [
     image: "https://pe56d.s3.amazonaws.com/o_3bdbb786cc574515a109fe88.jpg",
   },
   {
+    team: "Houston Astros",
+    url: "https://payhip.com/b/i1UfN",
+    image:
+      "https://pe56d.s3.amazonaws.com/cover-images/a4ccc485f4054386b4065feae2c900db_mockup_01_astros_bundle_hero.jpg",
+  },
+  {
     team: "Kansas City Royals",
     url: "https://payhip.com/b/qb7Jx",
     image: "https://pe56d.s3.amazonaws.com/o_5d0295f26ba840a0a4f30cd2.jpg",
+  },
+  {
+    team: "Los Angeles Angels",
+    url: "https://payhip.com/b/gLIk8",
+    image:
+      "https://pe56d.s3.amazonaws.com/cover-images/41dbf26db1494504a642a5400b4feaf7_mockup_01_los_angeles_angels_bundle_hero.jpg",
   },
   {
     team: "Los Angeles Dodgers",
@@ -100,6 +112,12 @@ export const baseballLegendLands: BaseballLegendLand[] = [
     team: "New York Yankees",
     url: "https://payhip.com/b/XxsL4",
     image: "https://pe56d.s3.amazonaws.com/o_b7afd7ab0a9b497ea2da1d3a.jpg",
+  },
+  {
+    team: "Oakland Athletics",
+    url: "https://payhip.com/b/aNw0R",
+    image:
+      "https://pe56d.s3.amazonaws.com/cover-images/d5b8df13a8b44c66a4f9e2235834d521_mockup_01_athletics_bundle_hero.jpg",
   },
   {
     team: "Philadelphia Phillies",
