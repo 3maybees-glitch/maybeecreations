@@ -19,6 +19,8 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Trace the life of the indispensable man — from Mount Vernon and Valley Forge to Yorktown and the presidency.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7fu7ldg6v1kec2rqd61o9s15.png",
+    url: "https://payhip.com/b/1Qs9u",
+    price: "$7.77",
   },
   {
     name: "Thomas Jefferson",
@@ -27,6 +29,8 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Explore liberty, learning, and the early republic — from Monticello to the Declaration and beyond.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7kt71119pk9vtkug1s2ict515.png",
+    url: "https://payhip.com/b/s4zBU",
+    price: "$7.77",
   },
   {
     name: "James Madison",
@@ -35,6 +39,8 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Walk the story of the Constitution’s architect — public service, republican government, and civic principle.",
     image: madisonMap,
+    url: "https://payhip.com/b/5IvEx",
+    price: "$7.77",
   },
   {
     name: "Alexander Hamilton",
@@ -43,6 +49,8 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Chart the rise of a founding visionary — finance, federalism, and the fight to shape a new nation.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7h9csl1o401l2b1a901dl41oi315.png",
+    url: "https://payhip.com/b/JGXBn",
+    price: "$7.77",
   },
   {
     name: "Benjamin Franklin",
@@ -51,6 +59,8 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Follow the polymath patriot — invention, diplomacy, virtue, and the spirit of American ingenuity.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7jcuru1gq21ki91p0c17gojff15.png",
+    url: "https://payhip.com/b/cgm8z",
+    price: "$7.77",
   },
   {
     name: "Revolutionary War",

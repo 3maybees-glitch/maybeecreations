@@ -32,8 +32,8 @@ const Freedom = () => {
 
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground mb-4">
-            Revolutionary War, Civil War, and World War II maps are available now on
-            Payhip. Additional Liberty Explorer founder maps are coming to the shop soon.
+            All Liberty Explorer maps are available now on Payhip — founding figures,
+            Revolutionary War, Civil War, and World War II theaters.
           </p>
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
             <a
