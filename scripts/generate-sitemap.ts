@@ -2,6 +2,7 @@
 
 import { writeFileSync } from "fs"
 import { resolve } from "path"
+import { stories } from "../src/data/stories"
 
 const BASE_URL = "https://maybeecreations.com"
 
@@ -18,6 +19,13 @@ const entries: SitemapEntry[] = [
   { path: "/freedom", changefreq: "weekly", priority: "0.9" },
   { path: "/fans", changefreq: "weekly", priority: "0.9" },
   { path: "/future", changefreq: "weekly", priority: "0.9" },
+  { path: "/stories", changefreq: "weekly", priority: "0.8" },
+  ...stories.map((story) => ({
+    path: `/stories/${story.slug}`,
+    changefreq: "monthly" as const,
+    priority: "0.7",
+    lastmod: story.publishedAt,
+  })),
   { path: "/sitemap", changefreq: "monthly", priority: "0.5" },
   { path: "/privacy", changefreq: "yearly", priority: "0.3" },
   { path: "/terms", changefreq: "yearly", priority: "0.3" },

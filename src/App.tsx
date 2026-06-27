@@ -12,6 +12,8 @@ import Freedom from "./pages/Freedom";
 import Fans from "./pages/Fans";
 import Future from "./pages/Future";
 import SitemapPage from "./pages/SitemapPage";
+import Stories from "./pages/Stories";
+import StoryPost from "./pages/StoryPost";
 
 const queryClient = new QueryClient();
 
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/freedom" element={<Freedom />} />
           <Route path="/fans" element={<Fans />} />
           <Route path="/future" element={<Future />} />
+          <Route path="/stories" element={<Stories />} />
+          <Route path="/stories/:slug" element={<StoryPost />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/sitemap" element={<SitemapPage />} />

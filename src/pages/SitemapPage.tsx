@@ -2,7 +2,8 @@ import { Navigation } from "@/components/Navigation";
 
 import { Footer } from "@/components/Footer";
 
-import { Map, Home, FileText, List } from "lucide-react";
+import { Map, Home, FileText, List, BookOpen } from "lucide-react";
+import { storiesSorted } from "@/data/stories";
 
 import { Link } from "react-router-dom";
 
@@ -51,6 +52,28 @@ const sections: SitemapSection[] = [
       { label: "Fans — Legend Explorer Baseball Legend Lands", path: "/fans" },
 
       { label: "Future — Tomorrow Explorer AI maps & Adventure Packs", path: "/future" },
+
+    ],
+
+  },
+
+  {
+
+    title: "Stories",
+
+    icon: <BookOpen className="h-5 w-5" />,
+
+    links: [
+
+      { label: "Stories — The Story Behind the Map", path: "/stories" },
+
+      ...storiesSorted.map((story) => ({
+
+        label: story.title,
+
+        path: `/stories/${story.slug}`,
+
+      })),
 
     ],
 

@@ -31,6 +31,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/stories" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                  Stories
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://payhip.com/MaybeeCreations"
                   target="_blank"
