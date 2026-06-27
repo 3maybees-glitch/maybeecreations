@@ -137,6 +137,12 @@ export const baseballLegendLands: BaseballLegendLand[] = [
       "https://pe56d.s3.amazonaws.com/cover-images/acde6b2119cd47eea08bcdda133c71d1_mockup_01_padres_bundle_hero.jpg",
   },
   {
+    team: "San Francisco Giants",
+    url: "https://payhip.com/b/WO8D1",
+    image:
+      "https://pe56d.s3.amazonaws.com/cover-images/c6d86f8a16a04bf5bf75358634d7d326_mockup_01_giants_bundle_hero.jpg",
+  },
+  {
     team: "Seattle Mariners",
     url: "https://payhip.com/b/xIFDm",
     image:
