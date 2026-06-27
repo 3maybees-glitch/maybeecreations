@@ -32,7 +32,7 @@ export const stories: Story[] = [
       "Every map we make begins with a question: what if learning felt like an adventure worth remembering?",
     publishedAt: "2026-06-27",
     category: "faith",
-    image: "https://pe56d.s3.amazonaws.com/o_1jp1pv8rpggmjvr1ohj1s3r14rk1c.png",
+    image: "https://pe56d.s3.amazonaws.com/o_1jps53jlost7quqvvdsiu1q1r17.png",
     readingMinutes: 4,
     categoryPath: "/",
     paragraphs: [
@@ -51,7 +51,7 @@ export const stories: Story[] = [
       "Before America had a Constitution, it had a problem — and James Madison spent years thinking his way toward an answer.",
     publishedAt: "2026-06-20",
     category: "freedom",
-    image: "https://pe56d.s3.amazonaws.com/o_1jr7fu7ldg6v1kec2rqd61o9s15.png",
+    image: "https://pe56d.s3.amazonaws.com/o_1jr7kkckmtktdvj1s7514fu1sr915.png",
     readingMinutes: 5,
     categoryPath: "/freedom",
     productLink: {
@@ -92,7 +92,7 @@ export const stories: Story[] = [
   },
   {
     slug: "america-250-discovery-map",
-    title: "Two Hundred Fifty Years of American Story",
+    title: "Two Hundred Fifty Years of the American Story",
     subtitle: "Celebrating America 250 with a map worth unfolding",
     excerpt:
       "A nation's anniversary is more than a date on the calendar — it is an invitation to remember what we share.",
