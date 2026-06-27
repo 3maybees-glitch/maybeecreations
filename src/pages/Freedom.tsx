@@ -33,7 +33,8 @@ const Freedom = () => {
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground mb-4">
             All Liberty Explorer maps are available now on Payhip — founding figures,
-            Revolutionary War, Civil War, and World War II theaters.
+            American and world conflicts from 1812 through today, and the America 250
+            anniversary edition.
           </p>
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
             <a
