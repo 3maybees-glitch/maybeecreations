@@ -49,6 +49,12 @@ export const pageMeta: Record<string, PageMeta> = {
       "Ten Creatively Crafted Tomorrow Explorer AI educational discovery world maps paired with Adventure Pack tutorials for ChatGPT, Claude, Gemini, and more.",
     path: "/future",
   },
+  stories: {
+    title: `Stories — The Story Behind the Map | ${SITE_NAME}`,
+    description:
+      "Storytime essays on the history, meaning, and joy of Maybee Creations maps and guides — Faith, Freedom, Fans, and the Future.",
+    path: "/stories",
+  },
   privacy: {
     title: `Privacy Policy | ${SITE_NAME}`,
     description: `Privacy policy for ${SITE_NAME} ${SEO_PHRASE.toLowerCase()} and digital products.`,
