@@ -28,7 +28,7 @@ export const pageMeta: Record<string, PageMeta> = {
   faith: {
     title: `Faith — ${SEO_PHRASE} & Soul Explorer Guides | ${SITE_NAME}`,
     description:
-      "Creatively Crafted Bible book category educational discovery world maps with Soul Explorer adventure guides for families and students.",
+      "Creatively Crafted Bible book category educational discovery world maps with Soul Explorer adventure guides — including a free Matthew–John map as our blessing to you.",
     path: "/faith",
   },
   freedom: {

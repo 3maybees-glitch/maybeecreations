@@ -12,9 +12,9 @@ const featured = [
     path: "/future",
   },
   {
-    title: "Books of the Law",
-    subtitle: "Faith · Soul Explorer map",
-    image: bibleMaps[0].image,
+    title: "Matthew – John",
+    subtitle: "Faith · Free Soul Explorer map",
+    image: bibleMaps[5].image,
     path: "/faith",
   },
   {

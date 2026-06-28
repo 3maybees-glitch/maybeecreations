@@ -32,7 +32,7 @@ export const categories: CategoryMeta[] = [
     path: "/faith",
     tagline: "Walk the lands of Scripture — map by map, book by book.",
     blurb:
-      "Soul Explorer adventure guides paired with Bible discovery maps from Genesis to Revelation.",
+      "Soul Explorer adventure guides paired with Bible discovery maps from Genesis to Revelation — including a free Matthew–John map as our blessing to you.",
     count: `${bibleMaps.length} Bible maps & guides`,
     mapPreviews: faithPreviews,
     accentVar: "faith",
