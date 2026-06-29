@@ -13,10 +13,19 @@ export { SITE_NAME, SITE_URL, DEFAULT_DESCRIPTION, OG_DESCRIPTION, HOME_TITLE_FU
 export const DEFAULT_OG_IMAGE =
   "https://pe56d.s3.amazonaws.com/o_1jp1pv8rpggmjvr1ohj1s3r14rk1c.png";
 
+export const STATIC_OG_IMAGE_ALT =
+  "Maybee Creations — Creatively Crafted educational discovery world maps for faith, freedom, fans, and the future";
+
 export interface PageMeta {
   title: string;
   description: string;
   path: string;
+  type?: "website" | "article";
+  publishedTime?: string;
+  modifiedTime?: string;
+  image?: string;
+  imageAlt?: string;
+  noindex?: boolean;
 }
 
 export const pageMeta: Record<string, PageMeta> = {
@@ -74,5 +83,6 @@ export const pageMeta: Record<string, PageMeta> = {
     title: `Page Not Found | ${SITE_NAME}`,
     description: DEFAULT_DESCRIPTION,
     path: "/",
+    noindex: true,
   },
 };

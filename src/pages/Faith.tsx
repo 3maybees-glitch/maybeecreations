@@ -4,13 +4,25 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { categories } from "@/data/categories";
 import { bibleMaps } from "@/data/bibleMaps";
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { categoryPageSchemas } from "@/lib/structuredData";
 
 const meta = categories.find((c) => c.key === "faith")!;
 
 const Faith = () => {
-  usePageMeta(pageMeta.faith);
+  usePageSeo(
+    pageMeta.faith,
+    categoryPageSchemas(
+      pageMeta.faith.path,
+      pageMeta.faith.title,
+      pageMeta.faith.description,
+      [
+        { name: "Home", path: "/" },
+        { name: "Faith", path: "/faith" },
+      ],
+    ),
+  );
 
   return (
     <CategoryPageLayout

@@ -4,26 +4,33 @@ import { StoriesPageLayout } from "@/components/StoriesPageLayout";
 import { Button } from "@/components/ui/button";
 import { categories } from "@/data/categories";
 import { getStoryBySlug } from "@/data/stories";
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 import { SITE_NAME } from "@/lib/pageMeta";
+import { storyPageSchemas } from "@/lib/structuredData";
 
 const StoryPost = () => {
   const { slug } = useParams<{ slug: string }>();
   const story = slug ? getStoryBySlug(slug) : undefined;
 
-  usePageMeta(
-    story
-      ? {
-          title: `${story.title} — Stories | ${SITE_NAME}`,
-          description: story.excerpt,
-          path: `/stories/${story.slug}`,
-        }
-      : {
-          title: `Story Not Found | ${SITE_NAME}`,
-          description: "This story could not be found.",
-          path: "/stories",
-        },
-  );
+  const meta = story
+    ? {
+        title: `${story.title} — Stories | ${SITE_NAME}`,
+        description: story.excerpt,
+        path: `/stories/${story.slug}`,
+        type: "article" as const,
+        publishedTime: story.publishedAt,
+        modifiedTime: story.publishedAt,
+        image: story.image,
+        imageAlt: story.title,
+      }
+    : {
+        title: `Story Not Found | ${SITE_NAME}`,
+        description: "This story could not be found.",
+        path: "/stories",
+        noindex: true,
+      };
+
+  usePageSeo(meta, story ? storyPageSchemas(story) : null);
 
   if (!story) {
     return <Navigate to="/stories" replace />;
@@ -51,7 +58,7 @@ const StoryPost = () => {
           <div className="rounded-sm overflow-hidden border border-border mb-8">
             <img
               src={story.image}
-              alt=""
+              alt={story.title}
               className="w-full aspect-[16/9] object-cover"
             />
           </div>
