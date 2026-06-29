@@ -4,8 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Check, ExternalLink } from "lucide-react";
 import { categories } from "@/data/categories";
 import { realms } from "@/data/realms";
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { categoryPageSchemas } from "@/lib/structuredData";
 
 const meta = categories.find((c) => c.key === "future")!;
 
@@ -19,7 +20,18 @@ const included = [
 ];
 
 const Future = () => {
-  usePageMeta(pageMeta.future);
+  usePageSeo(
+    pageMeta.future,
+    categoryPageSchemas(
+      pageMeta.future.path,
+      pageMeta.future.title,
+      pageMeta.future.description,
+      [
+        { name: "Home", path: "/" },
+        { name: "Future", path: "/future" },
+      ],
+    ),
+  );
 
   return (
     <CategoryPageLayout

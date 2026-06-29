@@ -4,13 +4,25 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { categories } from "@/data/categories";
 import { freedomMaps } from "@/data/freedomMaps";
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { categoryPageSchemas } from "@/lib/structuredData";
 
 const meta = categories.find((c) => c.key === "freedom")!;
 
 const Freedom = () => {
-  usePageMeta(pageMeta.freedom);
+  usePageSeo(
+    pageMeta.freedom,
+    categoryPageSchemas(
+      pageMeta.freedom.path,
+      pageMeta.freedom.title,
+      pageMeta.freedom.description,
+      [
+        { name: "Home", path: "/" },
+        { name: "Freedom", path: "/freedom" },
+      ],
+    ),
+  );
 
   return (
     <CategoryPageLayout

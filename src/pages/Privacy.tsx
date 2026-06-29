@@ -1,11 +1,20 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Shield } from "lucide-react";
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { staticPageSchemas } from "@/lib/structuredData";
 
 const Privacy = () => {
-  usePageMeta(pageMeta.privacy);
+  usePageSeo(
+    pageMeta.privacy,
+    staticPageSchemas(
+      pageMeta.privacy.path,
+      pageMeta.privacy.title,
+      pageMeta.privacy.description,
+      "Privacy Policy",
+    ),
+  );
 
   return (
     <div className="min-h-screen flex flex-col">

@@ -7,9 +7,11 @@ import { storiesSorted } from "@/data/stories";
 
 import { Link } from "react-router-dom";
 
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 
 import { pageMeta } from "@/lib/pageMeta";
+
+import { staticPageSchemas } from "@/lib/structuredData";
 
 
 
@@ -100,8 +102,15 @@ const sections: SitemapSection[] = [
 
 
 const SitemapPage = () => {
-
-  usePageMeta(pageMeta.sitemap);
+  usePageSeo(
+    pageMeta.sitemap,
+    staticPageSchemas(
+      pageMeta.sitemap.path,
+      pageMeta.sitemap.title,
+      pageMeta.sitemap.description,
+      "Sitemap",
+    ),
+  );
 
 
 
@@ -115,7 +124,14 @@ const SitemapPage = () => {
 
       <main className="flex-1 pt-16 pb-16">
 
-        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="container mx-auto px-4 max-w-4xl">
+          <p className="text-sm text-muted-foreground mb-6">
+            For AI assistants and answer engines, see{" "}
+            <a href="/llms.txt" className="text-accent hover:underline">
+              llms.txt
+            </a>
+            .
+          </p>
 
           <div className="flex items-center gap-3 mb-8">
 

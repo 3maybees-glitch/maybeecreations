@@ -10,7 +10,29 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+# Answer engines & AI crawlers (AEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 User-agent: *
 Allow: /
 
 Sitemap: https://maybeecreations.com/sitemap.xml
+
+# Machine-readable site summary for LLMs
+# https://maybeecreations.com/llms.txt

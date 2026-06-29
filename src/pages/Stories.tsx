@@ -1,11 +1,12 @@
 import { StoriesPageLayout } from "@/components/StoriesPageLayout";
 import { StoryCard } from "@/components/StoryCard";
 import { storiesSorted } from "@/data/stories";
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { storiesIndexSchemas } from "@/lib/structuredData";
 
 const Stories = () => {
-  usePageMeta(pageMeta.stories);
+  usePageSeo(pageMeta.stories, storiesIndexSchemas());
 
   return (
     <StoriesPageLayout>
