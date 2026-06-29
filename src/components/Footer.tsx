@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Compass } from "lucide-react";
+import { SocialLinks } from "@/components/SocialLinks";
 import { categories } from "@/data/categories";
 import { DEFAULT_DESCRIPTION } from "@/lib/siteCopy";
 
@@ -18,6 +19,7 @@ export const Footer = () => {
             <p className="text-lg text-muted-foreground italic leading-relaxed">
               {DEFAULT_DESCRIPTION}
             </p>
+            <SocialLinks className="mt-5" />
           </div>
 
           <div>

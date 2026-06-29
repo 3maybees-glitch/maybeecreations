@@ -6,6 +6,7 @@ import {
   SITE_NAME,
   SITE_URL,
 } from "@/lib/siteCopy";
+import { SOCIAL_SAME_AS } from "@/lib/socialLinks";
 
 export interface BreadcrumbItem {
   name: string;
@@ -38,7 +39,7 @@ export function organizationSchema() {
       url: `${SITE_URL}/maybee-creations-logo.png`,
     },
     description: DEFAULT_DESCRIPTION,
-    sameAs: ["https://payhip.com/MaybeeCreations"],
+    sameAs: SOCIAL_SAME_AS,
   };
 }
 

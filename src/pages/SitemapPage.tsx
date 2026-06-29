@@ -2,8 +2,9 @@ import { Navigation } from "@/components/Navigation";
 
 import { Footer } from "@/components/Footer";
 
-import { Map, Home, FileText, List, BookOpen } from "lucide-react";
+import { Map, Home, FileText, List, BookOpen, Share2 } from "lucide-react";
 import { storiesSorted } from "@/data/stories";
+import { SOCIAL_LINKS } from "@/lib/socialLinks";
 
 import { Link } from "react-router-dom";
 
@@ -97,9 +98,19 @@ const sections: SitemapSection[] = [
 
   },
 
+  {
+    title: "Connect",
+    icon: <Share2 className="h-5 w-5" />,
+    links: [
+      { label: "Payhip Storefront", path: "https://payhip.com/MaybeeCreations" },
+      ...SOCIAL_LINKS.map((link) => ({
+        label: link.shortLabel,
+        path: link.href,
+      })),
+    ],
+  },
+
 ];
-
-
 
 const SitemapPage = () => {
   usePageSeo(
@@ -172,23 +183,25 @@ const SitemapPage = () => {
                 <ul className="space-y-2 pl-7">
 
                   {section.links.map((link) => (
-
                     <li key={link.path}>
-
-                      <Link
-
-                        to={link.path}
-
-                        className="text-muted-foreground hover:text-accent transition-colors"
-
-                      >
-
-                        {link.label}
-
-                      </Link>
-
+                      {link.path.startsWith("http") ? (
+                        <a
+                          href={link.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-accent transition-colors"
+                        >
+                          {link.label}
+                        </a>
+                      ) : (
+                        <Link
+                          to={link.path}
+                          className="text-muted-foreground hover:text-accent transition-colors"
+                        >
+                          {link.label}
+                        </Link>
+                      )}
                     </li>
-
                   ))}
 
                 </ul>
