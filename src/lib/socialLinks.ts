@@ -24,6 +24,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
     label: "Connect with Maybee Creations on LinkedIn",
     shortLabel: "LinkedIn",
   },
+  {
+    name: "pinterest",
+    href: "https://www.pinterest.com/maybeecreations",
+    label: "Follow Maybee Creations on Pinterest",
+    shortLabel: "Pinterest",
+  },
 ];
 
 export const SOCIAL_SAME_AS = [
