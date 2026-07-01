@@ -1,13 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
-import type { BaseballLegendLand } from "@/data/baseballLands";
+import type { LegendLand } from "@/data/legendLand";
 
-export const LegendLandCard = ({ land }: { land: BaseballLegendLand }) => (
+export const LegendLandCard = ({ land }: { land: LegendLand }) => (
   <article className="parchment rounded-sm overflow-hidden flex flex-col group transition-transform hover:-translate-y-1 duration-300">
     <div className="relative overflow-hidden bg-muted aspect-[4/3]">
       <img
         src={land.image}
-        alt={`Legend Explorer ${land.team} Baseball Legend Land map`}
+        alt={`Legend Explorer ${land.team} ${land.sport} map`}
         loading="lazy"
         className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700"
       />
@@ -21,7 +21,7 @@ export const LegendLandCard = ({ land }: { land: BaseballLegendLand }) => (
         {land.team}
       </h3>
       <p className="text-xs uppercase tracking-widest text-muted-foreground font-semibold mb-3">
-        Baseball Legend Land
+        {land.sport}
       </p>
       <p className="text-base text-muted-foreground italic mb-6 flex-1">
         A Creatively Crafted fan adventure map celebrating the legends of {land.team}.

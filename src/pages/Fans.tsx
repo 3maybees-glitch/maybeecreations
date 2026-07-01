@@ -1,46 +1,74 @@
-import { CategoryPageLayout, CategorySection } from "@/components/CategoryPageLayout";
-import { categories } from "@/data/categories";
-import { baseballLegendLands } from "@/data/baseballLands";
-import { LegendLandCard } from "@/components/LegendLandCard";
-import { ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { usePageMeta } from "@/hooks/usePageMeta";
-import { pageMeta } from "@/lib/pageMeta";
-
-const meta = categories.find((c) => c.key === "fans")!;
-
-const Fans = () => {
-  usePageMeta(pageMeta.fans);
-
-  return (
-    <CategoryPageLayout
-      category={meta}
-      intro="Legend Explorer map experiences built for the people who live the game — every play, every season, every dynasty."
-    >
-      <CategorySection eyebrow="Legend Explorer Collection" title="Baseball Legend Lands">
-        <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
-          Creatively Crafted educational discovery world maps and fan adventure guides for the
-          legends of America&apos;s pastime. Each Legend Land is a $7.77 digital download on
-          Payhip.
-        </p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {baseballLegendLands.map((land) => (
-            <LegendLandCard key={land.url} land={land} />
-          ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
-            <a href="https://payhip.com/MaybeeCreations" target="_blank" rel="noopener noreferrer">
-              Visit the full storefront on Payhip
-              <ExternalLink className="ml-2 h-4 w-4" />
-            </a>
-          </Button>
-        </div>
-      </CategorySection>
-    </CategoryPageLayout>
-  );
-};
-
-export default Fans;
+import { CategoryPageLayout, CategorySection } from "@/components/CategoryPageLayout";
+import { categories } from "@/data/categories";
+import { baseballLegendLands } from "@/data/baseballLands";
+import { collegeFootballLegendLands } from "@/data/collegeFootballLands";
+import { tennisLegendLands } from "@/data/tennisLands";
+import { LegendLandCard } from "@/components/LegendLandCard";
+import { ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { usePageMeta } from "@/hooks/usePageMeta";
+import { pageMeta } from "@/lib/pageMeta";
+
+const meta = categories.find((c) => c.key === "fans")!;
+
+const Fans = () => {
+  usePageMeta(pageMeta.fans);
+
+  return (
+    <CategoryPageLayout
+      category={meta}
+      intro="Legend Explorer map experiences built for the people who live the game — every play, every season, every dynasty."
+    >
+      <CategorySection eyebrow="Legend Explorer Collection" title="Baseball Legend Lands">
+        <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
+          Creatively Crafted educational discovery world maps and fan adventure guides for the
+          legends of America&apos;s pastime. Each Legend Land is a $7.77 digital download on
+          Payhip.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {baseballLegendLands.map((land) => (
+            <LegendLandCard key={land.url} land={land} />
+          ))}
+        </div>
+      </CategorySection>
+
+      <CategorySection eyebrow="Legend Explorer Collection" title="College Football Legend Lands">
+        <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
+          Printable college football fan maps for the programs that define Saturdays — dynasties,
+          rivalries, and campus legends in every download.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {collegeFootballLegendLands.map((land) => (
+            <LegendLandCard key={land.url} land={land} />
+          ))}
+        </div>
+      </CategorySection>
+
+      <CategorySection eyebrow="Legend Explorer Collection" title="Tennis Legend Lands">
+        <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
+          Championship tennis maps for fans who live for the majors — starting with Wimbledon&apos;s
+          hallowed grass courts.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {tennisLegendLands.map((land) => (
+            <LegendLandCard key={land.url} land={land} />
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
+            <a href="https://payhip.com/MaybeeCreations" target="_blank" rel="noopener noreferrer">
+              Visit the full storefront on Payhip
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </a>
+          </Button>
+        </div>
+      </CategorySection>
+    </CategoryPageLayout>
+  );
+};
+
+export default Fans;
