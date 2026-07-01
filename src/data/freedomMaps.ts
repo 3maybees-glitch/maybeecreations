@@ -111,7 +111,7 @@ export const freedomMaps: FreedomMap[] = [
     category: "World History",
     subtitle: "Liberty Explorer World War I Discovery Map",
     tagline:
-      "March from Sarajevo to Versailles — trenches, alliances, and the war that reshaped the modern world.",
+      "Journey through the Great War — trenches, alliances, breakthroughs, and the events that reshaped the twentieth century.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3v7l8cvk41h2sktd1ptp1tbr1h.png",
     url: "https://payhip.com/b/1tmwd",
     price: "$7.77",
@@ -121,19 +121,9 @@ export const freedomMaps: FreedomMap[] = [
     category: "American History",
     subtitle: "Liberty Explorer War of 1812 Discovery Map",
     tagline:
-      "Sail from impressment disputes to Fort McHenry — a young republic defends its sovereignty once more.",
+      "Explore America’s second war for independence — from impressment and the burning of Washington to Fort McHenry and the Treaty of Ghent.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3v5dkfml21pvl1fq6l27gk61h.png",
     url: "https://payhip.com/b/LGDxy",
-    price: "$7.77",
-  },
-  {
-    name: "Korean War",
-    category: "American History",
-    subtitle: "Liberty Explorer Korean War Discovery Map",
-    tagline:
-      "Cross the 38th parallel — from Pusan to the Yalu and the armistice that divided a peninsula.",
-    image: "https://pe56d.s3.amazonaws.com/o_1js3v0pdq6i61lrg1sr9qf21koc1h.png",
-    url: "https://payhip.com/b/6Csro",
     price: "$7.77",
   },
   {
@@ -141,37 +131,47 @@ export const freedomMaps: FreedomMap[] = [
     category: "World History",
     subtitle: "Liberty Explorer Cold War Discovery Map",
     tagline:
-      "Navigate the Iron Curtain era — containment, crises, and the decades-long struggle between superpowers.",
+      "Trace the decades-long struggle between freedom and communism — from the Iron Curtain and Berlin to the Space Race and the fall of the Soviet Union.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3uoi7r1qe07frtid1j56u1o1g.png",
     url: "https://payhip.com/b/bIOul",
     price: "$7.77",
   },
   {
+    name: "Korean War",
+    category: "World History",
+    subtitle: "Liberty Explorer Korean War Discovery Map",
+    tagline:
+      "Follow the Forgotten War from the 38th parallel through Inchon, Chosin, and the armistice that still divides a peninsula today.",
+    image: "https://pe56d.s3.amazonaws.com/o_1js3v0pdq6i61lrg1sr9qf21koc1h.png",
+    url: "https://payhip.com/b/6Csro",
+    price: "$7.77",
+  },
+  {
     name: "Gulf War",
-    category: "American History",
+    category: "World History",
     subtitle: "Liberty Explorer Gulf War Discovery Map",
     tagline:
-      "Follow Operation Desert Storm — from invasion to coalition victory in the sands of Kuwait.",
+      "Relive Operation Desert Storm — coalition buildup, air campaign, the hundred-hour ground war, and Kuwait’s liberation.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3uu4ov12u0b055n61a6213fb1h.png",
     url: "https://payhip.com/b/FatCv",
     price: "$7.77",
   },
   {
     name: "War on Terror",
-    category: "American History",
+    category: "World History",
     subtitle: "Liberty Explorer War on Terror Discovery Map",
     tagline:
-      "Trace the long campaign after 9/11 — from Afghanistan and Iraq to the global fight against extremism.",
+      "Walk the defining conflict of our era — from September 11 through Afghanistan, Iraq, and the long fight against global terrorism.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3v37jc13itp7mj6r1jjg1kp91h.png",
     url: "https://payhip.com/b/xSJYo",
     price: "$7.77",
   },
   {
-    name: "U.S. History 250th Anniversary",
+    name: "America 250",
     category: "American History",
-    subtitle: "Liberty Explorer 250th Anniversary Discovery Map",
+    subtitle: "Liberty Explorer U.S. History 250th Anniversary Map",
     tagline:
-      "Celebrate America's semiquincentennial — two and a half centuries of founding principles and national story.",
+      "Celebrate 250 years of American history — the people, inventions, victories, and milestones that shaped a nation.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3uj1lt1ujn1mfo32n1s9s1miv17.png",
     url: "https://payhip.com/b/gF6jh",
     price: "$7.77",

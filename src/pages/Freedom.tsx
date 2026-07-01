@@ -4,13 +4,25 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { categories } from "@/data/categories";
 import { freedomMaps } from "@/data/freedomMaps";
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { categoryPageSchemas } from "@/lib/structuredData";
 
 const meta = categories.find((c) => c.key === "freedom")!;
 
 const Freedom = () => {
-  usePageMeta(pageMeta.freedom);
+  usePageSeo(
+    pageMeta.freedom,
+    categoryPageSchemas(
+      pageMeta.freedom.path,
+      pageMeta.freedom.title,
+      pageMeta.freedom.description,
+      [
+        { name: "Home", path: "/" },
+        { name: "Freedom", path: "/freedom" },
+      ],
+    ),
+  );
 
   return (
     <CategoryPageLayout
@@ -33,7 +45,8 @@ const Freedom = () => {
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground mb-4">
             All Liberty Explorer maps are available now on Payhip — founding figures,
-            Revolutionary War, Civil War, and World War II theaters.
+            American and world conflicts from 1812 through today, and the America 250
+            anniversary edition.
           </p>
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
             <a

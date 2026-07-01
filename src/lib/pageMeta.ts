@@ -13,10 +13,19 @@ export { SITE_NAME, SITE_URL, DEFAULT_DESCRIPTION, OG_DESCRIPTION, HOME_TITLE_FU
 export const DEFAULT_OG_IMAGE =
   "https://pe56d.s3.amazonaws.com/o_1jp1pv8rpggmjvr1ohj1s3r14rk1c.png";
 
+export const STATIC_OG_IMAGE_ALT =
+  "Maybee Creations — Creatively Crafted educational discovery world maps for faith, freedom, fans, and the future";
+
 export interface PageMeta {
   title: string;
   description: string;
   path: string;
+  type?: "website" | "article";
+  publishedTime?: string;
+  modifiedTime?: string;
+  image?: string;
+  imageAlt?: string;
+  noindex?: boolean;
 }
 
 export const pageMeta: Record<string, PageMeta> = {
@@ -49,6 +58,12 @@ export const pageMeta: Record<string, PageMeta> = {
       "Ten Creatively Crafted Tomorrow Explorer AI educational discovery world maps paired with Adventure Pack tutorials for ChatGPT, Claude, Gemini, and more.",
     path: "/future",
   },
+  stories: {
+    title: `Stories — The Story Behind the Map | ${SITE_NAME}`,
+    description:
+      "Storytime essays on the history, meaning, and joy of Maybee Creations maps and guides — Faith, Freedom, Fans, and the Future.",
+    path: "/stories",
+  },
   privacy: {
     title: `Privacy Policy | ${SITE_NAME}`,
     description: `Privacy policy for ${SITE_NAME} ${SEO_PHRASE.toLowerCase()} and digital products.`,
@@ -68,5 +83,6 @@ export const pageMeta: Record<string, PageMeta> = {
     title: `Page Not Found | ${SITE_NAME}`,
     description: DEFAULT_DESCRIPTION,
     path: "/",
+    noindex: true,
   },
 };

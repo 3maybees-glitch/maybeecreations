@@ -1,7 +1,7 @@
 import { bibleMaps } from "@/data/bibleMaps";
 import { baseballLegendLands } from "@/data/baseballLands";
 import { collegeFootballLegendLands } from "@/data/collegeFootballLands";
-import { tennisLegendLands } from "@/data/tennisLands";
+import { tennisLegendLands } from "@/data/tennisLegendLands";
 import { freedomMaps } from "@/data/freedomMaps";
 import { realms } from "@/data/realms";
 import {
@@ -58,8 +58,8 @@ export const categories: CategoryMeta[] = [
     path: "/fans",
     tagline: "Step into legendary ballparks, campuses, and courts you grew up cheering.",
     blurb:
-      "Legend Lands for baseball, college football, and tennis — printable fan adventure maps for the teams and championships that own your heart.",
-    count: `${baseballLegendLands.length + collegeFootballLegendLands.length + tennisLegendLands.length} Legend Lands`,
+      "Legend Explorer fan adventure maps for baseball, college football, and tennis — printable worlds built for the people who live the game.",
+    count: `${baseballLegendLands.length} Baseball · ${collegeFootballLegendLands.length} College Football · ${tennisLegendLands.length} Tennis Legend Lands`,
     mapPreviews: fansPreviews,
     accentVar: "fans",
   },

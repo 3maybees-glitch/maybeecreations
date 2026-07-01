@@ -1,11 +1,20 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { FileText } from "lucide-react";
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { staticPageSchemas } from "@/lib/structuredData";
 
 const Terms = () => {
-  usePageMeta(pageMeta.terms);
+  usePageSeo(
+    pageMeta.terms,
+    staticPageSchemas(
+      pageMeta.terms.path,
+      pageMeta.terms.title,
+      pageMeta.terms.description,
+      "Terms of Service",
+    ),
+  );
 
   return (
     <div className="min-h-screen flex flex-col">

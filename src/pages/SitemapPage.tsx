@@ -2,13 +2,17 @@ import { Navigation } from "@/components/Navigation";
 
 import { Footer } from "@/components/Footer";
 
-import { Map, Home, FileText, List } from "lucide-react";
+import { Map, Home, FileText, List, BookOpen, Share2 } from "lucide-react";
+import { storiesSorted } from "@/data/stories";
+import { SOCIAL_LINKS } from "@/lib/socialLinks";
 
 import { Link } from "react-router-dom";
 
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 
 import { pageMeta } from "@/lib/pageMeta";
+
+import { staticPageSchemas } from "@/lib/structuredData";
 
 
 
@@ -58,6 +62,28 @@ const sections: SitemapSection[] = [
 
   {
 
+    title: "Stories",
+
+    icon: <BookOpen className="h-5 w-5" />,
+
+    links: [
+
+      { label: "Stories — The Story Behind the Map", path: "/stories" },
+
+      ...storiesSorted.map((story) => ({
+
+        label: story.title,
+
+        path: `/stories/${story.slug}`,
+
+      })),
+
+    ],
+
+  },
+
+  {
+
     title: "Legal",
 
     icon: <FileText className="h-5 w-5" />,
@@ -72,13 +98,30 @@ const sections: SitemapSection[] = [
 
   },
 
+  {
+    title: "Connect",
+    icon: <Share2 className="h-5 w-5" />,
+    links: [
+      { label: "Payhip Storefront", path: "https://payhip.com/MaybeeCreations" },
+      ...SOCIAL_LINKS.map((link) => ({
+        label: link.shortLabel,
+        path: link.href,
+      })),
+    ],
+  },
+
 ];
 
-
-
 const SitemapPage = () => {
-
-  usePageMeta(pageMeta.sitemap);
+  usePageSeo(
+    pageMeta.sitemap,
+    staticPageSchemas(
+      pageMeta.sitemap.path,
+      pageMeta.sitemap.title,
+      pageMeta.sitemap.description,
+      "Sitemap",
+    ),
+  );
 
 
 
@@ -92,7 +135,14 @@ const SitemapPage = () => {
 
       <main className="flex-1 pt-16 pb-16">
 
-        <div className="container mx-auto px-4 max-w-4xl">
+          <div className="container mx-auto px-4 max-w-4xl">
+          <p className="text-sm text-muted-foreground mb-6">
+            For AI assistants and answer engines, see{" "}
+            <a href="/llms.txt" className="text-accent hover:underline">
+              llms.txt
+            </a>
+            .
+          </p>
 
           <div className="flex items-center gap-3 mb-8">
 
@@ -133,23 +183,25 @@ const SitemapPage = () => {
                 <ul className="space-y-2 pl-7">
 
                   {section.links.map((link) => (
-
                     <li key={link.path}>
-
-                      <Link
-
-                        to={link.path}
-
-                        className="text-muted-foreground hover:text-accent transition-colors"
-
-                      >
-
-                        {link.label}
-
-                      </Link>
-
+                      {link.path.startsWith("http") ? (
+                        <a
+                          href={link.path}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-muted-foreground hover:text-accent transition-colors"
+                        >
+                          {link.label}
+                        </a>
+                      ) : (
+                        <Link
+                          to={link.path}
+                          className="text-muted-foreground hover:text-accent transition-colors"
+                        >
+                          {link.label}
+                        </Link>
+                      )}
                     </li>
-
                   ))}
 
                 </ul>

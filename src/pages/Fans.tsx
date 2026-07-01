@@ -2,33 +2,52 @@ import { CategoryPageLayout, CategorySection } from "@/components/CategoryPageLa
 import { categories } from "@/data/categories";
 import { baseballLegendLands } from "@/data/baseballLands";
 import { collegeFootballLegendLands } from "@/data/collegeFootballLands";
-import { tennisLegendLands } from "@/data/tennisLands";
+import { tennisLegendLands } from "@/data/tennisLegendLands";
 import { LegendLandCard } from "@/components/LegendLandCard";
 import { ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { categoryPageSchemas } from "@/lib/structuredData";
 
 const meta = categories.find((c) => c.key === "fans")!;
 
 const Fans = () => {
-  usePageMeta(pageMeta.fans);
+  usePageSeo(
+    pageMeta.fans,
+    categoryPageSchemas(
+      pageMeta.fans.path,
+      pageMeta.fans.title,
+      pageMeta.fans.description,
+      [
+        { name: "Home", path: "/" },
+        { name: "Fans", path: "/fans" },
+      ],
+    ),
+  );
 
   return (
     <CategoryPageLayout
       category={meta}
-      intro="Legend Explorer map experiences built for the people who live the game — every play, every season, every dynasty."
+      intro="Legend Explorer map experiences built for the people who live the game — from ballpark dynasties and college Saturdays to championship tennis lore."
     >
-      <CategorySection eyebrow="Legend Explorer Collection" title="Baseball Legend Lands">
+      <CategorySection eyebrow="Legend Explorer Collection" title="Tennis Legend Lands">
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
           Creatively Crafted educational discovery world maps and fan adventure guides for the
-          legends of America&apos;s pastime. Each Legend Land is a $7.77 digital download on
-          Payhip.
+          championships fans celebrate year after year. Each Legend Land is a $7.77 digital download
+          on Payhip.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {baseballLegendLands.map((land) => (
-            <LegendLandCard key={land.url} land={land} />
+          {tennisLegendLands.map((land) => (
+            <LegendLandCard
+              key={land.url}
+              name={land.name}
+              series="Tennis Legend Land"
+              url={land.url}
+              image={land.image}
+              tagline={land.tagline}
+            />
           ))}
         </div>
       </CategorySection>
@@ -41,20 +60,35 @@ const Fans = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {collegeFootballLegendLands.map((land) => (
-            <LegendLandCard key={land.url} land={land} />
+            <LegendLandCard
+              key={land.url}
+              name={land.team}
+              series="College Football Legend Land"
+              url={land.url}
+              image={land.image}
+              tagline={`A Creatively Crafted fan adventure map celebrating the legends of ${land.team}.`}
+            />
           ))}
         </div>
       </CategorySection>
 
-      <CategorySection eyebrow="Legend Explorer Collection" title="Tennis Legend Lands">
+      <CategorySection eyebrow="Legend Explorer Collection" title="Baseball Legend Lands">
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
-          Championship tennis maps for fans who live for the majors — starting with Wimbledon&apos;s
-          hallowed grass courts.
+          Creatively Crafted educational discovery world maps and fan adventure guides for the
+          legends of America&apos;s pastime. Each Legend Land is a $7.77 digital download on
+          Payhip.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-          {tennisLegendLands.map((land) => (
-            <LegendLandCard key={land.url} land={land} />
+          {baseballLegendLands.map((land) => (
+            <LegendLandCard
+              key={land.url}
+              name={land.team}
+              series="Baseball Legend Land"
+              url={land.url}
+              image={land.image}
+              tagline={`A Creatively Crafted fan adventure map celebrating the legends of ${land.team}.`}
+            />
           ))}
         </div>
 

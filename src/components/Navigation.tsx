@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Compass, ChevronDown } from "lucide-react";
+import { BookOpen, Compass, ChevronDown } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -50,6 +50,14 @@ export const Navigation = () => {
               ))}
             </DropdownMenuContent>
           </DropdownMenu>
+
+          <Link
+            to="/stories"
+            className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest font-semibold text-foreground/80 hover:text-accent transition-colors"
+          >
+            <BookOpen className="h-4 w-4" />
+            Stories
+          </Link>
 
           <a
             href="https://payhip.com/MaybeeCreations"

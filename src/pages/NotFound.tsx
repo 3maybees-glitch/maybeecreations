@@ -1,11 +1,12 @@
 import { useLocation, Link } from "react-router-dom";
 import { useEffect } from "react";
-import { usePageMeta } from "@/hooks/usePageMeta";
+import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { staticPageSchemas } from "@/lib/structuredData";
 
 const NotFound = () => {
   const location = useLocation();
-  usePageMeta(pageMeta.notFound);
+  usePageSeo(pageMeta.notFound, null);
 
   useEffect(() => {
     console.error("404 Error: User attempted to access non-existent route:", location.pathname);
