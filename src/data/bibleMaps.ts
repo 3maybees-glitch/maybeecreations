@@ -6,6 +6,8 @@ export interface BibleMap {
   image: string;
   url: string;
   price: string;
+  /** When true, the full map and guide are offered free on Payhip */
+  isFree?: boolean;
 }
 
 export const bibleMaps: BibleMap[] = [
@@ -61,7 +63,8 @@ export const bibleMaps: BibleMap[] = [
     tagline: "Four perspectives, one Savior — journey through the life of Jesus.",
     image: "https://pe56d.s3.amazonaws.com/o_1jps53jlost7quqvvdsiu1q1r17.png",
     url: "https://payhip.com/b/PUY0k",
-    price: "$7.77",
+    price: "Free",
+    isFree: true,
   },
   {
     name: "Church History",
