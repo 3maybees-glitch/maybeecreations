@@ -6,6 +6,8 @@ export interface BibleMap {
   image: string;
   url: string;
   price: string;
+  /** Optional Soul Explorer flyover on the Maybee-Creations YouTube channel */
+  youtubeUrl?: string;
 }
 
 export const bibleMaps: BibleMap[] = [
@@ -17,6 +19,7 @@ export const bibleMaps: BibleMap[] = [
     image: "https://pe56d.s3.amazonaws.com/o_1jps1imb02cl1ne77pl8141cga1h.png",
     url: "https://payhip.com/b/EUVix",
     price: "$7.77",
+    youtubeUrl: "https://www.youtube.com/watch?v=PUkdYwxROfA",
   },
   {
     name: "Books of History",
@@ -26,6 +29,7 @@ export const bibleMaps: BibleMap[] = [
     image: "https://pe56d.s3.amazonaws.com/o_1jps1qmd0i2j1rhu1u1mmvauk1j.png",
     url: "https://payhip.com/b/NxKpH",
     price: "$7.77",
+    youtubeUrl: "https://www.youtube.com/watch?v=6R4pn8WM0Ec",
   },
   {
     name: "Books of Poetry",
@@ -62,6 +66,7 @@ export const bibleMaps: BibleMap[] = [
     image: "https://pe56d.s3.amazonaws.com/o_1jps53jlost7quqvvdsiu1q1r17.png",
     url: "https://payhip.com/b/PUY0k",
     price: "$7.77",
+    youtubeUrl: "https://www.youtube.com/watch?v=-ddQbEsVfxg",
   },
   {
     name: "Church History",
@@ -71,6 +76,7 @@ export const bibleMaps: BibleMap[] = [
     image: "https://pe56d.s3.amazonaws.com/o_1jps5f6sh1arshlp1v9t14k1mnl17.png",
     url: "https://payhip.com/b/4pVkg",
     price: "$7.77",
+    youtubeUrl: "https://www.youtube.com/watch?v=CWSUuHk9zgs",
   },
   {
     name: "Paul's Letters",
@@ -80,6 +86,7 @@ export const bibleMaps: BibleMap[] = [
     image: "https://pe56d.s3.amazonaws.com/o_1jps5rkcs1fpo14ec10u6dkg1t1m17.png",
     url: "https://payhip.com/b/jASU4",
     price: "$7.77",
+    youtubeUrl: "https://www.youtube.com/watch?v=Lo75ICRnC4Y",
   },
   {
     name: "Church Letters",
@@ -89,6 +96,7 @@ export const bibleMaps: BibleMap[] = [
     image: "https://pe56d.s3.amazonaws.com/o_1jps672vrv1r12461ap3j41h9h17.png",
     url: "https://payhip.com/b/iSlVa",
     price: "$7.77",
+    youtubeUrl: "https://www.youtube.com/watch?v=TftkM0Y_Co0",
   },
   {
     name: "Prophecy",
@@ -98,5 +106,6 @@ export const bibleMaps: BibleMap[] = [
     image: "https://pe56d.s3.amazonaws.com/o_1jps6gltfgda1rbrij41qgg1vd817.png",
     url: "https://payhip.com/b/gIEc5",
     price: "$7.77",
+    youtubeUrl: "https://www.youtube.com/watch?v=5hbWp0mYmm8",
   },
 ];
