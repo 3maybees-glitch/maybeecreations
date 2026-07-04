@@ -39,6 +39,7 @@ export const bibleMaps: BibleMap[] = [
     image: "https://pe56d.s3.amazonaws.com/o_1jps20iqosemioq187n11ppk371j.png",
     url: "https://payhip.com/b/tZGs3",
     price: "$7.77",
+    youtubeUrl: "https://www.youtube.com/watch?v=Lwif4hnvul4",
   },
   {
     name: "Major Prophets",
@@ -48,6 +49,7 @@ export const bibleMaps: BibleMap[] = [
     image: "https://pe56d.s3.amazonaws.com/o_1jps28dvf1una1l7pmi93ob1v3k1j.png",
     url: "https://payhip.com/b/s16iB",
     price: "$7.77",
+    youtubeUrl: "https://www.youtube.com/watch?v=csEP-CqAcW8",
   },
   {
     name: "Minor Prophets",
@@ -57,6 +59,7 @@ export const bibleMaps: BibleMap[] = [
     image: "https://pe56d.s3.amazonaws.com/o_1jps2r1ga15vt1miq1on41hhc1gd31j.png",
     url: "https://payhip.com/b/Qko4f",
     price: "$7.77",
+    youtubeUrl: "https://www.youtube.com/watch?v=s8u22yIxuSs",
   },
   {
     name: "The Gospels",

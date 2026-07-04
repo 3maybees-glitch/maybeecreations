@@ -39,7 +39,7 @@ const Faith = () => {
           explore the Word.
         </p>
         <p className="text-center text-sm md:text-base text-muted-foreground max-w-3xl mx-auto mb-10">
-          Several maps include a{" "}
+          Each map includes a{" "}
           <a
             href="https://youtube.com/@maybeecreations"
             target="_blank"
