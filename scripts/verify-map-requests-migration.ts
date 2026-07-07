@@ -52,16 +52,12 @@ async function main() {
   console.log("✓ map_requests table exists");
 
   const testTitle = `Migration verify ${Date.now()}`;
-  const { data: inserted, error: insertError } = await supabase
-    .from("map_requests")
-    .insert({
+  const { error: insertError } = await supabase.from("map_requests").insert({
       realm: "fans",
       title: testTitle,
       description: "Auto-generated verification row — safe to delete.",
       status: "pending",
-    })
-    .select("id")
-    .single();
+    });
 
   if (insertError) {
     console.error("❌ Insert failed:", insertError.message);
@@ -69,7 +65,7 @@ async function main() {
   }
 
   console.log("✓ Anonymous insert works (pending request saved)");
-  console.log(`  Test row id: ${inserted.id}`);
+  console.log(`  Test title: ${testTitle}`);
   console.log("\nNext: approve requests in Supabase → Table Editor → map_requests → set status = approved");
 }
 

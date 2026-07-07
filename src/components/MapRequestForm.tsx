@@ -100,18 +100,14 @@ export const MapRequestForm = ({ onSubmitted }: MapRequestFormProps) => {
         status: "pending" as const,
       };
 
-      const { data, error } = await supabase
-        .from("map_requests")
-        .insert(payload)
-        .select("id, realm, title, description, email, notify_when_made")
-        .single();
+      const { error } = await supabase.from("map_requests").insert(payload);
 
       if (error) {
         throw error;
       }
 
       void supabase.functions
-        .invoke("notify-map-request", { body: data })
+        .invoke("notify-map-request", { body: { ...payload, id: "submitted" } })
         .catch(() => undefined);
 
       form.reset({
