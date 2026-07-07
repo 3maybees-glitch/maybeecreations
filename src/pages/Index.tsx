@@ -4,6 +4,7 @@ import { CategoryGrid } from "@/components/CategoryGrid";
 import { AboutSection } from "@/components/AboutSection";
 import { FaqSection } from "@/components/FaqSection";
 import { LandingCta } from "@/components/LandingCta";
+import { RequestMapTeaser } from "@/components/RequestMapTeaser";
 import { Footer } from "@/components/Footer";
 import { homeFaqs } from "@/data/faqs";
 import { usePageSeo } from "@/hooks/usePageSeo";
@@ -20,6 +21,7 @@ const Index = () => {
         <Hero />
         <CategoryGrid />
         <AboutSection />
+        <RequestMapTeaser />
         <FaqSection faqs={homeFaqs} />
         <LandingCta />
       </main>

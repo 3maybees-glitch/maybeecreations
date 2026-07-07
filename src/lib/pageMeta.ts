@@ -79,6 +79,12 @@ export const pageMeta: Record<string, PageMeta> = {
     description: "Complete guide to every page on maybeecreations.com.",
     path: "/sitemap",
   },
+  requestMap: {
+    title: `Request a Map — Chart the Next Expedition | ${SITE_NAME}`,
+    description:
+      "Submit your idea for the next Maybee Creations educational discovery world map. Browse the public Mapmaker's Ledger of approved community requests across Faith, Freedom, Fans, and Future.",
+    path: "/request-a-map",
+  },
   notFound: {
     title: `Page Not Found | ${SITE_NAME}`,
     description: DEFAULT_DESCRIPTION,

@@ -4,11 +4,12 @@ import { baseballLegendLands } from "@/data/baseballLands";
 import { collegeFootballLegendLands } from "@/data/collegeFootballLands";
 import { tennisLegendLands } from "@/data/tennisLegendLands";
 import { LegendLandCard } from "@/components/LegendLandCard";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, MapPinned } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
 import { categoryPageSchemas } from "@/lib/structuredData";
+import { Link } from "react-router-dom";
 
 const meta = categories.find((c) => c.key === "fans")!;
 
@@ -92,7 +93,23 @@ const Fans = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 space-y-4">
+          <div className="max-w-2xl mx-auto rounded-sm border border-[hsl(var(--fans))]/30 bg-[hsl(var(--fans))]/10 p-6">
+            <p className="text-base md:text-lg text-muted-foreground mb-4">
+              Don&apos;t see your team, program, or championship on the map yet? Tell us what
+              Legend Land to chart next.
+            </p>
+            <Button
+              asChild
+              size="lg"
+              className="bg-[hsl(var(--fans))] text-[hsl(var(--primary))] hover:bg-[hsl(var(--fans))]/90 font-semibold"
+            >
+              <Link to="/request-a-map">
+                <MapPinned className="mr-2 h-4 w-4" />
+                Request a Map
+              </Link>
+            </Button>
+          </div>
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
             <a href="https://payhip.com/MaybeeCreations" target="_blank" rel="noopener noreferrer">
               Visit the full storefront on Payhip

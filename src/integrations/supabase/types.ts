@@ -14,6 +14,42 @@ export type Database = {
   }
   public: {
     Tables: {
+      map_requests: {
+        Row: {
+          created_at: string
+          description: string | null
+          email: string | null
+          id: string
+          notify_when_made: boolean
+          realm: Database["public"]["Enums"]["map_request_realm"]
+          reviewed_at: string | null
+          status: Database["public"]["Enums"]["map_request_status"]
+          title: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          email?: string | null
+          id?: string
+          notify_when_made?: boolean
+          realm: Database["public"]["Enums"]["map_request_realm"]
+          reviewed_at?: string | null
+          status?: Database["public"]["Enums"]["map_request_status"]
+          title: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          email?: string | null
+          id?: string
+          notify_when_made?: boolean
+          realm?: Database["public"]["Enums"]["map_request_realm"]
+          reviewed_at?: string | null
+          status?: Database["public"]["Enums"]["map_request_status"]
+          title?: string
+        }
+        Relationships: []
+      }
       purchases: {
         Row: {
           amount: number
@@ -52,7 +88,8 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      [_ in never]: never
+      map_request_realm: "faith" | "freedom" | "fans" | "future"
+      map_request_status: "pending" | "approved" | "declined"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -179,6 +216,9 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      map_request_realm: ["faith", "freedom", "fans", "future"],
+      map_request_status: ["pending", "approved", "declined"],
+    },
   },
 } as const
