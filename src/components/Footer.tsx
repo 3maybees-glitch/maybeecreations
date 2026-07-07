@@ -38,6 +38,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/request-a-map" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                  Request a Map
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://payhip.com/MaybeeCreations"
                   target="_blank"

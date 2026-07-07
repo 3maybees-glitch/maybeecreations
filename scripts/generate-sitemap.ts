@@ -20,6 +20,7 @@ const entries: SitemapEntry[] = [
   { path: "/fans", changefreq: "weekly", priority: "0.9" },
   { path: "/future", changefreq: "weekly", priority: "0.9" },
   { path: "/stories", changefreq: "weekly", priority: "0.8" },
+  { path: "/request-a-map", changefreq: "weekly", priority: "0.8" },
   ...stories.map((story) => ({
     path: `/stories/${story.slug}`,
     changefreq: "monthly" as const,

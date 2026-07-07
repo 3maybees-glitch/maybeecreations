@@ -14,6 +14,7 @@ import Future from "./pages/Future";
 import SitemapPage from "./pages/SitemapPage";
 import Stories from "./pages/Stories";
 import StoryPost from "./pages/StoryPost";
+import RequestMap from "./pages/RequestMap";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/future" element={<Future />} />
           <Route path="/stories" element={<Stories />} />
           <Route path="/stories/:slug" element={<StoryPost />} />
+          <Route path="/request-a-map" element={<RequestMap />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/sitemap" element={<SitemapPage />} />

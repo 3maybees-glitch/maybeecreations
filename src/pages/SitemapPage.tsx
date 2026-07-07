@@ -83,6 +83,14 @@ const sections: SitemapSection[] = [
   },
 
   {
+    title: "Community",
+    icon: <Map className="h-5 w-5" />,
+    links: [
+      { label: "Request a Map — Chart the Next Expedition", path: "/request-a-map" },
+    ],
+  },
+
+  {
 
     title: "Legal",
 
