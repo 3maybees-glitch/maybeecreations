@@ -123,7 +123,7 @@ Deno.serve(async (req) => {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
   } catch (error) {
-    console.error("send-map-request error:", error);
+    console.error("notify-map-request error:", error);
     return new Response(JSON.stringify({ error: "Unexpected error." }), {
       status: 500,
       headers: { ...corsHeaders, "Content-Type": "application/json" },

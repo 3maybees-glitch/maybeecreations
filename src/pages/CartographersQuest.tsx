@@ -85,7 +85,7 @@ const MapRequestForm = () => {
     }
 
     setSending(true);
-    const { data, error } = await supabase.functions.invoke("send-map-request", {
+    const { data, error } = await supabase.functions.invoke("notify-map-request", {
       body: form,
     });
     setSending(false);
