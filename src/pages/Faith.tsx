@@ -33,10 +33,22 @@ const Faith = () => {
         eyebrow="Soul Explorer Collection"
         title="Bible Book Category World Maps"
       >
-        <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
+        <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-4">
           Fantasy cartography of Scripture organized by book category — each map paired
           with an Adventure Guide of prompts, missions, and reflections to help readers
           explore the Word.
+        </p>
+        <p className="text-center text-sm md:text-base text-muted-foreground max-w-3xl mx-auto mb-10">
+          Each map includes a{" "}
+          <a
+            href="https://youtube.com/@maybeecreations"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-primary underline underline-offset-4 hover:text-accent"
+          >
+            YouTube flyover
+          </a>{" "}
+          so you can preview the world before purchasing.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">

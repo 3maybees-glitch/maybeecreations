@@ -8,3 +8,6 @@ verify_jwt = true
 
 [functions.verify-access]
 verify_jwt = true
+
+[functions.notify-map-request]
+verify_jwt = false

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { BookOpen } from "lucide-react";
+import { BookOpen, Play } from "lucide-react";
 import type { BibleMap } from "@/data/bibleMaps";
 
 export const BibleMapCard = ({ map }: { map: BibleMap }) => (
@@ -29,12 +29,31 @@ export const BibleMapCard = ({ map }: { map: BibleMap }) => (
 
       <div className="ink-divider mb-4" />
 
-      <Button asChild className="justify-start bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
-        <a href={map.url} target="_blank" rel="noopener noreferrer">
-          <BookOpen className="h-4 w-4 mr-2" />
-          Get Map &amp; Guide — {map.price}
-        </a>
-      </Button>
+      <div className="flex flex-col gap-2">
+        {map.youtubeUrl && (
+          <>
+            <p className="text-sm text-muted-foreground">
+              Watch the map flyover on YouTube to explore the world before you buy.
+            </p>
+            <Button
+              asChild
+              variant="outline"
+              className="justify-start border-primary/40 hover:bg-primary/5"
+            >
+              <a href={map.youtubeUrl} target="_blank" rel="noopener noreferrer">
+                <Play className="h-4 w-4 mr-2" />
+                Watch Map Flyover
+              </a>
+            </Button>
+          </>
+        )}
+        <Button asChild className="justify-start bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
+          <a href={map.url} target="_blank" rel="noopener noreferrer">
+            <BookOpen className="h-4 w-4 mr-2" />
+            Get Map &amp; Guide — {map.price}
+          </a>
+        </Button>
+      </div>
     </div>
   </article>
 );

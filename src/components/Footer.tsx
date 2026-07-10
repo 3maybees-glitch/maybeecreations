@@ -38,6 +38,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/quest" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                  The Cartographer's Quest
+                </Link>
+              </li>
+              <li>
                 <Link to="/request-a-map" className="text-lg text-muted-foreground hover:text-accent transition-colors">
                   Request a Map
                 </Link>
