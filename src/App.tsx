@@ -14,6 +14,7 @@ import Future from "./pages/Future";
 import SitemapPage from "./pages/SitemapPage";
 import Stories from "./pages/Stories";
 import StoryPost from "./pages/StoryPost";
+import CartographersQuest from "./pages/CartographersQuest";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/freedom" element={<Freedom />} />
           <Route path="/fans" element={<Fans />} />
           <Route path="/future" element={<Future />} />
+          <Route path="/quest" element={<CartographersQuest />} />
           <Route path="/stories" element={<Stories />} />
           <Route path="/stories/:slug" element={<StoryPost />} />
           <Route path="/privacy" element={<Privacy />} />

@@ -38,6 +38,11 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/quest" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                  The Cartographer's Quest
+                </Link>
+              </li>
+              <li>
                 <a
                   href="https://payhip.com/MaybeeCreations"
                   target="_blank"

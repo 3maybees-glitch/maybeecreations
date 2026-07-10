@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BookOpen, Compass, ChevronDown } from "lucide-react";
+import { BookOpen, Compass, ChevronDown, Feather } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -57,6 +57,14 @@ export const Navigation = () => {
           >
             <BookOpen className="h-4 w-4" />
             Stories
+          </Link>
+
+          <Link
+            to="/quest"
+            className="hidden sm:inline-flex items-center gap-1.5 text-xs uppercase tracking-widest font-semibold text-foreground/80 hover:text-accent transition-colors"
+          >
+            <Feather className="h-4 w-4" />
+            Quest
           </Link>
 
           <a

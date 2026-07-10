@@ -58,6 +58,12 @@ export const pageMeta: Record<string, PageMeta> = {
       "Ten Creatively Crafted Tomorrow Explorer AI educational discovery world maps paired with Adventure Pack tutorials for ChatGPT, Claude, Gemini, and more.",
     path: "/future",
   },
+  cartographersQuest: {
+    title: `The Cartographer's Quest — Request a Custom Fantasy Map | ${SITE_NAME}`,
+    description:
+      "Commission a custom Creatively Crafted fantasy world map, and vote on the future maps taking shape at the Maybee Creations drafting table.",
+    path: "/quest",
+  },
   stories: {
     title: `Stories — The Story Behind the Map | ${SITE_NAME}`,
     description:
