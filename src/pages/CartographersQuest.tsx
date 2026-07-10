@@ -85,13 +85,47 @@ const MapRequestForm = () => {
     }
 
     setSending(true);
+
+    const realmForDb =
+      form.realm === "other" ? "future" : form.realm;
+    const descriptionForDb =
+      form.realm === "other"
+        ? `Explorer: ${form.name}\nRealm: A Realm Not Yet Charted\n\n${form.description}`
+        : `Explorer: ${form.name}\n\n${form.description}`;
+
+    const requestId = crypto.randomUUID();
+
+    const { error: insertError } = await supabase.from("map_requests").insert({
+      id: requestId,
+      realm: realmForDb,
+      title: form.mapTitle,
+      description: descriptionForDb,
+      email: form.email,
+      notify_when_made: true,
+      status: "pending",
+    });
+
+    if (insertError) {
+      setSending(false);
+      toast.error("The raven could not deliver your quest. Please try again.");
+      return;
+    }
+
     const { data, error } = await supabase.functions.invoke("notify-map-request", {
-      body: form,
+      body: {
+        id: requestId,
+        realm: realmForDb,
+        title: form.mapTitle,
+        description: descriptionForDb,
+        email: form.email,
+        notify_when_made: true,
+      },
     });
     setSending(false);
 
     if (error || data?.error) {
-      toast.error("The raven could not deliver your quest. Please try again.");
+      // Request is saved even if the notification email fails.
+      setSubmitted(true);
       return;
     }
 

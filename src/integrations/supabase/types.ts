@@ -48,32 +48,35 @@ export type Database = {
         Row: {
           created_at: string
           description: string
-          email: string
+          email: string | null
           id: string
-          map_title: string
+          notify_when_made: boolean
           realm: string
-          requester_name: string
+          reviewed_at: string | null
           status: string
+          title: string
         }
         Insert: {
           created_at?: string
           description: string
-          email: string
+          email?: string | null
           id?: string
-          map_title: string
+          notify_when_made?: boolean
           realm: string
-          requester_name: string
+          reviewed_at?: string | null
           status?: string
+          title: string
         }
         Update: {
           created_at?: string
           description?: string
-          email?: string
+          email?: string | null
           id?: string
-          map_title?: string
+          notify_when_made?: boolean
           realm?: string
-          requester_name?: string
+          reviewed_at?: string | null
           status?: string
+          title?: string
         }
         Relationships: []
       }
