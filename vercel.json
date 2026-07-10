@@ -1,4 +1,8 @@
 {
+  "redirects": [
+    { "source": "/quest", "destination": "/request-a-map", "permanent": true },
+    { "source": "/quest/:path*", "destination": "/request-a-map", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]

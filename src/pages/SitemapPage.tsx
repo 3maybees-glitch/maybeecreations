@@ -61,17 +61,6 @@ const sections: SitemapSection[] = [
   },
 
   {
-    title: "Quest",
-    icon: <Map className="h-5 w-5" />,
-    links: [
-      {
-        label: "The Cartographer's Quest — request a custom map & vote on future maps",
-        path: "/quest",
-      },
-    ],
-  },
-
-  {
 
     title: "Stories",
 
