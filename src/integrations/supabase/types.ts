@@ -14,6 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
+      map_ideas: {
+        Row: {
+          created_at: string
+          description: string
+          id: string
+          realm: string
+          status: string
+          title: string
+          votes: number
+        }
+        Insert: {
+          created_at?: string
+          description: string
+          id?: string
+          realm: string
+          status?: string
+          title: string
+          votes?: number
+        }
+        Update: {
+          created_at?: string
+          description?: string
+          id?: string
+          realm?: string
+          status?: string
+          title?: string
+          votes?: number
+        }
+        Relationships: []
+      }
       map_requests: {
         Row: {
           created_at: string
@@ -85,7 +115,7 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      vote_for_map_idea: { Args: { idea_id: string }; Returns: number }
     }
     Enums: {
       map_request_realm: "faith" | "freedom" | "fans" | "future"
