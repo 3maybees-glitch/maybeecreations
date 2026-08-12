@@ -7,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { categories } from "@/data/categories";
+import { ETSY_SHOP_URL } from "@/lib/shopLinks";
 import mcLogoIcon from "@/assets/mc-logo-icon.png";
 
 export const Navigation = () => {
@@ -68,7 +69,7 @@ export const Navigation = () => {
           </Link>
 
           <a
-            href="https://payhip.com/MaybeeCreations"
+            href={ETSY_SHOP_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-xs uppercase tracking-widest font-semibold text-primary hover:text-accent transition-colors"

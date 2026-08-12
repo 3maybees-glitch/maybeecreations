@@ -6,7 +6,7 @@ export interface FreedomMap {
   subtitle: string;
   tagline: string;
   image: string;
-  /** Set when the map is live on Payhip */
+  /** Set when the map is live on Etsy */
   url?: string;
   price?: string;
 }
@@ -19,7 +19,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Trace the life of the indispensable man — from Mount Vernon and Valley Forge to Yorktown and the presidency.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7fu7ldg6v1kec2rqd61o9s15.png",
-    url: "https://payhip.com/b/1Qs9u",
+    url: "https://www.etsy.com/listing/4528796525/george-washington-educational-discovery",
     price: "$7.77",
   },
   {
@@ -29,7 +29,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Explore liberty, learning, and the early republic — from Monticello to the Declaration and beyond.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7kt71119pk9vtkug1s2ict515.png",
-    url: "https://payhip.com/b/s4zBU",
+    url: "https://www.etsy.com/listing/4528799329/thomas-jefferson-educational-discovery",
     price: "$7.77",
   },
   {
@@ -39,7 +39,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Walk the story of the Constitution’s architect — public service, republican government, and civic principle.",
     image: madisonMap,
-    url: "https://payhip.com/b/5IvEx",
+    url: "https://www.etsy.com/listing/4528798649/james-madison-educational-discovery-map",
     price: "$7.77",
   },
   {
@@ -49,7 +49,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Chart the rise of a founding visionary — finance, federalism, and the fight to shape a new nation.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7h9csl1o401l2b1a901dl41oi315.png",
-    url: "https://payhip.com/b/JGXBn",
+    url: "https://www.etsy.com/listing/4528797215/alexander-hamilton-educational-discovery",
     price: "$7.77",
   },
   {
@@ -59,7 +59,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Follow the polymath patriot — invention, diplomacy, virtue, and the spirit of American ingenuity.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7jcuru1gq21ki91p0c17gojff15.png",
-    url: "https://payhip.com/b/cgm8z",
+    url: "https://www.etsy.com/listing/4528797921/benjamin-franklin-educational-discovery",
     price: "$7.77",
   },
   {
@@ -70,7 +70,7 @@ export const freedomMaps: FreedomMap[] = [
       "Follow the fight for independence from Lexington and Concord through Valley Forge, Yorktown, and the Treaty of Paris.",
     image:
       "https://pe56d.s3.amazonaws.com/cover-images/66563ad8d8424fe985f0076698b8c56b_01_revolutionary_war_desk_mockup_watermarked.jpg",
-    url: "https://payhip.com/b/7LFgy",
+    url: "https://www.etsy.com/listing/4528271862/liberty-explorer-american-revolutionary",
     price: "$7.77",
   },
   {
@@ -81,7 +81,7 @@ export const freedomMaps: FreedomMap[] = [
       "Follow the River of Time from Fort Sumter to Appomattox — secession, emancipation, turning points, and the fight to preserve the Union.",
     image:
       "https://pe56d.s3.amazonaws.com/cover-images/b042b65a77cb44e5848f97c328a91f0b_01_civil_war_desk_mockup_watermarked.jpg",
-    url: "https://payhip.com/b/nseRl",
+    url: "https://www.etsy.com/listing/4528269869/liberty-explorer-american-civil-war",
     price: "$7.77",
   },
   {
@@ -92,7 +92,7 @@ export const freedomMaps: FreedomMap[] = [
       "Trace the sweep of the war in Europe — from the Battle of Britain and North Africa through D-Day, the Rhine, Berlin, and V-E Day.",
     image:
       "https://pe56d.s3.amazonaws.com/cover-images/23887df344ab42e683a06db5cbdcacfd_01_wwii_europe_desk_mockup_watermarked.jpg",
-    url: "https://payhip.com/b/4xbse",
+    url: "https://www.etsy.com/listing/4528247129/liberty-explorer-world-war-ii-european",
     price: "$7.77",
   },
   {
@@ -103,7 +103,7 @@ export const freedomMaps: FreedomMap[] = [
       "Cross the Pacific from Pearl Harbor through Midway, Guadalcanal, Leyte Gulf, Iwo Jima, Okinawa, and Japan’s surrender.",
     image:
       "https://pe56d.s3.amazonaws.com/cover-images/5ed6b8b660a549f6800c3163b677a86f_01_wwii_pacific_desk_mockup_watermarked.jpg",
-    url: "https://payhip.com/b/Z3yho",
+    url: "https://www.etsy.com/listing/4528239695/liberty-explorer-world-war-ii-pacific",
     price: "$7.77",
   },
   {
@@ -113,7 +113,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Journey through the Great War — trenches, alliances, breakthroughs, and the events that reshaped the twentieth century.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3v7l8cvk41h2sktd1ptp1tbr1h.png",
-    url: "https://payhip.com/b/1tmwd",
+    url: "https://www.etsy.com/listing/4528255023/liberty-explorer-world-war-i-discovery",
     price: "$7.77",
   },
   {
@@ -123,7 +123,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Explore America’s second war for independence — from impressment and the burning of Washington to Fort McHenry and the Treaty of Ghent.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3v5dkfml21pvl1fq6l27gk61h.png",
-    url: "https://payhip.com/b/LGDxy",
+    url: "https://www.etsy.com/listing/4528268234/liberty-explorer-war-of-1812-discovery",
     price: "$7.77",
   },
   {
@@ -133,7 +133,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Trace the decades-long struggle between freedom and communism — from the Iron Curtain and Berlin to the Space Race and the fall of the Soviet Union.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3uoi7r1qe07frtid1j56u1o1g.png",
-    url: "https://payhip.com/b/bIOul",
+    url: "https://www.etsy.com/listing/4528277014/liberty-explorer-cold-war-discovery-map",
     price: "$7.77",
   },
   {
@@ -143,7 +143,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Follow the Forgotten War from the 38th parallel through Inchon, Chosin, and the armistice that still divides a peninsula today.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3v0pdq6i61lrg1sr9qf21koc1h.png",
-    url: "https://payhip.com/b/6Csro",
+    url: "https://www.etsy.com/listing/4528273996/liberty-explorer-korean-war-discovery",
     price: "$7.77",
   },
   {
@@ -153,7 +153,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Relive Operation Desert Storm — coalition buildup, air campaign, the hundred-hour ground war, and Kuwait’s liberation.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3uu4ov12u0b055n61a6213fb1h.png",
-    url: "https://payhip.com/b/FatCv",
+    url: "https://www.etsy.com/listing/4528275550/liberty-explorer-gulf-war-discovery-map",
     price: "$7.77",
   },
   {
@@ -163,7 +163,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Walk the defining conflict of our era — from September 11 through Afghanistan, Iraq, and the long fight against global terrorism.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3v37jc13itp7mj6r1jjg1kp91h.png",
-    url: "https://payhip.com/b/xSJYo",
+    url: "https://www.etsy.com/listing/4528269632/liberty-explorer-war-on-terror-discovery",
     price: "$7.77",
   },
   {
@@ -173,7 +173,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Celebrate 250 years of American history — the people, inventions, victories, and milestones that shaped a nation.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3uj1lt1ujn1mfo32n1s9s1miv17.png",
-    url: "https://payhip.com/b/gF6jh",
+    url: "https://www.etsy.com/listing/4528280384/liberty-explorer-united-states-history",
     price: "$7.77",
   },
 ];

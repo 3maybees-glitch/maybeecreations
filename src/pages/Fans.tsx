@@ -8,6 +8,7 @@ import { ExternalLink, MapPinned } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { ETSY_SHOP_URL } from "@/lib/shopLinks";
 import { categoryPageSchemas } from "@/lib/structuredData";
 import { Link } from "react-router-dom";
 
@@ -36,7 +37,7 @@ const Fans = () => {
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
           Creatively Crafted educational discovery world maps and fan adventure guides for the
           championships fans celebrate year after year. Each Legend Land is a $7.77 digital download
-          on Payhip.
+          on Etsy.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -77,7 +78,7 @@ const Fans = () => {
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
           Creatively Crafted educational discovery world maps and fan adventure guides for the
           legends of America&apos;s pastime. Each Legend Land is a $7.77 digital download on
-          Payhip.
+          Etsy.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -111,8 +112,8 @@ const Fans = () => {
             </Button>
           </div>
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
-            <a href="https://payhip.com/MaybeeCreations" target="_blank" rel="noopener noreferrer">
-              Visit the full storefront on Payhip
+            <a href={ETSY_SHOP_URL} target="_blank" rel="noopener noreferrer">
+              Visit the full storefront on Etsy
               <ExternalLink className="ml-2 h-4 w-4" />
             </a>
           </Button>

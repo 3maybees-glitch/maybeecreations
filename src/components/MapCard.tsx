@@ -10,7 +10,10 @@ export interface Realm {
   bundleUrl: string;
 }
 
-export const MapCard = ({ realm }: { realm: Realm }) => (
+export const MapCard = ({ realm }: { realm: Realm }) => {
+  const sameListing = realm.mapUrl === realm.bundleUrl;
+
+  return (
   <article className="parchment rounded-sm overflow-hidden flex flex-col group transition-transform hover:-translate-y-1 duration-300">
     <div className="relative overflow-hidden bg-muted aspect-[4/3]">
       <img
@@ -35,19 +38,31 @@ export const MapCard = ({ realm }: { realm: Realm }) => (
       <div className="ink-divider mb-4" />
 
       <div className="flex flex-col gap-2">
-        <Button asChild variant="outline" className="justify-start border-primary/40 hover:bg-primary/5">
-          <a href={realm.mapUrl} target="_blank" rel="noopener noreferrer">
-            <Compass className="h-4 w-4 mr-2" />
-            Get World Map — $4.99
-          </a>
-        </Button>
-        <Button asChild className="justify-start bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
-          <a href={realm.bundleUrl} target="_blank" rel="noopener noreferrer">
-            <Scroll className="h-4 w-4 mr-2" />
-            Get Adventure Pack — $9.99
-          </a>
-        </Button>
+        {sameListing ? (
+          <Button asChild className="justify-start bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
+            <a href={realm.bundleUrl} target="_blank" rel="noopener noreferrer">
+              <Scroll className="h-4 w-4 mr-2" />
+              Get Map &amp; Adventure Pack on Etsy
+            </a>
+          </Button>
+        ) : (
+          <>
+            <Button asChild variant="outline" className="justify-start border-primary/40 hover:bg-primary/5">
+              <a href={realm.mapUrl} target="_blank" rel="noopener noreferrer">
+                <Compass className="h-4 w-4 mr-2" />
+                Get World Map — $4.99
+              </a>
+            </Button>
+            <Button asChild className="justify-start bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
+              <a href={realm.bundleUrl} target="_blank" rel="noopener noreferrer">
+                <Scroll className="h-4 w-4 mr-2" />
+                Get Adventure Pack — $9.99
+              </a>
+            </Button>
+          </>
+        )}
       </div>
     </div>
   </article>
-);
+  );
+};

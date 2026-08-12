@@ -6,6 +6,7 @@ import { categories } from "@/data/categories";
 import { realms } from "@/data/realms";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { ETSY_SHOP_URL } from "@/lib/shopLinks";
 import { categoryPageSchemas } from "@/lib/structuredData";
 
 const meta = categories.find((c) => c.key === "future")!;
@@ -81,8 +82,8 @@ const Future = () => {
 
         <div className="text-center mt-12">
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
-            <a href="https://payhip.com/MaybeeCreations" target="_blank" rel="noopener noreferrer">
-              Visit the full storefront on Payhip
+            <a href={ETSY_SHOP_URL} target="_blank" rel="noopener noreferrer">
+              Visit the full storefront on Etsy
               <ExternalLink className="ml-2 h-4 w-4" />
             </a>
           </Button>

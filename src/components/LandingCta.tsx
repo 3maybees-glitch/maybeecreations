@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Compass, ShoppingBag } from "lucide-react";
+import { ETSY_SHOP_URL } from "@/lib/shopLinks";
 
 export const LandingCta = () => {
   return (
@@ -23,7 +24,7 @@ export const LandingCta = () => {
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 uppercase tracking-widest"
             >
-              <a href="https://payhip.com/MaybeeCreations" target="_blank" rel="noopener noreferrer">
+              <a href={ETSY_SHOP_URL} target="_blank" rel="noopener noreferrer">
                 <ShoppingBag className="mr-2 h-5 w-5" />
                 Visit the Shop
               </a>

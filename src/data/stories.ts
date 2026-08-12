@@ -56,7 +56,7 @@ export const stories: Story[] = [
     categoryPath: "/freedom",
     productLink: {
       label: "Get the James Madison Map & Guide",
-      url: "https://payhip.com/b/5IvEx",
+      url: "https://www.etsy.com/listing/4528798649/james-madison-educational-discovery-map",
     },
     paragraphs: [
       "James Madison was not the loudest voice in the room. He did not tower over crowds or command a battlefield. What he possessed was something rarer: the patience to think carefully about how a free people should govern themselves — and the persistence to see that thinking become law.",
@@ -80,7 +80,7 @@ export const stories: Story[] = [
     categoryPath: "/fans",
     productLink: {
       label: "Get the Giants Legend Land",
-      url: "https://payhip.com/b/WO8D1",
+      url: "https://www.etsy.com/listing/4522161138/san-francisco-giants-fantasy-map",
     },
     paragraphs: [
       "Some teams are just franchises. The Giants are a lineage. New York roots. California reinvention. Candlestick wind. Barry Bonds at the plate. Madison Bumgarner on the mound in October. A fanbase that wears orange and black like a second skin.",
@@ -103,7 +103,7 @@ export const stories: Story[] = [
     categoryPath: "/freedom",
     productLink: {
       label: "Get the America 250 Map & Guide",
-      url: "https://payhip.com/b/gF6jh",
+      url: "https://www.etsy.com/listing/4528280384/liberty-explorer-united-states-history",
     },
     paragraphs: [
       "In 2026, the United States marks two hundred fifty years since the Declaration of Independence. Parades will march. Speeches will be given. Flags will fly from porches and storefronts. But the deepest celebration happens when families and classrooms take time to look back — really look — at the people, inventions, struggles, and triumphs that shaped a nation.",

@@ -9,6 +9,7 @@ import {
   HERO_SUBHEADLINE,
   SEO_PHRASE,
 } from "@/lib/siteCopy";
+import { ETSY_SHOP_URL } from "@/lib/shopLinks";
 
 export const Hero = () => {
   const [lineOne, lineTwo] = HERO_HEADLINE.split(". ").map((part, index, arr) =>
@@ -72,7 +73,7 @@ export const Hero = () => {
               size="lg"
               className="border-primary/40 px-8 py-6 text-base uppercase tracking-widest bg-background/60 backdrop-blur-sm"
             >
-              <a href="https://payhip.com/MaybeeCreations" target="_blank" rel="noopener noreferrer">
+              <a href={ETSY_SHOP_URL} target="_blank" rel="noopener noreferrer">
                 <Map className="mr-2 h-5 w-5" />
                 Browse the Shop
               </a>
