@@ -3,6 +3,7 @@ import { Compass } from "lucide-react";
 import { SocialLinks } from "@/components/SocialLinks";
 import { categories } from "@/data/categories";
 import { DEFAULT_DESCRIPTION } from "@/lib/siteCopy";
+import { ETSY_SHOP_URL } from "@/lib/shopLinks";
 
 export const Footer = () => {
   return (
@@ -44,12 +45,12 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://payhip.com/MaybeeCreations"
+                  href={ETSY_SHOP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-lg text-muted-foreground hover:text-accent transition-colors"
                 >
-                  Payhip Storefront
+                  Etsy Storefront
                 </a>
               </li>
               <li>

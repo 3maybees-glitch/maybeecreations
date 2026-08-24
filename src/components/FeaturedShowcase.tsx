@@ -21,7 +21,7 @@ const featured = [
     title: "Yankees Legend Land",
     subtitle: "Fans · Baseball map",
     image:
-      "https://payhip.com/cdn-cgi/image/format=auto,width=750/https://pe56d.s3.amazonaws.com/o_d9fb85192db24e56883c69f5.jpg",
+      "https://pe56d.s3.amazonaws.com/o_b7afd7ab0a9b497ea2da1d3a.jpg",
     path: "/fans",
   },
   {

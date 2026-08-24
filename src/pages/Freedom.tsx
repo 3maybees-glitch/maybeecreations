@@ -6,6 +6,7 @@ import { categories } from "@/data/categories";
 import { freedomMaps } from "@/data/freedomMaps";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
+import { ETSY_SHOP_URL } from "@/lib/shopLinks";
 import { categoryPageSchemas } from "@/lib/structuredData";
 
 const meta = categories.find((c) => c.key === "freedom")!;
@@ -44,17 +45,17 @@ const Freedom = () => {
 
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground mb-4">
-            All Liberty Explorer maps are available now on Payhip — founding figures,
+            All Liberty Explorer maps are available now on Etsy — founding figures,
             American and world conflicts from 1812 through today, and the America 250
             anniversary edition.
           </p>
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
             <a
-              href="https://payhip.com/MaybeeCreations"
+              href={ETSY_SHOP_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Visit the full storefront on Payhip
+              Visit the full storefront on Etsy
               <ExternalLink className="ml-2 h-4 w-4" />
             </a>
           </Button>

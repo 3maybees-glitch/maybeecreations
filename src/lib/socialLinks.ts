@@ -32,7 +32,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 ];
 
+import { ETSY_SHOP_URL } from "@/lib/shopLinks";
+
 export const SOCIAL_SAME_AS = [
-  "https://payhip.com/MaybeeCreations",
+  ETSY_SHOP_URL,
   ...SOCIAL_LINKS.map((link) => link.href),
 ];
