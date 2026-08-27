@@ -275,7 +275,7 @@ def assemble(slug: str):
 
 
 def main(argv):
-    slugs = argv[1:] or ["eagles"]
+    slugs = argv[1:] or [s for s in META if s in TEAMS]
     for slug in slugs:
         assemble(slug)
 
