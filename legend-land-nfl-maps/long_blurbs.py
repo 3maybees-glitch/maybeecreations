@@ -143,14 +143,17 @@ EXTRAS.update(NFC)
 EXTRAS.update(NFC2)
 
 
-def _depth(slug, name):
+def _depth(slug, idx, name):
     meta = META.get(slug, {})
     display = meta.get("display", "the franchise")
-    return (
-        f"Stand here long enough and the map starts to explain why {display} still tell this story. "
-        f"{name} is drawn as weather, crowd, and official color — not a caption under a highlight reel. "
-        f"The painting keeps the names Sundays still say out loud, and the walk continues only after you understand the cost of this stop."
+    closers = (
+        f"Walk the path slowly: {name} is where {display} first learned what this city would forgive and what it would not.",
+        f"The map keeps {name} because later banners still borrow weather from this stop — crowd, color, and the names Sundays refuse to drop.",
+        f"Visitors leave {name} knowing the box score was never the whole story {display} came here to remember.",
+        f"If the painting feels larger than a highlight, that is the point: {name} is a place {display} still inhabit on winter nights.",
+        f"Stand here and the franchise accent comes back — {display} talking about {name} the way families talk about a house they will not sell.",
     )
+    return closers[idx % len(closers)]
 
 
 def long_text(slug, idx, name, short):
@@ -162,6 +165,6 @@ def long_text(slug, idx, name, short):
         body = _join(short, extra)
     else:
         body = _fallback(slug, name, short)
-    if len(body) < 520:
-        body = f"{body} {_depth(slug, name)}"
+    if len(body) < 480:
+        body = f"{body} {_depth(slug, idx, name)}"
     return body

@@ -95,17 +95,15 @@ def fit_cover(src):
 
 
 def paste_art(page, src, box):
-    """Fill the frame, biasing the crop toward the top so heads stay in view."""
+    """Show the full painting inside the tall frame so heads are not cropped."""
     x0, y0, x1, y1 = box
-    inner = (x0 + 12, y0 + 12, x1 - 12, y1 - 12)
+    inner_w = (x1 - x0) - 24
+    inner_h = (y1 - y0) - 24
     art = Image.open(src).convert("RGB")
-    fitted = ImageOps.fit(
-        art,
-        (inner[2] - inner[0], inner[3] - inner[1]),
-        Image.Resampling.LANCZOS,
-        centering=(0.5, 0.12),
-    )
-    page.paste(fitted, (inner[0], inner[1]))
+    contained = ImageOps.contain(art, (inner_w, inner_h), Image.Resampling.LANCZOS)
+    px = x0 + 12 + (inner_w - contained.width) // 2
+    py = y0 + 12 + (inner_h - contained.height) // 2
+    page.paste(contained, (px, py))
 
 
 def draw_stop_title(d, top, idx, name, color):
