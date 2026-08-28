@@ -4,16 +4,18 @@ import { collegeFootballLegendLands } from "@/data/collegeFootballLands";
 import { nflLegendLands } from "@/data/nflLands";
 import { tennisLegendLands } from "@/data/tennisLegendLands";
 import { freedomMaps } from "@/data/freedomMaps";
+import { frontierMaps } from "@/data/frontierMaps";
 import { realms } from "@/data/realms";
 import {
   faithPreviews,
   freedomPreviewMaps,
+  frontierPreviews,
   fansPreviews,
   futurePreviews,
-  type MapPreview,
 } from "@/data/realmPreviews";
 
-export type CategoryKey = "faith" | "freedom" | "fans" | "future";
+export type CategoryKey = "faith" | "freedom" | "frontier" | "fans" | "future";
+export type MapRequestRealm = Exclude<CategoryKey, "frontier">;
 
 export interface CategoryMeta {
   key: CategoryKey;
@@ -51,6 +53,18 @@ export const categories: CategoryMeta[] = [
     count: `${freedomMaps.length} Liberty Explorer maps & guides`,
     mapPreviews: freedomPreviewMaps,
     accentVar: "freedom",
+  },
+  {
+    key: "frontier",
+    name: "Frontier",
+    explorerName: "Frontier Explorer",
+    path: "/frontier",
+    tagline: "Chart the lives and ideas that opened new worlds — science, story, music, and more.",
+    blurb:
+      "Frontier Explorer maps of Einstein, the Odyssey, Mozart, Shakespeare, Tesla, and the rest of the science, literature, music, faith, and liberty expedition.",
+    count: `${frontierMaps.length} Frontier Explorer maps & guides`,
+    mapPreviews: frontierPreviews,
+    accentVar: "frontier",
   },
   {
     key: "fans",

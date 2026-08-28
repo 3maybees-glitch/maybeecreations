@@ -7,7 +7,7 @@ export const CategoryGrid = () => {
       <div className="container mx-auto">
         <div className="text-center mb-14 max-w-3xl mx-auto">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-accent font-semibold mb-2 md:mb-4">
-            ✦ Four Worlds, One Cartographer ✦
+            ✦ Five Worlds, One Cartographer ✦
           </p>
           <h2 className="text-3xl md:text-5xl font-bold text-primary mb-6">
             Choose Your Realm

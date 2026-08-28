@@ -54,6 +54,14 @@ export const AboutSection = () => {
             the games fans care about.
           </p>
           <p>
+            Frontier Explorer maps take the same approach to science, literature, music,
+            and missionary lives — from{" "}
+            <Link to="/frontier" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
+              Einstein, the Odyssey, and Mozart
+            </Link>{" "}
+            to Shakespeare, Tesla, and the Adams family.
+          </p>
+          <p>
             A growing part of the company is focused on AI education through{" "}
             <Link to="/future" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
               colorful tutorial world maps
@@ -63,7 +71,8 @@ export const AboutSection = () => {
           </p>
           <p className="italic text-primary font-medium">
             Across every project, the mission is the same: create digital tools that help
-            people explore faith, freedom, fandom, and the future with clarity and creativity.
+            people explore faith, freedom, the frontier, fandom, and the future with
+            clarity and creativity.
           </p>
         </div>
       </div>
