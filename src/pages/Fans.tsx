@@ -57,8 +57,8 @@ const Fans = () => {
       <CategorySection eyebrow="Legend Explorer Collection" title="Tennis Legend Lands">
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
           Creatively Crafted educational discovery world maps and fan adventure guides for the
-          championships fans celebrate year after year. Each Legend Land is a $7.77 digital download
-          on Etsy.
+          championships fans celebrate year after year. Each Legend Land is a $7.77 digital
+          download. Wimbledon Men is on Etsy; Wimbledon Women stays on Payhip.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">

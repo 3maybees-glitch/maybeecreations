@@ -40,7 +40,7 @@ export const collegeFootballLegendLands: LegendLand[] = [
   },
   {
     team: "Notre Dame Fighting Irish",
-    url: "https://www.etsy.com/shop/MaybeeCreates?search_query=Notre+Dame+Fighting+Irish+Legend+Land",
+    url: "https://payhip.com/b/w12QP",
     image: "https://pe56d.s3.amazonaws.com/o_1jse9bhch1int1rd92sui01h6u1n.png",
     sport: "College Football Legend Land",
   },
