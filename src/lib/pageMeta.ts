@@ -49,7 +49,7 @@ export const pageMeta: Record<string, PageMeta> = {
   fans: {
     title: `Fans — Legend Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
     description:
-      "Creatively Crafted Legend Explorer fan maps for baseball, college football, and tennis — educational discovery world maps and adventure guides.",
+      "Creatively Crafted Legend Explorer fan maps for the NFL, baseball, college football, and tennis — educational discovery world maps and adventure guides.",
     path: "/fans",
   },
   future: {

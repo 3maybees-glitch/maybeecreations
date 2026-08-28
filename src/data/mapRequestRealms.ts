@@ -24,7 +24,7 @@ export const mapRequestRealms: MapRequestRealmOption[] = [
     value: "fans",
     label: "Fans",
     explorer: "Legend Explorer",
-    examples: "Your team's Legend Land, a rivalry map, a college program or championship series",
+    examples: "Your NFL team's Legend Land, a rivalry map, a college program or championship series",
   },
   {
     value: "future",

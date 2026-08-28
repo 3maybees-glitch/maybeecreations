@@ -1,6 +1,7 @@
 import { bibleMaps } from "@/data/bibleMaps";
 import { freedomMaps } from "@/data/freedomMaps";
 import { baseballLegendLands } from "@/data/baseballLands";
+import { nflLegendLands } from "@/data/nflLands";
 import { tennisLegendLands } from "@/data/tennisLegendLands";
 import { realms } from "@/data/realms";
 
@@ -16,7 +17,8 @@ function toPreviews(items: { name: string; image: string }[], count = 4): MapPre
 export const faithPreviews = toPreviews(bibleMaps);
 export const freedomPreviewMaps = toPreviews(freedomMaps);
 export const fansPreviews = toPreviews([
-  ...baseballLegendLands.slice(0, 3).map(({ team, image }) => ({ name: team, image })),
+  ...nflLegendLands.slice(8, 12).map(({ team, image }) => ({ name: team, image })),
+  ...baseballLegendLands.slice(0, 2).map(({ team, image }) => ({ name: team, image })),
   ...tennisLegendLands.map(({ name, image }) => ({ name, image })),
 ]);
 export const futurePreviews = toPreviews(realms);
