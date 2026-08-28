@@ -5,16 +5,16 @@ import { ETSY_SHOP_HOST, ETSY_SHOP_URL } from "@/lib/shopLinks";
 export const homeFaqs: FaqItem[] = [
   {
     question: "What is Maybee Creations?",
-    answer: `${SITE_NAME} is a digital creation studio that makes Creatively Crafted ${SEO_PHRASE.toLowerCase()} and adventure guides across four worlds: ${PILLARS}. Products include printable Bible maps, Liberty Explorer civics maps, Baseball Legend Lands for sports fans, and Tomorrow Explorer AI learning maps.`,
+    answer: `${SITE_NAME} is a digital creation studio that makes Creatively Crafted ${SEO_PHRASE.toLowerCase()} and adventure guides across four worlds: ${PILLARS}. Products include printable Bible maps, Liberty Explorer civics maps, NFL and Baseball Legend Lands for sports fans, and Tomorrow Explorer AI learning maps.`,
   },
   {
     question: "What are educational discovery world maps?",
-    answer: `Educational discovery world maps are printable, fantasy-style cartography paired with adventure guidebooks. Each map turns a subject — Scripture, American history, baseball lore, or AI tools — into a visual world families and students can explore with prompts, missions, and reflections.`,
+    answer: `Educational discovery world maps are printable, fantasy-style cartography paired with adventure guidebooks. Each map turns a subject — Scripture, American history, NFL and baseball lore, or AI tools — into a visual world families and students can explore with prompts, missions, and reflections.`,
   },
   {
     question: "What are the four realms on maybeecreations.com?",
     answer:
-      "Faith (Soul Explorer Bible maps), Freedom (Liberty Explorer civics and history maps), Fans (Legend Explorer Baseball Legend Lands), and Future (Tomorrow Explorer AI realm maps with Adventure Pack tutorials for ChatGPT, Claude, Gemini, and more).",
+      "Faith (Soul Explorer Bible maps), Freedom (Liberty Explorer civics and history maps), Fans (Legend Explorer NFL, baseball, college football, and tennis Legend Lands), and Future (Tomorrow Explorer AI realm maps with Adventure Pack tutorials for ChatGPT, Claude, Gemini, and more).",
   },
   {
     question: "Who are Maybee Creations maps designed for?",

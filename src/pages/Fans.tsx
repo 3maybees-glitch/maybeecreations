@@ -2,6 +2,7 @@ import { CategoryPageLayout, CategorySection } from "@/components/CategoryPageLa
 import { categories } from "@/data/categories";
 import { baseballLegendLands } from "@/data/baseballLands";
 import { collegeFootballLegendLands } from "@/data/collegeFootballLands";
+import { nflLegendLands } from "@/data/nflLands";
 import { tennisLegendLands } from "@/data/tennisLegendLands";
 import { LegendLandCard } from "@/components/LegendLandCard";
 import { ExternalLink, MapPinned } from "lucide-react";
@@ -31,8 +32,28 @@ const Fans = () => {
   return (
     <CategoryPageLayout
       category={meta}
-      intro="Legend Explorer map experiences built for the people who live the game — from ballpark dynasties and college Saturdays to championship tennis lore."
+      intro="Legend Explorer map experiences built for the people who live the game — from NFL Sundays and ballpark dynasties to college Saturdays and championship tennis lore."
     >
+      <CategorySection eyebrow="Legend Explorer Collection" title="NFL Legend Lands">
+        <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
+          All 32 NFL franchises as printable Legend Land world maps and adventure guides. Each
+          Legend Land is a $7.77 digital download on Etsy.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {nflLegendLands.map((land) => (
+            <LegendLandCard
+              key={land.url}
+              name={land.team}
+              series="NFL Legend Land"
+              url={land.url}
+              image={land.image}
+              tagline={`A Creatively Crafted fan adventure map celebrating the legends of the ${land.team}.`}
+            />
+          ))}
+        </div>
+      </CategorySection>
+
       <CategorySection eyebrow="Legend Explorer Collection" title="Tennis Legend Lands">
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
           Creatively Crafted educational discovery world maps and fan adventure guides for the

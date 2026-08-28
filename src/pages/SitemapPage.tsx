@@ -53,7 +53,7 @@ const sections: SitemapSection[] = [
 
       { label: "Freedom — Liberty Explorer world maps", path: "/freedom" },
 
-      { label: "Fans — Legend Explorer Baseball Legend Lands", path: "/fans" },
+      { label: "Fans — Legend Explorer NFL, baseball, college football, and tennis Legend Lands", path: "/fans" },
 
       { label: "Future — Tomorrow Explorer AI maps & Adventure Packs", path: "/future" },
 
