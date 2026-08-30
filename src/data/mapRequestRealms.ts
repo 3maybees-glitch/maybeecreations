@@ -1,7 +1,7 @@
-import type { CategoryKey } from "@/data/categories";
+import type { CategoryKey, MapRequestRealm } from "@/data/categories";
 
 export interface MapRequestRealmOption {
-  value: CategoryKey;
+  value: MapRequestRealm;
   label: string;
   explorer: string;
   examples: string;

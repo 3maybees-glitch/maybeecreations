@@ -214,7 +214,7 @@ export function storiesIndexSchemas() {
     webPageSchema({
       title: `Stories — The Story Behind the Map | ${SITE_NAME}`,
       description:
-        "Storytime essays on the history, meaning, and joy of Maybee Creations maps and guides — Faith, Freedom, Fans, and the Future.",
+        "Storytime essays on the history, meaning, and joy of Maybee Creations maps and guides — Faith, Freedom, Frontier, Fans, and the Future.",
       path: "/stories",
     }),
     breadcrumbSchema([

@@ -14,7 +14,7 @@ export const DEFAULT_OG_IMAGE =
   "https://pe56d.s3.amazonaws.com/o_1jp1pv8rpggmjvr1ohj1s3r14rk1c.png";
 
 export const STATIC_OG_IMAGE_ALT =
-  "Maybee Creations — Creatively Crafted educational discovery world maps for faith, freedom, fans, and the future";
+  "Maybee Creations — Creatively Crafted educational discovery world maps for faith, freedom, frontier, fans, and the future";
 
 export interface PageMeta {
   title: string;
@@ -46,6 +46,12 @@ export const pageMeta: Record<string, PageMeta> = {
       "Creatively Crafted Liberty Explorer educational discovery world maps celebrating civics, founding figures, and American and world history.",
     path: "/freedom",
   },
+  frontier: {
+    title: `Frontier — Frontier Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
+    description:
+      "Creatively Crafted Frontier Explorer maps of Einstein, the Odyssey, Mozart, Shakespeare, Tesla, and more — science, literature, music, faith, and liberty.",
+    path: "/frontier",
+  },
   fans: {
     title: `Fans — Legend Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
     description:
@@ -61,7 +67,7 @@ export const pageMeta: Record<string, PageMeta> = {
   stories: {
     title: `Stories — The Story Behind the Map | ${SITE_NAME}`,
     description:
-      "Storytime essays on the history, meaning, and joy of Maybee Creations maps and guides — Faith, Freedom, Fans, and the Future.",
+      "Storytime essays on the history, meaning, and joy of Maybee Creations maps and guides — Faith, Freedom, Frontier, Fans, and the Future.",
     path: "/stories",
   },
   privacy: {
