@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { realms } from "@/data/realms";
 import { bibleMaps } from "@/data/bibleMaps";
+import { baseballLegendLands } from "@/data/baseballLands";
 import freedomImg from "@/assets/category-freedom.jpg";
+
+const yankeesLegendLand = baseballLegendLands.find((land) => land.team === "New York Yankees")!;
 
 const featured = [
   {
@@ -20,8 +23,7 @@ const featured = [
   {
     title: "Yankees Legend Land",
     subtitle: "Fans · Baseball map",
-    image:
-      "https://pe56d.s3.amazonaws.com/o_b7afd7ab0a9b497ea2da1d3a.jpg",
+    image: yankeesLegendLand.image,
     path: "/fans",
   },
   {

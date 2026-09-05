@@ -74,8 +74,7 @@ export const stories: Story[] = [
       "From Seals Stadium to the bay-side cathedral of Oracle Park, Giants baseball is a geography of memory.",
     publishedAt: "2026-06-15",
     category: "fans",
-    image:
-      "https://pe56d.s3.amazonaws.com/cover-images/c6d86f8a16a04bf5bf75358634d7d326_mockup_01_giants_bundle_hero.jpg",
+    image: "/maps/mlb/giants.jpg",
     readingMinutes: 4,
     categoryPath: "/fans",
     productLink: {
