@@ -3,4 +3,5 @@ export interface LegendLand {
   url: string;
   image: string;
   sport: string;
+  tagline?: string;
 }

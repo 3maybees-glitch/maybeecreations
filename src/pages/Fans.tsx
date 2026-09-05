@@ -98,8 +98,8 @@ const Fans = () => {
       <CategorySection eyebrow="Legend Explorer Collection" title="Baseball Legend Lands">
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
           Creatively Crafted educational discovery world maps and fan adventure guides for the
-          legends of America&apos;s pastime. Each Legend Land is a $7.77 digital download on
-          Etsy.
+          legends of America&apos;s pastime — every MLB club plus Hall of Fame pitcher and
+          batter maps. Each Legend Land is a $7.77 digital download on Etsy.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -110,7 +110,10 @@ const Fans = () => {
               series="Baseball Legend Land"
               url={land.url}
               image={land.image}
-              tagline={`A Creatively Crafted fan adventure map celebrating the legends of ${land.team}.`}
+              tagline={
+                land.tagline ??
+                `A Creatively Crafted fan adventure map celebrating the legends of ${land.team}.`
+              }
             />
           ))}
         </div>
