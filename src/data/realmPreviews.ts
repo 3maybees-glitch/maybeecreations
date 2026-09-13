@@ -1,9 +1,6 @@
 import { bibleMaps } from "@/data/bibleMaps";
 import { freedomMaps } from "@/data/freedomMaps";
 import { frontierMaps } from "@/data/frontierMaps";
-import { baseballLegendLands } from "@/data/baseballLands";
-import { nflLegendLands } from "@/data/nflLands";
-import { tennisLegendLands } from "@/data/tennisLegendLands";
 import { realms } from "@/data/realms";
 
 export interface MapPreview {
@@ -17,17 +14,18 @@ function toPreviews(items: { name: string; image: string }[], count = 4): MapPre
 
 export const faithPreviews = toPreviews(bibleMaps);
 export const freedomPreviewMaps = toPreviews(freedomMaps);
-export const frontierPreviews = toPreviews(
-  ["einstein", "odyssey", "mozart", "shakespeare"].map((slug) => {
-    const map = frontierMaps.find((item) => item.slug === slug)!;
-    return { name: map.name, image: map.image };
-  }),
-);
-export const fansPreviews = toPreviews([
-  ...nflLegendLands.slice(8, 12).map(({ team, image }) => ({ name: team, image })),
-  ...baseballLegendLands.slice(0, 2).map(({ team, image }) => ({ name: team, image })),
-  ...tennisLegendLands.map(({ name, image }) => ({ name, image })),
-]);
+export const frontierPreviews: MapPreview[] = [
+  { name: "Albert Einstein", image: "/realm-previews/frontier-einstein.jpg" },
+  { name: "The Odyssey", image: "/realm-previews/frontier-odyssey.jpg" },
+  { name: "Wolfgang Amadeus Mozart", image: "/realm-previews/frontier-mozart.jpg" },
+  { name: "William Shakespeare", image: "/realm-previews/frontier-shakespeare.jpg" },
+];
+export const fansPreviews: MapPreview[] = [
+  { name: "Dallas Cowboys", image: "/realm-previews/fans-cowboys.jpg" },
+  { name: "Denver Broncos", image: "/realm-previews/fans-broncos.jpg" },
+  { name: "Detroit Lions", image: "/realm-previews/fans-lions.jpg" },
+  { name: "Green Bay Packers", image: "/realm-previews/fans-packers.jpg" },
+];
 export const futurePreviews = toPreviews(realms);
 
 /** Curated strip for the hero — one standout map per realm */

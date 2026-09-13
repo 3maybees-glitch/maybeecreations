@@ -21,7 +21,7 @@ export const CategoryCard = ({ category }: Props) => {
                 src={map.image}
                 alt={map.name}
                 loading="lazy"
-                className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-700"
+                className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/20 transition-colors duration-300" />
             </div>
