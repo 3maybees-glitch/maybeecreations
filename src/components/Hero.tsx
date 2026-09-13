@@ -95,7 +95,7 @@ export const Hero = () => {
                     src={map.image}
                     alt={map.name}
                     loading="lazy"
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover object-[center_40%]"
                   />
                 </div>
                 <p className="px-2 py-1.5 text-[10px] md:text-xs font-semibold text-primary truncate bg-card/90">

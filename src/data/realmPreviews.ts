@@ -38,9 +38,9 @@ export const heroMapStrip: MapPreview[] = [
   { name: bibleMaps[0].name, image: bibleMaps[0].image },
   { name: freedomMaps[2].name, image: freedomMaps[2].image },
   { name: einstein.name, image: einstein.image },
-  { name: baseballLegendLands[0].team, image: baseballLegendLands[0].image },
+  { name: "Arizona Diamondbacks", image: "/realm-previews/hero-diamondbacks.jpg" },
   { name: realms[0].name, image: realms[0].image },
   { name: bibleMaps[6].name, image: bibleMaps[6].image },
   { name: odyssey.name, image: odyssey.image },
-  { name: baseballLegendLands[2].team, image: baseballLegendLands[2].image },
+  { name: "Baltimore Orioles", image: "/realm-previews/hero-orioles.jpg" },
 ];
