@@ -1,6 +1,5 @@
 import { bibleMaps } from "@/data/bibleMaps";
 import { freedomMaps } from "@/data/freedomMaps";
-import { frontierMaps } from "@/data/frontierMaps";
 import { realms } from "@/data/realms";
 
 export interface MapPreview {
@@ -29,16 +28,13 @@ export const fansPreviews: MapPreview[] = [
 export const futurePreviews = toPreviews(realms);
 
 /** Curated strip for the hero — one standout map per realm */
-const einstein = frontierMaps.find((map) => map.slug === "einstein")!;
-const odyssey = frontierMaps.find((map) => map.slug === "odyssey")!;
-
 export const heroMapStrip: MapPreview[] = [
   { name: bibleMaps[0].name, image: bibleMaps[0].image },
   { name: freedomMaps[2].name, image: freedomMaps[2].image },
-  { name: einstein.name, image: einstein.image },
+  { name: "Albert Einstein", image: "/realm-previews/frontier-einstein.jpg" },
   { name: "Arizona Diamondbacks", image: "/realm-previews/hero-diamondbacks.jpg" },
   { name: realms[0].name, image: realms[0].image },
   { name: bibleMaps[6].name, image: bibleMaps[6].image },
-  { name: odyssey.name, image: odyssey.image },
+  { name: "The Odyssey", image: "/realm-previews/frontier-odyssey.jpg" },
   { name: "Baltimore Orioles", image: "/realm-previews/hero-orioles.jpg" },
 ];
