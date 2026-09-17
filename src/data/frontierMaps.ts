@@ -11,10 +11,6 @@ export interface FrontierMap {
   price: string;
 }
 
-function shopUrl(query: string): string {
-  return `https://www.etsy.com/shop/MaybeeCreates?search_query=${encodeURIComponent(query)}`;
-}
-
 function card(slug: string): string {
   return `/maps/frontier/${slug}.svg`;
 }
@@ -30,7 +26,7 @@ export const frontierMaps: FrontierMap[] = [
     tagline:
       "A Frontier Explorer map of Einstein’s life, thought, and the reshaping of space and time.",
     image: card("einstein"),
-    url: shopUrl("Einstein Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/albert-einstein-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478154",
     price: PRICE,
   },
   {
@@ -40,7 +36,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Forge of Alternating Current",
     tagline: "The life and inventions of Nikola Tesla — lightning, motors, and the future he worked for.",
     image: card("tesla"),
-    url: shopUrl("Tesla Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/nikola-tesla-discovery-map-guidebook-inventor-history-art-frontier-explorer-printable-435478152",
     price: PRICE,
   },
   {
@@ -50,7 +46,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Lunar Odyssey Realms",
     tagline: "The Apollo missions as a voyage map — from Cape Kennedy to the Sea of Tranquility.",
     image: card("apollo"),
-    url: shopUrl("Apollo Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/apollo-missions-discovery-map-guidebook-inventor-history-art-frontier-explorer-printable-435478150",
     price: PRICE,
   },
   {
@@ -60,7 +56,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Principia Continents",
     tagline: "The life and laws of Isaac Newton — gravity, optics, and the shoulders of giants.",
     image: card("newton"),
-    url: shopUrl("Newton Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/isaac-newton-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478161",
     price: PRICE,
   },
   {
@@ -70,7 +66,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Starry Messenger Continents",
     tagline: "The life of Galileo — telescopes, falling bodies, and a world that still moves.",
     image: card("galileo"),
-    url: shopUrl("Galileo Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/galileo-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478119",
     price: PRICE,
   },
   {
@@ -80,7 +76,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Heliocentric Continents",
     tagline: "The turn from an Earth-centered sky to a sun-centered cosmos.",
     image: card("copernican"),
-    url: shopUrl("Copernican Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/copernicus-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478170",
     price: PRICE,
   },
   {
@@ -90,7 +86,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Radium Continents",
     tagline: "The life of Marie Curie — radioactivity, two Nobels, and fearless understanding.",
     image: card("curie"),
-    url: shopUrl("Curie Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/marie-curie-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478120",
     price: PRICE,
   },
   {
@@ -100,7 +96,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Electromagnetic Continents",
     tagline: "The unification of electricity, magnetism, and light into one field.",
     image: card("maxwell"),
-    url: shopUrl("Maxwell Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/james-clerk-maxwell-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478162",
     price: PRICE,
   },
   {
@@ -110,7 +106,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Renaissance Invention Continents",
     tagline: "The notebooks, machines, and seeing-eye of Leonardo da Vinci.",
     image: card("leonardo"),
-    url: shopUrl("Leonardo Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/leonardo-da-vinci-discovery-map-guidebook-inventor-history-art-frontier-explorer-printable-435478165",
     price: PRICE,
   },
   {
@@ -120,7 +116,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Invention Factory Continents",
     tagline: "The life of Thomas Edison — Menlo Park, the light bulb, and ninety-nine percent perspiration.",
     image: card("edison"),
-    url: shopUrl("Edison Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/thomas-edison-discovery-map-guidebook-inventor-history-art-frontier-explorer-printable-435478115",
     price: PRICE,
   },
   {
@@ -130,7 +126,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Germ Theory Continents",
     tagline: "The life of Louis Pasteur — vaccines, fermentation, and a mind prepared for chance.",
     image: card("pasteur"),
-    url: shopUrl("Pasteur Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/louis-pasteur-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478082",
     price: PRICE,
   },
   {
@@ -140,7 +136,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "First Flight Continents",
     tagline: "Kitty Hawk, control, and the first powered flight.",
     image: card("wright"),
-    url: shopUrl("Wright Brothers Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/wright-brothers-discovery-map-guidebook-inventor-history-art-frontier-explorer-printable-435478121",
     price: PRICE,
   },
   {
@@ -150,7 +146,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Telephone Continents",
     tagline: "The life of Alexander Graham Bell — speech, sound, and the first telephone call.",
     image: card("bell"),
-    url: shopUrl("Bell Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/alexander-bell-discovery-map-guidebook-inventor-history-art-frontier-explorer-printable-435478078",
     price: PRICE,
   },
   {
@@ -160,7 +156,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Steam Engine Continents",
     tagline: "The life and inventions of James Watt — steam, efficiency, and the industrial age.",
     image: card("watt"),
-    url: shopUrl("Watt Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/james-watt-discovery-map-guidebook-inventor-history-art-frontier-explorer-printable-435478092",
     price: PRICE,
   },
   {
@@ -170,7 +166,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Note G Algorithm Continents",
     tagline: "The life of Ada Lovelace — the Analytical Engine and the first computer program.",
     image: card("lovelace"),
-    url: shopUrl("Lovelace Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/ada-lovelace-discovery-map-guidebook-computer-history-art-frontier-explorer-printable-435478110",
     price: PRICE,
   },
   {
@@ -180,7 +176,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Movable Type Continents",
     tagline: "The life of Johannes Gutenberg — movable type, Mainz, and the printed word.",
     image: card("gutenberg"),
-    url: shopUrl("Gutenberg Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/johannes-gutenberg-discovery-map-guidebook-inventor-history-art-frontier-explorer-printable-435478118",
     price: PRICE,
   },
   {
@@ -190,7 +186,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Nature’s Encyclopedia Continents",
     tagline: "The life and thought of Aristotle — the desire to know written across a world.",
     image: card("aristotle"),
-    url: shopUrl("Aristotle Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/aristotle-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478093",
     price: PRICE,
   },
   {
@@ -200,7 +196,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Realms of Change",
     tagline: "The story of calculus — Newton, Leibniz, and the mathematics of motion.",
     image: card("calculus"),
-    url: shopUrl("Calculus Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/calculus-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478153",
     price: PRICE,
   },
   {
@@ -210,7 +206,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Unknown Quantity Continents",
     tagline: "The story of algebra — symbols, unknowns, and written geometry.",
     image: card("algebra"),
-    url: shopUrl("Algebra Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/algebra-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478164",
     price: PRICE,
   },
   {
@@ -220,7 +216,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Euclid’s Elements Continents",
     tagline: "The realms of geometry — no royal road, only proof and proportion.",
     image: card("geometry"),
-    url: shopUrl("Geometry Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/geometry-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478113",
     price: PRICE,
   },
   {
@@ -230,7 +226,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Four Operations Continents",
     tagline: "The story of arithmetic — number, measure, and the queen of mathematics.",
     image: card("arithmetic"),
-    url: shopUrl("Arithmetic Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/arithmetic-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478080",
     price: PRICE,
   },
   {
@@ -240,7 +236,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Prime Continents",
     tagline: "The story of number theory — primes, integers, and the oldest modern math.",
     image: card("number-theory"),
-    url: shopUrl("Number Theory Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/number-theory-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478090",
     price: PRICE,
   },
   {
@@ -250,7 +246,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Chance Continents",
     tagline: "The story of probability — common sense reduced to calculus.",
     image: card("probability"),
-    url: shopUrl("Probability Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/probability-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478096",
     price: PRICE,
   },
   {
@@ -260,7 +256,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Inference Continents",
     tagline: "The story of statistics — data, uncertainty, and learning from the world.",
     image: card("statistics"),
-    url: shopUrl("Statistics Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/statistics-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478172",
     price: PRICE,
   },
   {
@@ -270,7 +266,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Classical Mechanics Continents",
     tagline: "Newton’s three laws of motion mapped as a world of force and reaction.",
     image: card("newtons-laws"),
-    url: shopUrl("Newton Laws Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/isaac-newton-laws-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478123",
     price: PRICE,
   },
   {
@@ -280,7 +276,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Microscopic Continents",
     tagline: "The story of the cell — omnis cellula e cellula.",
     image: card("cell"),
-    url: shopUrl("Cell Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/the-cell-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478159",
     price: PRICE,
   },
   {
@@ -290,7 +286,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Inheritance Continents",
     tagline: "The story of genetics and heredity — Mendel, genes, and the code of life.",
     image: card("genetics"),
-    url: shopUrl("Genetics Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/genetics-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478088",
     price: PRICE,
   },
   {
@@ -300,7 +296,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Invisible Kingdom Continents",
     tagline: "The story of germ theory — the invisible kingdoms that changed medicine.",
     image: card("germ-theory"),
-    url: shopUrl("Germ Theory Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/germ-theory-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478089",
     price: PRICE,
   },
   {
@@ -310,7 +306,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Antibiotic Continents",
     tagline: "The story of penicillin — Fleming, Florey, Chain, and the medicine found by chance.",
     image: card("penicillin"),
-    url: shopUrl("Penicillin Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/penicillin-discovery-map-guidebook-science-classroom-art-frontier-explorer-printable-435478087",
     price: PRICE,
   },
   {
@@ -320,7 +316,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "S-Expression Continents",
     tagline: "The story of Lisp — lists, recursion, and the enlightenment of a language.",
     image: card("lisp"),
-    url: shopUrl("Lisp Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/lisp-discovery-map-guidebook-computer-history-art-frontier-explorer-printable-435478160",
     price: PRICE,
   },
   {
@@ -330,7 +326,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Bell Labs Continents",
     tagline: "The story of UNIX Sixth Edition — a system around which a fellowship could form.",
     image: card("unix"),
-    url: shopUrl("UNIX Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/unix-discovery-map-guidebook-computer-history-art-frontier-explorer-printable-435478097",
     price: PRICE,
   },
   {
@@ -340,7 +336,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Comanche and Luminary Continents",
     tagline: "The story of the Apollo Guidance Computer — software that had to be first.",
     image: card("apollo-agc"),
-    url: shopUrl("Apollo Guidance Computer Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/apollo-computer-discovery-map-guidebook-computer-history-art-frontier-explorer-printable-435478091",
     price: PRICE,
   },
   {
@@ -350,7 +346,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Two Ships Continents",
     tagline: "The story of Spacewar! — the first great video game and a future invented at a console.",
     image: card("spacewar"),
-    url: shopUrl("Spacewar Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/spacewar-discovery-map-guidebook-computer-history-art-frontier-explorer-printable-435478085",
     price: PRICE,
   },
   {
@@ -360,7 +356,8 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Circuit Simulation Continents",
     tagline: "The story of SPICE — simulating circuits and teaching electronics to a computer.",
     image: card("spice"),
-    url: shopUrl("SPICE Frontier Explorer"),
+    // TODO: no individual Shopify product found (2026-09-17); Frontier collection as last resort.
+    url: "https://maybeecreation.myshopify.com/collections/frontier",
     price: PRICE,
   },
   {
@@ -370,7 +367,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "The Bard’s Realms",
     tagline: "The life and works of William Shakespeare — such stuff as dreams are made on.",
     image: card("shakespeare"),
-    url: shopUrl("Shakespeare Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/william-shakespeare-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478158",
     price: PRICE,
   },
   {
@@ -380,7 +377,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Odysseus’s Odyssey",
     tagline: "The journey home from Troy — twists, turns, and a man driven time and again off course.",
     image: card("odyssey"),
-    url: shopUrl("Odyssey Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/the-odyssey-discovery-map-guidebook-literature-classroom-art-frontier-explorer-printable-435478054",
     price: PRICE,
   },
   {
@@ -390,7 +387,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Iliad and Odyssey Continents",
     tagline: "The world of Homer — bronze-age war, the wine-dark sea, and the first epic maps.",
     image: card("homer"),
-    url: shopUrl("Homer Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/homer-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478166",
     price: PRICE,
   },
   {
@@ -400,7 +397,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Three Realms of the Comedy",
     tagline: "The life of Dante — Inferno, Purgatorio, Paradiso, and a dark wood in mid-journey.",
     image: card("dante"),
-    url: shopUrl("Dante Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/dante-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478103",
     price: PRICE,
   },
   {
@@ -410,7 +407,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Middle-earth Continents",
     tagline: "Tolkien’s legendarium as a Frontier Explorer map — not all those who wander are lost.",
     image: card("lotr"),
-    url: shopUrl("Lord of the Rings Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/lord-of-the-rings-discovery-map-guidebook-literature-classroom-art-frontier-explorer-printable-435478163",
     price: PRICE,
   },
   {
@@ -420,7 +417,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "White Whale Oceans",
     tagline: "The voyage of Moby-Dick — Call me Ishmael, and follow the white whale.",
     image: card("moby-dick"),
-    url: shopUrl("Moby-Dick Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/moby-dick-discovery-map-guidebook-literature-classroom-art-frontier-explorer-printable-435478117",
     price: PRICE,
   },
   {
@@ -430,7 +427,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "War and Peace Continents",
     tagline: "The life of Leo Tolstoy — changing the self before changing the world.",
     image: card("tolstoy"),
-    url: shopUrl("Tolstoy Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/leo-tolstoy-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478083",
     price: PRICE,
   },
   {
@@ -440,7 +437,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Fog and Factory Continents",
     tagline: "The life of Charles Dickens — the best of times, the worst of times.",
     image: card("dickens"),
-    url: shopUrl("Dickens Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/charles-dickens-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478076",
     price: PRICE,
   },
   {
@@ -450,7 +447,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "La Mancha Continents",
     tagline: "The story of Don Quixote — I know who I am, and who I may be if I choose.",
     image: card("don-quixote"),
-    url: shopUrl("Don Quixote Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/don-quixote-discovery-map-guidebook-literature-classroom-art-frontier-explorer-printable-435478053",
     price: PRICE,
   },
   {
@@ -460,7 +457,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Oceania Continents",
     tagline: "George Orwell’s 1984 — who controls the past controls the future.",
     image: card("1984"),
-    url: shopUrl("1984 Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/1984-discovery-map-guidebook-literature-classroom-art-frontier-explorer-printable-435478079",
     price: PRICE,
   },
   {
@@ -470,7 +467,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Canterbury Road Continents",
     tagline: "The life and poetry of Geoffrey Chaucer — a pilgrimage mapped in April rain.",
     image: card("chaucer"),
-    url: shopUrl("Chaucer Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/geoffrey-chaucer-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478095",
     price: PRICE,
   },
   {
@@ -480,7 +477,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Ulysses Continents",
     tagline: "The world of James Joyce — Dublin, a single day, and language set walking.",
     image: card("joyce"),
-    url: shopUrl("Joyce Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/james-joyce-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478126",
     price: PRICE,
   },
   {
@@ -490,7 +487,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Yoknapatawpha Continents",
     tagline: "The world of William Faulkner — a county of memory, family, and the South.",
     image: card("faulkner"),
-    url: shopUrl("Faulkner Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/william-faulkner-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478171",
     price: PRICE,
   },
   {
@@ -500,7 +497,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Harmony of the Spheres",
     tagline: "The life and music of J.S. Bach — glory to God and refreshment of the soul.",
     image: card("bach"),
-    url: shopUrl("Bach Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/j-s-bach-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478151",
     price: PRICE,
   },
   {
@@ -510,7 +507,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Magic Flute Continents",
     tagline: "The life of Mozart — melody as the essence of music.",
     image: card("mozart"),
-    url: shopUrl("Mozart Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/mozart-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478122",
     price: PRICE,
   },
   {
@@ -520,7 +517,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Eroica Symphony Continents",
     tagline: "The life of Beethoven — fate seized by the throat and written in nine symphonies.",
     image: card("beethoven"),
-    url: shopUrl("Beethoven Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/beethoven-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478116",
     price: PRICE,
   },
   {
@@ -530,7 +527,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Lieder Continents",
     tagline: "The life and songs of Franz Schubert — melody, friendship, and unfinished symphonies.",
     image: card("schubert"),
-    url: shopUrl("Schubert Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/franz-schubert-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478169",
     price: PRICE,
   },
   {
@@ -540,7 +537,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Clair de Lune Continents",
     tagline: "The life and music of Claude Debussy — works of art that make the rules.",
     image: card("debussy"),
-    url: shopUrl("Debussy Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/claude-debussy-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478086",
     price: PRICE,
   },
   {
@@ -550,7 +547,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Rite of Spring Continents",
     tagline: "The life of Igor Stravinsky — music felt before it is understood.",
     image: card("stravinsky"),
-    url: shopUrl("Stravinsky Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/igor-stravinsky-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478081",
     price: PRICE,
   },
   {
@@ -560,7 +557,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Resurrection Continents",
     tagline: "The life and music of Gustav Mahler — a symphony that must contain the world.",
     image: card("mahler"),
-    url: shopUrl("Mahler Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/gustav-mahler-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478098",
     price: PRICE,
   },
   {
@@ -570,7 +567,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Missionary Explorer Lands",
     tagline: "The life of David Livingstone — anywhere, so long as it is forward.",
     image: card("livingstone"),
-    url: shopUrl("Livingstone Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/david-livingstone-bible-map-guidebook-mission-history-art-soul-explorer-printable-435478156",
     price: PRICE,
   },
   {
@@ -580,7 +577,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Operation Auca Continents",
     tagline: "The life of Jim Elliot — he is no fool who gives what he cannot keep.",
     image: card("elliot"),
-    url: shopUrl("Elliot Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/jim-elliot-bible-map-guidebook-mission-history-art-soul-explorer-printable-435478167",
     price: PRICE,
   },
   {
@@ -590,7 +587,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Missionary Translator Lands",
     tagline: "The life of William Carey — expect great things from God; attempt great things for God.",
     image: card("carey"),
-    url: shopUrl("Carey Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/william-carey-bible-map-guidebook-mission-history-art-soul-explorer-printable-435478109",
     price: PRICE,
   },
   {
@@ -600,7 +597,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Inland Mission Continents",
     tagline: "The life of Hudson Taylor — God’s work done in God’s way.",
     image: card("taylor"),
-    url: shopUrl("Hudson Taylor Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/hudson-taylor-bible-map-guidebook-mission-history-art-soul-explorer-printable-435478112",
     price: PRICE,
   },
   {
@@ -610,7 +607,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Burma Mission Continents",
     tagline: "The life of Adoniram Judson — devoted for life.",
     image: card("judson"),
-    url: shopUrl("Judson Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/adoniram-judson-bible-map-guidebook-mission-history-art-soul-explorer-printable-435478074",
     price: PRICE,
   },
   {
@@ -620,7 +617,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Dohnavur Lands",
     tagline: "The life of Amy Carmichael — you can give without loving, but you cannot love without giving.",
     image: card("carmichael"),
-    url: shopUrl("Carmichael Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/amy-carmichael-bible-map-guidebook-mission-history-art-soul-explorer-printable-435478084",
     price: PRICE,
   },
   {
@@ -630,7 +627,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "The Hiding Place Realms",
     tagline: "The life of Corrie ten Boom — no pit so deep that God’s love is not deeper still.",
     image: card("corrie"),
-    url: shopUrl("Corrie ten Boom Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/corrie-ten-boom-bible-map-guidebook-mission-history-art-soul-explorer-printable-435478149",
     price: PRICE,
   },
   {
@@ -640,7 +637,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Father & Son of Liberty",
     tagline: "The lives of John and John Quincy Adams — posterity, duty, and the cost of freedom.",
     image: card("adams"),
-    url: shopUrl("Adams Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/adams-presidents-history-map-guidebook-presidential-classroom-art-liberty-explorer-printable-435478155",
     price: PRICE,
   },
   {
@@ -650,7 +647,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Sons of Liberty Continents",
     tagline: "The life of Samuel Adams — liberties worth defending at all hazards.",
     image: card("samuel-adams"),
-    url: shopUrl("Samuel Adams Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/samuel-adams-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478111",
     price: PRICE,
   },
   {
@@ -660,7 +657,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Midnight Ride Continents",
     tagline: "The life of Paul Revere — a silversmith, a signal, and a ride that woke a countryside.",
     image: card("revere"),
-    url: shopUrl("Revere Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/paul-revere-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478168",
     price: PRICE,
   },
   {
@@ -670,7 +667,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Federalist Justice Continents",
     tagline: "The life of John Jay — diplomacy, the Court, and property no power may take.",
     image: card("john-jay"),
-    url: shopUrl("John Jay Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/john-jay-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478114",
     price: PRICE,
   },
   {
@@ -680,7 +677,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Bold Signature Continents",
     tagline: "The life of John Hancock — a name written large enough for a king to read.",
     image: card("hancock"),
-    url: shopUrl("Hancock Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/john-hancock-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478075",
     price: PRICE,
   },
   {
@@ -690,7 +687,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Liberty or Death Continents",
     tagline: "The life of Patrick Henry — give me liberty, or give me death.",
     image: card("henry"),
-    url: shopUrl("Patrick Henry Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/patrick-henry-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478077",
     price: PRICE,
   },
   {
@@ -700,7 +697,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Common Sense Continents",
     tagline: "The life and writings of Thomas Paine — times that try men’s souls.",
     image: card("paine"),
-    url: shopUrl("Paine Frontier Explorer"),
+    url: "https://maybeecreation.myshopify.com/products/thomas-paine-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478094",
     price: PRICE,
   },
 ];

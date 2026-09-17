@@ -6,7 +6,7 @@ import { categories } from "@/data/categories";
 import { bibleMaps } from "@/data/bibleMaps";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
-import { ETSY_SHOP_URL } from "@/lib/shopLinks";
+import { SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
 import { categoryPageSchemas } from "@/lib/structuredData";
 
 const meta = categories.find((c) => c.key === "faith")!;
@@ -61,11 +61,11 @@ const Faith = () => {
         <div className="text-center mt-12">
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
             <a
-              href={ETSY_SHOP_URL}
+              href={SHOPIFY_SHOP_URL}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Visit the full storefront on Etsy
+              Visit the full storefront on Shopify
               <ExternalLink className="ml-2 h-4 w-4" />
             </a>
           </Button>

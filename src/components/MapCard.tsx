@@ -42,7 +42,7 @@ export const MapCard = ({ realm }: { realm: Realm }) => {
           <Button asChild className="justify-start bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
             <a href={realm.bundleUrl} target="_blank" rel="noopener noreferrer">
               <Scroll className="h-4 w-4 mr-2" />
-              Get Map &amp; Adventure Pack on Etsy
+              Get Map &amp; Adventure Pack
             </a>
           </Button>
         ) : (
