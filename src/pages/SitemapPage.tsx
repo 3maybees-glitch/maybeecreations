@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Map, Home, FileText, List, BookOpen, Share2 } from "lucide-react";
 import { storiesSorted } from "@/data/stories";
 import { SOCIAL_LINKS } from "@/lib/socialLinks";
-import { ETSY_SHOP_URL } from "@/lib/shopLinks";
+import { PAYHIP_SHOP_URL, SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
 
 import { Link } from "react-router-dom";
 
@@ -113,7 +113,8 @@ const sections: SitemapSection[] = [
     title: "Connect",
     icon: <Share2 className="h-5 w-5" />,
     links: [
-      { label: "Etsy Storefront", path: ETSY_SHOP_URL },
+      { label: "Shop (Shopify)", path: SHOPIFY_SHOP_URL },
+      { label: "Fans shop (Payhip)", path: PAYHIP_SHOP_URL },
       ...SOCIAL_LINKS.map((link) => ({
         label: link.shortLabel,
         path: link.href,

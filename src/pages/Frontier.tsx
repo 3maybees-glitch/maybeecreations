@@ -11,7 +11,7 @@ import {
 } from "@/data/frontierMaps";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
-import { ETSY_SHOP_URL } from "@/lib/shopLinks";
+import { SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
 import { categoryPageSchemas } from "@/lib/structuredData";
 import { Link } from "react-router-dom";
 
@@ -61,7 +61,7 @@ const Frontier = () => {
           >
             <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
               {seriesCopy[series]} Each Frontier Explorer map is a $7.77 digital download on
-              Etsy.
+              Shopify.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -93,8 +93,8 @@ const Frontier = () => {
                   </Button>
                 </div>
                 <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
-                  <a href={ETSY_SHOP_URL} target="_blank" rel="noopener noreferrer">
-                    Visit the full storefront on Etsy
+                  <a href={SHOPIFY_SHOP_URL} target="_blank" rel="noopener noreferrer">
+                    Visit the full storefront on Shopify
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>

@@ -1,6 +1,10 @@
 import type { FaqItem } from "@/lib/structuredData";
 import { PILLARS, SEO_PHRASE, SITE_NAME } from "@/lib/siteCopy";
-import { ETSY_SHOP_HOST, ETSY_SHOP_URL } from "@/lib/shopLinks";
+import {
+  PAYHIP_SHOP_URL,
+  SHOPIFY_SHOP_HOST,
+  SHOPIFY_SHOP_URL,
+} from "@/lib/shopLinks";
 
 export const homeFaqs: FaqItem[] = [
   {
@@ -23,7 +27,7 @@ export const homeFaqs: FaqItem[] = [
   },
   {
     question: "Where can I buy Maybee Creations maps and guides?",
-    answer: `Printable maps and adventure guides are available on the Maybee Creates Etsy shop at ${ETSY_SHOP_URL} (${ETSY_SHOP_HOST}). Browse by realm on maybeecreations.com, then purchase and download from Etsy.`,
+    answer: `Printable maps and adventure guides for Faith, Freedom, Frontier, and Future are available on the Maybee Creations Shopify shop at ${SHOPIFY_SHOP_URL} (${SHOPIFY_SHOP_HOST}). Fans / Legend Land maps check out on Payhip at ${PAYHIP_SHOP_URL}. Browse by realm on maybeecreations.com, then purchase and download from the matching shop.`,
   },
   {
     question: "Does Maybee Creations publish stories or articles?",

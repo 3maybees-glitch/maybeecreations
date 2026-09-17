@@ -9,7 +9,7 @@ import { ExternalLink, MapPinned } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
-import { ETSY_SHOP_URL } from "@/lib/shopLinks";
+import { PAYHIP_SHOP_URL } from "@/lib/shopLinks";
 import { categoryPageSchemas } from "@/lib/structuredData";
 import { Link } from "react-router-dom";
 
@@ -37,13 +37,13 @@ const Fans = () => {
       <CategorySection eyebrow="Legend Explorer Collection" title="NFL Legend Lands">
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
           All 32 NFL franchises as printable Legend Land world maps and adventure guides. Each
-          Legend Land is a $7.77 digital download on Etsy.
+          Legend Land is a $7.77 digital download on Payhip.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {nflLegendLands.map((land) => (
             <LegendLandCard
-              key={land.url}
+              key={land.team}
               name={land.team}
               series="NFL Legend Land"
               url={land.url}
@@ -58,13 +58,13 @@ const Fans = () => {
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
           Creatively Crafted educational discovery world maps and fan adventure guides for the
           championships fans celebrate year after year. Each Legend Land is a $7.77 digital
-          download. Wimbledon Men is on Etsy; Wimbledon Women stays on Payhip.
+          download on Payhip.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {tennisLegendLands.map((land) => (
             <LegendLandCard
-              key={land.url}
+              key={land.name}
               name={land.name}
               series="Tennis Legend Land"
               url={land.url}
@@ -84,7 +84,7 @@ const Fans = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {collegeFootballLegendLands.map((land) => (
             <LegendLandCard
-              key={land.url}
+              key={land.team}
               name={land.team}
               series="College Football Legend Land"
               url={land.url}
@@ -99,13 +99,13 @@ const Fans = () => {
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
           Creatively Crafted educational discovery world maps and fan adventure guides for the
           legends of America&apos;s pastime. Each Legend Land is a $7.77 digital download on
-          Etsy.
+          Payhip.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {baseballLegendLands.map((land) => (
             <LegendLandCard
-              key={land.url}
+              key={land.team}
               name={land.team}
               series="Baseball Legend Land"
               url={land.url}
@@ -133,8 +133,8 @@ const Fans = () => {
             </Button>
           </div>
           <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
-            <a href={ETSY_SHOP_URL} target="_blank" rel="noopener noreferrer">
-              Visit the full storefront on Etsy
+            <a href={PAYHIP_SHOP_URL} target="_blank" rel="noopener noreferrer">
+              Visit the Fans shop on Payhip
               <ExternalLink className="ml-2 h-4 w-4" />
             </a>
           </Button>
