@@ -56,7 +56,7 @@ export const stories: Story[] = [
     categoryPath: "/freedom",
     productLink: {
       label: "Get the James Madison Map & Guide",
-      url: "https://maybeecreation.myshopify.com/products/james-madison-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478236",
+      url: "https://shop.maybeecreations.com/products/james-madison-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478236",
     },
     paragraphs: [
       "James Madison was not the loudest voice in the room. He did not tower over crowds or command a battlefield. What he possessed was something rarer: the patience to think carefully about how a free people should govern themselves — and the persistence to see that thinking become law.",
@@ -103,7 +103,7 @@ export const stories: Story[] = [
     categoryPath: "/freedom",
     productLink: {
       label: "Get the America 250 Map & Guide",
-      url: "https://maybeecreation.myshopify.com/products/america-250-history-map-guidebook-patriotic-classroom-art-liberty-explorer-printable-435478193",
+      url: "https://shop.maybeecreations.com/products/america-250-history-map-guidebook-patriotic-classroom-art-liberty-explorer-printable-435478193",
     },
     paragraphs: [
       "In 2026, the United States marks two hundred fifty years since the Declaration of Independence. Parades will march. Speeches will be given. Flags will fly from porches and storefronts. But the deepest celebration happens when families and classrooms take time to look back — really look — at the people, inventions, struggles, and triumphs that shaped a nation.",
