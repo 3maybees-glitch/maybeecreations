@@ -471,16 +471,6 @@ export const frontierMaps: FrontierMap[] = [
     price: PRICE,
   },
   {
-    slug: "joyce",
-    name: "James Joyce",
-    series: "Literature",
-    subtitle: "Ulysses Continents",
-    tagline: "The world of James Joyce — Dublin, a single day, and language set walking.",
-    image: card("joyce"),
-    url: "https://shop.maybeecreations.com/products/james-joyce-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478126",
-    price: PRICE,
-  },
-  {
     slug: "faulkner",
     name: "William Faulkner",
     series: "Literature",
