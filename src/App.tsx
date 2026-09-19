@@ -7,6 +7,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
+import Refund from "./pages/Refund";
+import Shipping from "./pages/Shipping";
+import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Faith from "./pages/Faith";
 import Freedom from "./pages/Freedom";
@@ -38,6 +41,15 @@ const App = () => (
           <Route path="/request-a-map" element={<RequestMap />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/policies/terms-of-service" element={<Terms />} />
+          <Route path="/refund-policy" element={<Refund />} />
+          <Route path="/refunds" element={<Refund />} />
+          <Route path="/policies/refund-policy" element={<Refund />} />
+          <Route path="/shipping-policy" element={<Shipping />} />
+          <Route path="/shipping" element={<Shipping />} />
+          <Route path="/policies/shipping-policy" element={<Shipping />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/policies/contact-information" element={<Contact />} />
           <Route path="/sitemap" element={<SitemapPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

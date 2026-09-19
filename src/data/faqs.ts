@@ -30,6 +30,10 @@ export const homeFaqs: FaqItem[] = [
     answer: `Printable maps and adventure guides for Faith, Freedom, Frontier, and Future are available on the Maybee Creations Shopify shop at ${SHOPIFY_SHOP_URL} (${SHOPIFY_SHOP_HOST}). Fans / Legend Land maps check out on Payhip at ${PAYHIP_SHOP_URL}. Browse by realm on maybeecreations.com, then purchase and download from the matching shop.`,
   },
   {
+    question: "How do digital downloads, shipping, and refunds work?",
+    answer: `Shopify orders are instant digital downloads — there is no physical shipment. Files arrive by email after checkout. If a download is missing, corrupted, or the wrong file, email hellomaybeecreations@gmail.com within 14 days for a replacement or refund. Full details are on the Refund Policy, Shipping Policy, Terms of Service, and Contact pages.`,
+  },
+  {
     question: "Does Maybee Creations publish stories or articles?",
     answer:
       "Yes. The Stories section — The Story Behind the Map — shares essays on the history, meaning, and joy behind each map collection, including founding-era civics, baseball fandom, Scripture exploration, and America 250.",

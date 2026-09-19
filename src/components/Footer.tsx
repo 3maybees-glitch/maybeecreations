@@ -64,6 +64,21 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/refund-policy" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                  Refund Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/shipping-policy" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                  Shipping Policy
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-lg text-muted-foreground hover:text-accent transition-colors">
+                  Contact
+                </Link>
+              </li>
+              <li>
                 <Link to="/sitemap" className="text-lg text-muted-foreground hover:text-accent transition-colors">
                   Sitemap
                 </Link>

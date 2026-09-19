@@ -241,6 +241,26 @@ export function staticPageSchemas(
   ]);
 }
 
+export function contactPageSchemas(path: string, title: string, description: string) {
+  return buildGraph([
+    organizationSchema(),
+    webSiteSchema(),
+    webPageSchema({ title, description, path }),
+    breadcrumbSchema([
+      { name: "Home", path: "/" },
+      { name: "Contact", path },
+    ]),
+    {
+      "@type": "ContactPage",
+      "@id": `${SITE_URL}${path}#contactpage`,
+      url: `${SITE_URL}${path}`,
+      name: title,
+      description,
+      isPartOf: { "@id": `${SITE_URL}/#website` },
+    },
+  ]);
+}
+
 export function buildGraph(nodes: Record<string, unknown>[]) {
   return {
     "@context": "https://schema.org",

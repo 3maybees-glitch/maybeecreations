@@ -123,7 +123,9 @@ const Privacy = () => {
             <section>
               <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
               <p className="text-muted-foreground leading-relaxed">
-                If you have any questions about this Privacy Policy, please contact us at privacy@maybeecreations.com
+                If you have any questions about this Privacy Policy, please email hellomaybeecreations@gmail.com
+                or 3maybees@gmail.com, call +1 609-221-5619, or write 1616 Spottswood Pl, Lynchburg VA 24503,
+                United States.
               </p>
             </section>
           </div>
