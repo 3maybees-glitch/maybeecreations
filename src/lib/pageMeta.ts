@@ -77,8 +77,23 @@ export const pageMeta: Record<string, PageMeta> = {
   },
   terms: {
     title: `Terms of Service | ${SITE_NAME}`,
-    description: `Terms of service for ${SITE_NAME} ${SEO_PHRASE.toLowerCase()} and digital products.`,
+    description: `Terms of service for ${SITE_NAME} ${SEO_PHRASE.toLowerCase()} and instant digital downloads.`,
     path: "/terms",
+  },
+  refund: {
+    title: `Refund Policy | ${SITE_NAME}`,
+    description: `Refund policy for ${SITE_NAME} instant digital map and guidebook downloads.`,
+    path: "/refund",
+  },
+  shipping: {
+    title: `Shipping Policy | ${SITE_NAME}`,
+    description: `Shipping and delivery policy for ${SITE_NAME} instant digital downloads. No physical shipping.`,
+    path: "/shipping",
+  },
+  contact: {
+    title: `Contact | ${SITE_NAME}`,
+    description: `Contact Maybee Creations for shop help, missing downloads, refunds, and map requests.`,
+    path: "/contact",
   },
   sitemap: {
     title: `Sitemap | ${SITE_NAME}`,
