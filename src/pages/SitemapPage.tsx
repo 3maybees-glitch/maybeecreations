@@ -105,6 +105,12 @@ const sections: SitemapSection[] = [
 
       { label: "Terms of Service", path: "/terms" },
 
+      { label: "Refund Policy", path: "/refund-policy" },
+
+      { label: "Shipping Policy", path: "/shipping-policy" },
+
+      { label: "Contact", path: "/contact" },
+
     ],
 
   },

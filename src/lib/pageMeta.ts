@@ -77,8 +77,23 @@ export const pageMeta: Record<string, PageMeta> = {
   },
   terms: {
     title: `Terms of Service | ${SITE_NAME}`,
-    description: `Terms of service for ${SITE_NAME} ${SEO_PHRASE.toLowerCase()} and digital products.`,
+    description: `Terms of service for ${SITE_NAME} ${SEO_PHRASE.toLowerCase()} and instant digital map downloads.`,
     path: "/terms",
+  },
+  refund: {
+    title: `Refund Policy | ${SITE_NAME}`,
+    description: `Refund policy for ${SITE_NAME} instant digital map and guidebook downloads — replacements, missing files, and how refunds work.`,
+    path: "/refund-policy",
+  },
+  shipping: {
+    title: `Shipping Policy | ${SITE_NAME}`,
+    description: `${SITE_NAME} ships digitally: printable maps and guides are delivered instantly by email after checkout. No physical shipping.`,
+    path: "/shipping-policy",
+  },
+  contact: {
+    title: `Contact | ${SITE_NAME}`,
+    description: `Contact ${SITE_NAME} for order help, missing downloads, refunds, and classroom licenses.`,
+    path: "/contact",
   },
   sitemap: {
     title: `Sitemap | ${SITE_NAME}`,
