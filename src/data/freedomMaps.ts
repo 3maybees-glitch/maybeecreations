@@ -68,8 +68,7 @@ export const freedomMaps: FreedomMap[] = [
     subtitle: "Liberty Explorer Revolutionary War Map",
     tagline:
       "Follow the fight for independence from Lexington and Concord through Valley Forge, Yorktown, and the Treaty of Paris.",
-    image:
-      "https://pe56d.s3.amazonaws.com/cover-images/66563ad8d8424fe985f0076698b8c56b_01_revolutionary_war_desk_mockup_watermarked.jpg",
+    image: "/maps/freedom/revolutionary-war-desk.jpg",
     url: "https://shop.maybeecreations.com/products/revolutionary-war-history-map-guidebook-military-classroom-art-liberty-explorer-printable-435478225",
     price: "$7.77",
   },
@@ -79,8 +78,7 @@ export const freedomMaps: FreedomMap[] = [
     subtitle: "Liberty Explorer Civil War Discovery Map",
     tagline:
       "Follow the River of Time from Fort Sumter to Appomattox — secession, emancipation, turning points, and the fight to preserve the Union.",
-    image:
-      "https://pe56d.s3.amazonaws.com/cover-images/b042b65a77cb44e5848f97c328a91f0b_01_civil_war_desk_mockup_watermarked.jpg",
+    image: "/maps/freedom/civil-war-desk.jpg",
     url: "https://shop.maybeecreations.com/products/american-civil-war-history-map-guidebook-military-classroom-art-liberty-explorer-printable-435478269",
     price: "$7.77",
   },
@@ -90,8 +88,7 @@ export const freedomMaps: FreedomMap[] = [
     subtitle: "Liberty Explorer WWII European Theater Map",
     tagline:
       "Trace the sweep of the war in Europe — from the Battle of Britain and North Africa through D-Day, the Rhine, Berlin, and V-E Day.",
-    image:
-      "https://pe56d.s3.amazonaws.com/cover-images/23887df344ab42e683a06db5cbdcacfd_01_wwii_europe_desk_mockup_watermarked.jpg",
+    image: "/maps/freedom/wwii-europe-desk.jpg",
     url: "https://shop.maybeecreations.com/products/world-war-ii-europe-history-map-guidebook-military-classroom-art-liberty-explorer-printable-435478050",
     price: "$7.77",
   },
@@ -101,8 +98,7 @@ export const freedomMaps: FreedomMap[] = [
     subtitle: "Liberty Explorer WWII Pacific Theater Map",
     tagline:
       "Cross the Pacific from Pearl Harbor through Midway, Guadalcanal, Leyte Gulf, Iwo Jima, Okinawa, and Japan’s surrender.",
-    image:
-      "https://pe56d.s3.amazonaws.com/cover-images/5ed6b8b660a549f6800c3163b677a86f_01_wwii_pacific_desk_mockup_watermarked.jpg",
+    image: "/maps/freedom/wwii-pacific-desk.jpg",
     url: "https://shop.maybeecreations.com/products/world-war-ii-pacific-history-map-guidebook-military-classroom-art-liberty-explorer-printable-435478262",
     price: "$7.77",
   },
