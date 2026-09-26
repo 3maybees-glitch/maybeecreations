@@ -32,7 +32,7 @@ export const stories: Story[] = [
       "Every map we make begins with a question: what if learning felt like an adventure worth remembering?",
     publishedAt: "2026-06-27",
     category: "faith",
-    image: "https://pe56d.s3.amazonaws.com/o_1jps53jlost7quqvvdsiu1q1r17.png",
+    image: "/maps/faith/gospels.png",
     readingMinutes: 4,
     categoryPath: "/",
     paragraphs: [
