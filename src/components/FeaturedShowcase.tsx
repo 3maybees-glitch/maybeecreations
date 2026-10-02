@@ -46,7 +46,7 @@ export const FeaturedShowcase = () => {
           <div className="ink-divider w-32 mx-auto mb-4" />
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             Creatively Crafted educational discovery world maps — Bible cartography, liberty
-            maps, fan legend lands, and AI kingdoms.
+            maps, expeditions, fan legend lands, and AI kingdoms.
           </p>
         </div>
 

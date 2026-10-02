@@ -14,6 +14,7 @@ import NotFound from "./pages/NotFound";
 import Faith from "./pages/Faith";
 import Freedom from "./pages/Freedom";
 import Frontier from "./pages/Frontier";
+import Farlands from "./pages/Farlands";
 import Fans from "./pages/Fans";
 import Future from "./pages/Future";
 import SitemapPage from "./pages/SitemapPage";
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/faith" element={<Faith />} />
           <Route path="/freedom" element={<Freedom />} />
           <Route path="/frontier" element={<Frontier />} />
+          <Route path="/farlands" element={<Farlands />} />
           <Route path="/fans" element={<Fans />} />
           <Route path="/future" element={<Future />} />
           <Route path="/stories" element={<Stories />} />

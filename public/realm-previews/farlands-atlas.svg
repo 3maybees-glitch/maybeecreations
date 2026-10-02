@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Farlands atlas motif">
+  <rect width="400" height="500" fill="#4a3b28"/>
+  <rect x="70" y="90" width="260" height="300" rx="8" fill="#d9c39a" stroke="#2a2116" stroke-width="4"/>
+  <line x1="200" y1="90" x2="200" y2="390" stroke="#2a2116" stroke-width="3"/>
+  <path d="M95 160 C140 140, 160 200, 200 180" fill="none" stroke="#5a4a30" stroke-width="3"/>
+  <path d="M200 200 C240 180, 270 240, 305 220" fill="none" stroke="#5a4a30" stroke-width="3"/>
+  <path d="M110 260 C150 240, 170 300, 200 280 C230 260, 260 310, 300 290" fill="none" stroke="#6b5a3a" stroke-width="2"/>
+  <text x="200" y="440" text-anchor="middle" fill="#f3e6c8" font-family="Georgia, serif" font-size="20" letter-spacing="3">ATLAS</text>
+</svg>

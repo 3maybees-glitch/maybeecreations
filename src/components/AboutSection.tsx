@@ -62,6 +62,13 @@ export const AboutSection = () => {
             to Shakespeare, Tesla, and the Adams family.
           </p>
           <p>
+            Farlands opens the{" "}
+            <Link to="/farlands" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
+              Expedition Explorer
+            </Link>{" "}
+            trail — educational discovery maps for distant horizons, trails, and atlases of wonder.
+          </p>
+          <p>
             A growing part of the company is focused on AI education through{" "}
             <Link to="/future" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
               colorful tutorial world maps
@@ -71,7 +78,7 @@ export const AboutSection = () => {
           </p>
           <p className="italic text-primary font-medium">
             Across every project, the mission is the same: create digital tools that help
-            people explore faith, freedom, the frontier, fandom, and the future with
+            people explore faith, freedom, the frontier, the farlands, fandom, and the future with
             clarity and creativity.
           </p>
         </div>

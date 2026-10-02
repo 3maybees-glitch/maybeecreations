@@ -29,7 +29,7 @@ import { mapRequestRealms } from "@/data/mapRequestRealms";
 
 const mapRequestSchema = z
   .object({
-    realm: z.enum(["faith", "freedom", "fans", "future"], {
+    realm: z.enum(["faith", "freedom", "farlands", "fans", "future"], {
       required_error: "Choose which realm this map belongs in.",
     }),
     title: z
@@ -169,7 +169,7 @@ export const MapRequestForm = ({ onSubmitted }: MapRequestFormProps) => {
                 <Select onValueChange={field.onChange} value={field.value}>
                   <FormControl>
                     <SelectTrigger>
-                      <SelectValue placeholder="Faith, Freedom, Fans, or Future" />
+                      <SelectValue placeholder="Faith, Freedom, Farlands, Fans, or Future" />
                     </SelectTrigger>
                   </FormControl>
                   <SelectContent>

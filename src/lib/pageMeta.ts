@@ -14,7 +14,7 @@ export const DEFAULT_OG_IMAGE =
   "https://www.maybeecreations.com/maps/future/chatgpt.png";
 
 export const STATIC_OG_IMAGE_ALT =
-  "Maybee Creations — Creatively Crafted educational discovery world maps for faith, freedom, frontier, fans, and the future";
+  "Maybee Creations — Creatively Crafted educational discovery world maps for faith, freedom, frontier, farlands, fans, and the future";
 
 export interface PageMeta {
   title: string;
@@ -52,6 +52,12 @@ export const pageMeta: Record<string, PageMeta> = {
       "Creatively Crafted Frontier Explorer maps of Einstein, the Odyssey, Mozart, Shakespeare, Tesla, and more — science, literature, music, faith, and liberty.",
     path: "/frontier",
   },
+  farlands: {
+    title: `Farlands — Expedition Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
+    description:
+      "Creatively Crafted Expedition Explorer educational discovery world maps for far horizons, trails, and atlases of wonder.",
+    path: "/farlands",
+  },
   fans: {
     title: `Fans — Legend Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
     description:
@@ -67,7 +73,7 @@ export const pageMeta: Record<string, PageMeta> = {
   stories: {
     title: `Stories — The Story Behind the Map | ${SITE_NAME}`,
     description:
-      "Storytime essays on the history, meaning, and joy of Maybee Creations maps and guides — Faith, Freedom, Frontier, Fans, and the Future.",
+      "Storytime essays on the history, meaning, and joy of Maybee Creations maps and guides — Faith, Freedom, Frontier, Farlands, Fans, and the Future.",
     path: "/stories",
   },
   privacy: {
@@ -103,7 +109,7 @@ export const pageMeta: Record<string, PageMeta> = {
   requestMap: {
     title: `Request a Map — Chart the Next Expedition | ${SITE_NAME}`,
     description:
-      "Submit your idea for the next Maybee Creations educational discovery world map. Browse the public Mapmaker's Ledger of approved community requests across Faith, Freedom, Fans, and Future.",
+      "Submit your idea for the next Maybee Creations educational discovery world map. Browse the public Mapmaker's Ledger of approved community requests across Faith, Freedom, Farlands, Fans, and Future.",
     path: "/request-a-map",
   },
   notFound: {
