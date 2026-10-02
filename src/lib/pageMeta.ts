@@ -53,9 +53,9 @@ export const pageMeta: Record<string, PageMeta> = {
     path: "/frontier",
   },
   farlands: {
-    title: `Farlands — Expedition Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
+    title: `Farlands — Destination Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
     description:
-      "Creatively Crafted Expedition Explorer educational discovery world maps for far horizons, trails, and atlases of wonder.",
+      "Fifty Farlands Explorer country kits — illustrated fantasy maps, guidebooks, and audio tours. Creatively Crafted educational discovery world maps.",
     path: "/farlands",
   },
   fans: {

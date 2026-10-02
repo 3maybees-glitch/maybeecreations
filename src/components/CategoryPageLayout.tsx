@@ -6,10 +6,12 @@ import type { ReactNode } from "react";
 interface Props {
   category: CategoryMeta;
   intro?: string;
+  /** Small title above the realm name. Defaults to the category explorer name. */
+  explorerLabel?: string;
   children: ReactNode;
 }
 
-export const CategoryPageLayout = ({ category, intro, children }: Props) => {
+export const CategoryPageLayout = ({ category, intro, explorerLabel, children }: Props) => {
   return (
     <div
       className="min-h-screen"
@@ -25,7 +27,7 @@ export const CategoryPageLayout = ({ category, intro, children }: Props) => {
               className="text-xs md:text-sm uppercase tracking-[0.3em] font-semibold mb-2 md:mb-4"
               style={{ color: "hsl(var(--category))" }}
             >
-              ✦ {category.explorerName} ✦
+              ✦ {explorerLabel ?? category.explorerName} ✦
             </p>
             <h1
               className="font-display text-4xl md:text-7xl font-black uppercase tracking-wide mb-3 md:mb-6"
