@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" role="img" aria-label="Farlands compass motif">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3d4f3a"/>
+      <stop offset="55%" stop-color="#6b5a3a"/>
+      <stop offset="100%" stop-color="#c4a574"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#sky)"/>
+  <circle cx="200" cy="230" r="110" fill="none" stroke="#f3e6c8" stroke-width="6" opacity="0.85"/>
+  <circle cx="200" cy="230" r="78" fill="none" stroke="#f3e6c8" stroke-width="2" opacity="0.55"/>
+  <polygon points="200,120 215,230 200,215 185,230" fill="#f3e6c8"/>
+  <polygon points="200,340 185,230 200,245 215,230" fill="#d9b978" opacity="0.8"/>
+  <text x="200" y="430" text-anchor="middle" fill="#f3e6c8" font-family="Georgia, serif" font-size="22" letter-spacing="4">FARLANDS</text>
+  <text x="200" y="458" text-anchor="middle" fill="#f3e6c8" font-family="Georgia, serif" font-size="12" opacity="0.8" letter-spacing="2">EXPEDITION</text>
+</svg>

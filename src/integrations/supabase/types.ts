@@ -88,7 +88,7 @@ export type Database = {
       [_ in never]: never
     }
     Enums: {
-      map_request_realm: "faith" | "freedom" | "fans" | "future"
+      map_request_realm: "faith" | "freedom" | "farlands" | "fans" | "future"
       map_request_status: "pending" | "approved" | "declined"
     }
     CompositeTypes: {
@@ -217,7 +217,7 @@ export type CompositeTypes<
 export const Constants = {
   public: {
     Enums: {
-      map_request_realm: ["faith", "freedom", "fans", "future"],
+      map_request_realm: ["faith", "freedom", "farlands", "fans", "future"],
       map_request_status: ["pending", "approved", "declined"],
     },
   },

@@ -17,7 +17,7 @@ export default defineConfig(() => ({
       manifest: {
         name: "Maybee Creations",
         short_name: "Maybee",
-        description: "Creatively Crafted educational discovery world maps for faith, freedom, fans, and the future",
+        description: "Creatively Crafted educational discovery world maps for faith, freedom, frontier, farlands, fans, and the future",
         theme_color: "#3a2a14",
         background_color: "#f5eedc",
         display: "standalone",

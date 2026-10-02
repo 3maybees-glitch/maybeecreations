@@ -21,6 +21,12 @@ export const mapRequestRealms: MapRequestRealmOption[] = [
     examples: "A founding mother map, a state constitution series, a Cold War liberty map",
   },
   {
+    value: "farlands",
+    label: "Farlands",
+    explorer: "Expedition Explorer",
+    examples: "A polar expedition map, a Silk Road trail, a rainforest discovery atlas",
+  },
+  {
     value: "fans",
     label: "Fans",
     explorer: "Legend Explorer",

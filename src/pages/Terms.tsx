@@ -41,8 +41,8 @@ const Terms = () => {
         <h2 className="text-2xl font-bold mb-4">The products</h2>
         <p className="text-muted-foreground leading-relaxed">
           Maybee Creations sells printable educational discovery maps and
-          adventure guidebooks for Faith, Freedom, Frontier, Fans, and
-          Future. Shopify is the checkout for Faith, Freedom, Frontier, and
+          adventure guidebooks for Faith, Freedom, Frontier, Farlands, Fans, and
+          Future. Shopify is the checkout for Faith, Freedom, Frontier, Farlands, and
           Future. Fans / Legend Land titles may check out on{" "}
           <a
             href={PAYHIP_SHOP_URL}

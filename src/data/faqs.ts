@@ -9,16 +9,16 @@ import {
 export const homeFaqs: FaqItem[] = [
   {
     question: "What is Maybee Creations?",
-    answer: `${SITE_NAME} is a digital creation studio that makes Creatively Crafted ${SEO_PHRASE.toLowerCase()} and adventure guides across five worlds: ${PILLARS}. Products include printable Bible maps, Liberty Explorer civics maps, Frontier Explorer science and story maps, NFL and Baseball Legend Lands for sports fans, and Tomorrow Explorer AI learning maps.`,
+    answer: `${SITE_NAME} is a digital creation studio that makes Creatively Crafted ${SEO_PHRASE.toLowerCase()} and adventure guides across six worlds: ${PILLARS}. Products include printable Bible maps, Liberty Explorer civics maps, Frontier Explorer science and story maps, Expedition Explorer Farlands maps, NFL and Baseball Legend Lands for sports fans, and Tomorrow Explorer AI learning maps.`,
   },
   {
     question: "What are educational discovery world maps?",
-    answer: `Educational discovery world maps are printable, fantasy-style cartography paired with adventure guidebooks. Each map turns a subject — Scripture, American history, science and literature, NFL and baseball lore, or AI tools — into a visual world families and students can explore with prompts, missions, and reflections.`,
+    answer: `Educational discovery world maps are printable, fantasy-style cartography paired with adventure guidebooks. Each map turns a subject — Scripture, American history, science and literature, expeditions, NFL and baseball lore, or AI tools — into a visual world families and students can explore with prompts, missions, and reflections.`,
   },
   {
-    question: "What are the five realms on maybeecreations.com?",
+    question: "What are the six realms on maybeecreations.com?",
     answer:
-      "Faith (Soul Explorer Bible maps), Freedom (Liberty Explorer civics and history maps), Frontier (Frontier Explorer science, literature, music, missionary, and liberty maps such as Einstein, the Odyssey, and Mozart), Fans (Legend Explorer NFL, baseball, college football, and tennis Legend Lands), and Future (Tomorrow Explorer AI realm maps with Adventure Pack tutorials for ChatGPT, Claude, Gemini, and more).",
+      "Faith (Soul Explorer Bible maps), Freedom (Liberty Explorer civics and history maps), Frontier (Frontier Explorer science, literature, music, missionary, and liberty maps such as Einstein, the Odyssey, and Mozart), Farlands (Expedition Explorer educational discovery maps for distant horizons and trails), Fans (Legend Explorer NFL, baseball, college football, and tennis Legend Lands), and Future (Tomorrow Explorer AI realm maps with Adventure Pack tutorials for ChatGPT, Claude, Gemini, and more).",
   },
   {
     question: "Who are Maybee Creations maps designed for?",
@@ -27,7 +27,7 @@ export const homeFaqs: FaqItem[] = [
   },
   {
     question: "Where can I buy Maybee Creations maps and guides?",
-    answer: `Printable maps and adventure guides for Faith, Freedom, Frontier, and Future are available on the Maybee Creations Shopify shop at ${SHOPIFY_SHOP_URL} (${SHOPIFY_SHOP_HOST}). Fans / Legend Land maps check out on Payhip at ${PAYHIP_SHOP_URL}. Browse by realm on maybeecreations.com, then purchase and download from the matching shop.`,
+    answer: `Printable maps and adventure guides for Faith, Freedom, Frontier, Farlands, and Future are available on the Maybee Creations Shopify shop at ${SHOPIFY_SHOP_URL} (${SHOPIFY_SHOP_HOST}). Fans / Legend Land maps check out on Payhip at ${PAYHIP_SHOP_URL}. Browse by realm on maybeecreations.com, then purchase and download from the matching shop.`,
   },
   {
     question: "Does Maybee Creations publish stories or articles?",

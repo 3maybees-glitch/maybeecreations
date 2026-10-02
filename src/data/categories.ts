@@ -5,16 +5,25 @@ import { nflLegendLands } from "@/data/nflLands";
 import { tennisLegendLands } from "@/data/tennisLegendLands";
 import { freedomMaps } from "@/data/freedomMaps";
 import { frontierMaps } from "@/data/frontierMaps";
+import { farlandsMaps } from "@/data/farlandsMaps";
 import { realms } from "@/data/realms";
 import {
   faithPreviews,
   freedomPreviewMaps,
   frontierPreviews,
+  farlandsPreviews,
   fansPreviews,
   futurePreviews,
+  type MapPreview,
 } from "@/data/realmPreviews";
 
-export type CategoryKey = "faith" | "freedom" | "frontier" | "fans" | "future";
+export type CategoryKey =
+  | "faith"
+  | "freedom"
+  | "frontier"
+  | "farlands"
+  | "fans"
+  | "future";
 export type MapRequestRealm = Exclude<CategoryKey, "frontier">;
 
 export interface CategoryMeta {
@@ -65,6 +74,21 @@ export const categories: CategoryMeta[] = [
     count: `${frontierMaps.length} Frontier Explorer maps & guides`,
     mapPreviews: frontierPreviews,
     accentVar: "frontier",
+  },
+  {
+    key: "farlands",
+    name: "Farlands",
+    explorerName: "Expedition Explorer",
+    path: "/farlands",
+    tagline: "Set out for distant horizons — expedition maps for educational discovery.",
+    blurb:
+      "Expedition Explorer maps charting far shores, trails, and atlases of wonder — printable worlds for families who learn by exploring.",
+    count:
+      farlandsMaps.length > 0
+        ? `${farlandsMaps.length} Expedition Explorer maps & guides`
+        : "Expedition maps coming soon",
+    mapPreviews: farlandsPreviews,
+    accentVar: "farlands",
   },
   {
     key: "fans",

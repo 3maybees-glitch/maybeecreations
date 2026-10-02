@@ -76,7 +76,7 @@ const Contact = () => {
         <h2 className="text-2xl font-bold mb-4">Shops</h2>
         <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
           <li>
-            Faith, Freedom, Frontier, and Future maps:{" "}
+            Faith, Freedom, Frontier, Farlands, and Future maps:{" "}
             <a
               href={SHOPIFY_SHOP_URL}
               target="_blank"

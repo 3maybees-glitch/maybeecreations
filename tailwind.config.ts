@@ -51,6 +51,7 @@ export default {
         faith: "hsl(var(--faith))",
         freedom: "hsl(var(--freedom))",
         "freedom-glow": "hsl(var(--freedom-glow))",
+        farlands: "hsl(var(--farlands))",
         fans: "hsl(var(--fans))",
         future: "hsl(var(--future))",
         sidebar: {
