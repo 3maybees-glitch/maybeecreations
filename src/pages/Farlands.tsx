@@ -1,21 +1,31 @@
+import { useMemo, useState, type ReactNode } from "react";
 import { CategoryPageLayout, CategorySection } from "@/components/CategoryPageLayout";
+import { FarlandsMapCard } from "@/components/FarlandsMapCard";
 import { Button } from "@/components/ui/button";
-import { Check, Compass, ExternalLink, Map } from "lucide-react";
+import { Check, ExternalLink } from "lucide-react";
 import { categories } from "@/data/categories";
-import { FARLANDS_COLLECTION_URL, farlandsMaps } from "@/data/farlandsMaps";
+import {
+  FARLANDS_COLLECTION_URL,
+  farlandsMaps,
+  farlandsRegions,
+  type FarlandsRegion,
+} from "@/data/farlandsMaps";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
-import { SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
 import { categoryPageSchemas } from "@/lib/structuredData";
+import { cn } from "@/lib/utils";
 
 const meta = categories.find((c) => c.key === "farlands")!;
 
 const included = [
-  "Printable expedition discovery map",
-  "Explorer guidebook with prompts and missions",
-  "Classroom and kitchen-table friendly lessons",
-  "Instant digital download when maps publish",
+  "Illustrated fantasy expedition map",
+  "Explorer guidebook",
+  "Audio tour of 18 stops",
+  "Instant digital download",
 ];
+
+type RegionFilter = "all" | FarlandsRegion;
+type SortOrder = "num" | "alpha";
 
 const Farlands = () => {
   usePageSeo(
@@ -31,33 +41,30 @@ const Farlands = () => {
     ),
   );
 
+  const [region, setRegion] = useState<RegionFilter>("all");
+  const [sort, setSort] = useState<SortOrder>("num");
+
+  const visibleMaps = useMemo(() => {
+    const filtered =
+      region === "all" ? farlandsMaps : farlandsMaps.filter((map) => map.region === region);
+    return [...filtered].sort((a, b) =>
+      sort === "alpha" ? a.name.localeCompare(b.name) : a.num - b.num,
+    );
+  }, [region, sort]);
+
   return (
     <CategoryPageLayout
       category={meta}
-      intro="Creatively Crafted educational discovery world maps for expeditions beyond the familiar shores — chart distant horizons, trails, and atlases of wonder."
+      explorerLabel="Destination Explorer"
+      intro="Farlands Explorer country kits — an illustrated fantasy map, guidebook, and audio tour for each destination."
     >
-      <section className="py-12 px-4">
-        <div className="container mx-auto max-w-3xl text-center">
-          <p className="text-base md:text-xl text-foreground/85 leading-relaxed font-medium">
-            Farlands is the expedition realm — maps that invite families and students to{" "}
-            <span className="font-semibold text-primary">explore</span>,{" "}
-            <span className="font-semibold text-primary">discover</span>, and{" "}
-            <span className="font-semibold text-primary">learn</span> through cartography of the
-            far-off and the newly charted.
-          </p>
-        </div>
-      </section>
-
-      <section className="py-12 px-4">
-        <div className="container mx-auto max-w-2xl">
-          <div className="parchment p-8 rounded-sm">
-            <h3 className="text-xl md:text-3xl font-bold text-primary text-center mb-6">
-              What&apos;s Included?
-            </h3>
-            <p className="text-center text-muted-foreground italic mb-6">
-              Each Farlands expedition pack is planned to include:
-            </p>
-            <ul className="space-y-3">
+      <section className="py-8 px-4">
+        <div className="container mx-auto max-w-3xl">
+          <div className="parchment p-6 md:p-8 rounded-sm">
+            <h2 className="text-xl md:text-3xl font-bold text-primary text-center mb-6">
+              What&apos;s in each kit
+            </h2>
+            <ul className="grid sm:grid-cols-2 gap-3">
               {included.map((item) => (
                 <li key={item} className="flex items-start gap-3 text-foreground">
                   <Check className="h-5 w-5 text-accent shrink-0 mt-0.5" />
@@ -70,61 +77,81 @@ const Farlands = () => {
       </section>
 
       <CategorySection
-        eyebrow="Expedition Explorer Collection"
-        title={
-          farlandsMaps.length > 0
-            ? `${farlandsMaps.length} Farlands Maps`
-            : "The First Expeditions Are Being Charted"
-        }
+        eyebrow="Destination Explorer"
+        title={`${farlandsMaps.length} Farlands Explorer Maps`}
       >
-        {farlandsMaps.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            {/* Product cards land here when Shopify SKUs exist */}
-          </div>
-        ) : (
-          <div className="parchment rounded-sm border border-primary/15 p-8 md:p-12 text-center max-w-3xl mx-auto">
-            <div className="inline-flex items-center justify-center w-14 h-14 rounded-sm bg-accent/15 mb-5">
-              <Compass className="h-7 w-7 text-accent" aria-hidden />
-            </div>
-            <p className="text-lg md:text-xl text-foreground/90 mb-3 font-medium">
-              No Farlands maps are listed yet.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-8 max-w-xl mx-auto">
-              When the first expedition maps publish on Shopify, they will appear here. Until
-              then, follow the Farlands collection or browse the full shop for Faith, Freedom,
-              Frontier, and Future maps already on the trail.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="uppercase tracking-widest">
-                <a href={FARLANDS_COLLECTION_URL} target="_blank" rel="noopener noreferrer">
-                  <Map className="mr-2 h-4 w-4" />
-                  Open Farlands on Shopify
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="uppercase tracking-widest">
-                <a href={SHOPIFY_SHOP_URL} target="_blank" rel="noopener noreferrer">
-                  Visit the full storefront
-                  <ExternalLink className="ml-2 h-4 w-4" />
-                </a>
-              </Button>
-            </div>
-          </div>
-        )}
+        <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-4 mb-8">
+          Fifty country expeditions, each a {farlandsMaps[0]?.price ?? "$7.77"} digital download.
+          Browse in catalog order, or narrow the atlas by region.
+        </p>
 
-        {farlandsMaps.length > 0 ? (
-          <div className="text-center mt-12">
-            <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
-              <a href={FARLANDS_COLLECTION_URL} target="_blank" rel="noopener noreferrer">
-                Visit the Farlands collection on Shopify
-                <ExternalLink className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
+        <div className="flex flex-col gap-4 mb-8">
+          <div className="flex flex-wrap gap-2" role="group" aria-label="Filter maps by region">
+            <FilterChip pressed={region === "all"} onClick={() => setRegion("all")}>
+              All
+            </FilterChip>
+            {farlandsRegions.map((item) => (
+              <FilterChip key={item} pressed={region === item} onClick={() => setRegion(item)}>
+                {item}
+              </FilterChip>
+            ))}
           </div>
-        ) : null}
+          <div className="flex flex-wrap items-center gap-2" role="group" aria-label="Sort maps">
+            <FilterChip pressed={sort === "num"} onClick={() => setSort("num")}>
+              Expedition order
+            </FilterChip>
+            <FilterChip pressed={sort === "alpha"} onClick={() => setSort("alpha")}>
+              A–Z
+            </FilterChip>
+            <p className="text-sm text-muted-foreground ml-1">
+              {visibleMaps.length} {visibleMaps.length === 1 ? "map" : "maps"}
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {visibleMaps.map((map) => (
+            <FarlandsMapCard key={map.slug} map={map} />
+          ))}
+        </div>
+
+        <div className="text-center mt-12">
+          <Button asChild size="lg" variant="ghost" className="text-primary hover:text-accent">
+            <a href={FARLANDS_COLLECTION_URL} target="_blank" rel="noopener noreferrer">
+              Visit the Farlands collection on Shopify
+              <ExternalLink className="ml-2 h-4 w-4" />
+            </a>
+          </Button>
+        </div>
       </CategorySection>
     </CategoryPageLayout>
   );
 };
+
+function FilterChip({
+  pressed,
+  onClick,
+  children,
+}: {
+  pressed: boolean;
+  onClick: () => void;
+  children: ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      aria-pressed={pressed}
+      onClick={onClick}
+      className={cn(
+        "px-3 py-1.5 text-xs uppercase tracking-widest font-semibold border rounded-sm transition-colors",
+        pressed
+          ? "bg-primary text-primary-foreground border-primary"
+          : "bg-background/70 text-primary border-primary/30 hover:border-primary hover:bg-primary/5",
+      )}
+    >
+      {children}
+    </button>
+  );
+}
 
 export default Farlands;

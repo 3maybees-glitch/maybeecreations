@@ -83,10 +83,7 @@ export const categories: CategoryMeta[] = [
     tagline: "Set out for distant horizons — expedition maps for educational discovery.",
     blurb:
       "Expedition Explorer maps charting far shores, trails, and atlases of wonder — printable worlds for families who learn by exploring.",
-    count:
-      farlandsMaps.length > 0
-        ? `${farlandsMaps.length} Expedition Explorer maps & guides`
-        : "Expedition maps coming soon",
+    count: `${farlandsMaps.length} Expedition Explorer maps & guides`,
     mapPreviews: farlandsPreviews,
     accentVar: "farlands",
   },
