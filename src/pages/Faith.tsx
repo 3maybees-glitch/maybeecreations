@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
 import { categories } from "@/data/categories";
 import { bibleMaps } from "@/data/bibleMaps";
+import { lifeOfMaps } from "@/data/lifeOfMaps";
 import { usePageSeo } from "@/hooks/usePageSeo";
 import { pageMeta } from "@/lib/pageMeta";
 import { SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
@@ -54,6 +55,23 @@ const Faith = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {bibleMaps.map((map) => (
+            <BibleMapCard key={map.url} map={map} />
+          ))}
+        </div>
+      </CategorySection>
+
+      <CategorySection
+        eyebrow="Soul Explorer Collection"
+        title="Life Of Bible Character Maps"
+      >
+        <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-6 mb-10">
+          Illustrated journeys through the lives of Scripture&apos;s heroes — each printable
+          map paired with a Soul Explorer guidebook for Sunday school, homeschool, and
+          family Bible study.
+        </p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          {lifeOfMaps.map((map) => (
             <BibleMapCard key={map.url} map={map} />
           ))}
         </div>

@@ -49,7 +49,7 @@ const sections: SitemapSection[] = [
 
     links: [
 
-      { label: "Faith — Bible world maps & Soul Explorer guides", path: "/faith" },
+      { label: "Faith — Bible book & Life Of character maps & Soul Explorer guides", path: "/faith" },
 
       { label: "Freedom — Liberty Explorer world maps", path: "/freedom" },
 
