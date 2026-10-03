@@ -1,4 +1,5 @@
 import { bibleMaps } from "@/data/bibleMaps";
+import { lifeOfMaps } from "@/data/lifeOfMaps";
 import { baseballLegendLands } from "@/data/baseballLands";
 import { collegeFootballLegendLands } from "@/data/collegeFootballLands";
 import { nflLegendLands } from "@/data/nflLands";
@@ -46,8 +47,8 @@ export const categories: CategoryMeta[] = [
     path: "/faith",
     tagline: "Walk the lands of Scripture — map by map, book by book.",
     blurb:
-      "Soul Explorer adventure guides paired with Bible discovery maps from Genesis to Revelation.",
-    count: `${bibleMaps.length} Bible maps & guides`,
+      "Soul Explorer adventure guides paired with Bible discovery maps — book categories and Life Of character journeys from Genesis to Revelation.",
+    count: `${bibleMaps.length + lifeOfMaps.length} Bible maps & guides`,
     mapPreviews: faithPreviews,
     accentVar: "faith",
   },
