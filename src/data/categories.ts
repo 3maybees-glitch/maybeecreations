@@ -66,7 +66,7 @@ export const categories: CategoryMeta[] = [
   {
     key: "frontier",
     name: "Frontier",
-    explorerName: "Frontier Explorer",
+    explorerName: "Discovery Explorer",
     path: "/frontier",
     tagline: "Chart the lives and ideas that opened new worlds — science, story, music, and more.",
     blurb:

@@ -27,12 +27,12 @@ export const fansPreviews: MapPreview[] = [
 ];
 export const futurePreviews = toPreviews(realms);
 
-/** Decorative Farlands motifs (not product SKUs) until maps publish */
+/** Four country maps that stand in for the Farlands collection */
 export const farlandsPreviews: MapPreview[] = [
-  { name: "Farlands Compass", image: "/realm-previews/farlands-compass.svg" },
-  { name: "Farlands Horizon", image: "/realm-previews/farlands-horizon.svg" },
-  { name: "Farlands Trail", image: "/realm-previews/farlands-trail.svg" },
-  { name: "Farlands Atlas", image: "/realm-previews/farlands-atlas.svg" },
+  { name: "Japan", image: "/maps/farlands/japan.webp" },
+  { name: "Egypt", image: "/maps/farlands/egypt.webp" },
+  { name: "Peru", image: "/maps/farlands/peru.webp" },
+  { name: "Norway", image: "/maps/farlands/norway.webp" },
 ];
 
 /** Curated strip for the hero — one standout map per realm */
@@ -40,7 +40,7 @@ export const heroMapStrip: MapPreview[] = [
   { name: bibleMaps[0].name, image: bibleMaps[0].image },
   { name: freedomMaps[2].name, image: freedomMaps[2].image },
   { name: "Albert Einstein", image: "/realm-previews/frontier-einstein.jpg" },
-  { name: "Farlands Compass", image: "/realm-previews/farlands-compass.svg" },
+  { name: "Norway", image: "/maps/farlands/norway.webp" },
   { name: "Arizona Diamondbacks", image: "/realm-previews/hero-diamondbacks.jpg" },
   { name: realms[0].name, image: realms[0].image },
   { name: bibleMaps[6].name, image: bibleMaps[6].image },
