@@ -6,8 +6,16 @@ export interface Realm {
   brand: string;
   tagline: string;
   image: string;
+  /** Study map listing. May match bundleUrl when map and guidebook are one product. */
   mapUrl: string;
+  /** Guidebook or future site-only bundle. May match mapUrl when sold together. */
   bundleUrl: string;
+  /** Price label when map and guidebook share one Shopify product. */
+  price?: string;
+  /** Price label for a separate study-map listing. */
+  mapPrice?: string;
+  /** Price label for a separate guidebook or bundle listing. */
+  bundlePrice?: string;
 }
 
 export const MapCard = ({ realm }: { realm: Realm }) => {
@@ -42,23 +50,27 @@ export const MapCard = ({ realm }: { realm: Realm }) => {
           <Button asChild className="justify-start bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
             <a href={realm.bundleUrl} target="_blank" rel="noopener noreferrer">
               <Scroll className="h-4 w-4 mr-2" />
-              Get Map &amp; Adventure Pack
+              Get Map &amp; Adventure Pack{realm.price ? ` — ${realm.price}` : ""}
             </a>
           </Button>
         ) : (
           <>
-            <Button asChild variant="outline" className="justify-start border-primary/40 hover:bg-primary/5">
-              <a href={realm.mapUrl} target="_blank" rel="noopener noreferrer">
-                <Compass className="h-4 w-4 mr-2" />
-                Get World Map — $4.99
-              </a>
-            </Button>
-            <Button asChild className="justify-start bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
-              <a href={realm.bundleUrl} target="_blank" rel="noopener noreferrer">
-                <Scroll className="h-4 w-4 mr-2" />
-                Get Adventure Pack — $9.99
-              </a>
-            </Button>
+            {realm.mapPrice ? (
+              <Button asChild variant="outline" className="justify-start border-primary/40 hover:bg-primary/5">
+                <a href={realm.mapUrl} target="_blank" rel="noopener noreferrer">
+                  <Compass className="h-4 w-4 mr-2" />
+                  Get Study Map — {realm.mapPrice}
+                </a>
+              </Button>
+            ) : null}
+            {realm.bundlePrice ? (
+              <Button asChild className="justify-start bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/20">
+                <a href={realm.bundleUrl} target="_blank" rel="noopener noreferrer">
+                  <Scroll className="h-4 w-4 mr-2" />
+                  Get Adventure Pack — {realm.bundlePrice}
+                </a>
+              </Button>
+            ) : null}
           </>
         )}
       </div>

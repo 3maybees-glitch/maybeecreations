@@ -53,7 +53,7 @@ async function main() {
 
   const testTitle = `Migration verify ${Date.now()}`;
   const { error: insertError } = await supabase.from("map_requests").insert({
-      realm: "fans",
+      realm: "faith",
       title: testTitle,
       description: "Auto-generated verification row — safe to delete.",
       status: "pending",

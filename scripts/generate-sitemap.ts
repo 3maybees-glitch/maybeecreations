@@ -19,7 +19,6 @@ const entries: SitemapEntry[] = [
   { path: "/freedom", changefreq: "weekly", priority: "0.9" },
   { path: "/frontier", changefreq: "weekly", priority: "0.9" },
   { path: "/farlands", changefreq: "weekly", priority: "0.9", lastmod: "2026-10-02" },
-  { path: "/fans", changefreq: "weekly", priority: "0.9" },
   { path: "/future", changefreq: "weekly", priority: "0.9" },
   { path: "/stories", changefreq: "weekly", priority: "0.8" },
   { path: "/request-a-map", changefreq: "weekly", priority: "0.8" },

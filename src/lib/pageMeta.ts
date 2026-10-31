@@ -14,7 +14,7 @@ export const DEFAULT_OG_IMAGE =
   "https://www.maybeecreations.com/maps/future/chatgpt.png";
 
 export const STATIC_OG_IMAGE_ALT =
-  "Maybee Creations — Creatively Crafted educational discovery world maps for faith, freedom, frontier, farlands, fans, and the future";
+  "Maybee Creations — Creatively Crafted educational discovery world maps for faith, freedom, frontier, farlands, and the future";
 
 export interface PageMeta {
   title: string;
@@ -53,16 +53,10 @@ export const pageMeta: Record<string, PageMeta> = {
     path: "/frontier",
   },
   farlands: {
-    title: `Farlands — Destination Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
+    title: `Farlands — Farlands Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
     description:
       "Fifty Farlands Explorer country kits — illustrated fantasy maps, guidebooks, and audio tours. Creatively Crafted educational discovery world maps.",
     path: "/farlands",
-  },
-  fans: {
-    title: `Fans — Legend Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
-    description:
-      "Creatively Crafted Legend Explorer fan maps for the NFL, baseball, college football, and tennis — educational discovery world maps and adventure guides.",
-    path: "/fans",
   },
   future: {
     title: `Future — Tomorrow Explorer ${SEO_PHRASE} | ${SITE_NAME}`,
@@ -73,7 +67,7 @@ export const pageMeta: Record<string, PageMeta> = {
   stories: {
     title: `Stories — The Story Behind the Map | ${SITE_NAME}`,
     description:
-      "Storytime essays on the history, meaning, and joy of Maybee Creations maps and guides — Faith, Freedom, Frontier, Farlands, Fans, and the Future.",
+      "Storytime essays on the history, meaning, and joy of Maybee Creations maps and guides — Faith, Freedom, Frontier, Farlands, and the Future.",
     path: "/stories",
   },
   privacy: {
@@ -109,7 +103,7 @@ export const pageMeta: Record<string, PageMeta> = {
   requestMap: {
     title: `Request a Map — Chart the Next Expedition | ${SITE_NAME}`,
     description:
-      "Submit your idea for the next Maybee Creations educational discovery world map. Browse the public Mapmaker's Ledger of approved community requests across Faith, Freedom, Farlands, Fans, and Future.",
+      "Submit your idea for the next Maybee Creations educational discovery world map. Browse the public Mapmaker's Ledger of approved community requests across Faith, Freedom, Farlands, and Future.",
     path: "/request-a-map",
   },
   notFound: {

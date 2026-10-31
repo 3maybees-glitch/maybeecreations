@@ -23,14 +23,8 @@ export const mapRequestRealms: MapRequestRealmOption[] = [
   {
     value: "farlands",
     label: "Farlands",
-    explorer: "Expedition Explorer",
+    explorer: "Farlands Explorer",
     examples: "A polar expedition map, a Silk Road trail, a rainforest discovery atlas",
-  },
-  {
-    value: "fans",
-    label: "Fans",
-    explorer: "Legend Explorer",
-    examples: "Your NFL team's Legend Land, a rivalry map, a college program or championship series",
   },
   {
     value: "future",

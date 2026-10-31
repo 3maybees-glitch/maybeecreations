@@ -18,7 +18,7 @@ export const AboutSection = () => {
           <p>
             Maybee Creations is a digital creation company focused on building apps, maps,
             and learning tools that make complex ideas easier to explore. The brand combines
-            faith-based projects, civic and freedom-focused tools, sports stat experiences,
+            faith-based projects, civic and freedom-focused tools, expedition maps,
             and beginner-friendly AI education into practical digital products.
           </p>
           <p>
@@ -40,20 +40,6 @@ export const AboutSection = () => {
             public-issue learning.
           </p>
           <p>
-            Maybee Creations also creates sports and fan-focused products, including
-            basketball stat tools like{" "}
-            <Link to="/fans" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
-              StatSpeak
-            </Link>
-            , an Oklahoma Sooners college football app, and Baseball Legend Land maps
-            for teams like the{" "}
-            <Link to="/fans" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
-              Washington Nationals
-            </Link>{" "}
-            — simple, useful, and engaging ways to follow teams, track stats, and enjoy
-            the games fans care about.
-          </p>
-          <p>
             Frontier Explorer maps take the same approach to science, literature, music,
             and missionary lives — from{" "}
             <Link to="/frontier" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
@@ -62,11 +48,11 @@ export const AboutSection = () => {
             to Shakespeare, Tesla, and the Adams family.
           </p>
           <p>
-            Farlands opens the{" "}
+            Farlands Explorer country kits open the{" "}
             <Link to="/farlands" className="font-semibold text-primary hover:text-accent underline-offset-2 hover:underline">
-              Expedition Explorer
+              Farlands
             </Link>{" "}
-            trail — educational discovery maps for distant horizons, trails, and atlases of wonder.
+            trail — an illustrated study map, guidebook, and audio tour for each country, ready to print and laminate.
           </p>
           <p>
             A growing part of the company is focused on AI education through{" "}
@@ -78,7 +64,7 @@ export const AboutSection = () => {
           </p>
           <p className="italic text-primary font-medium">
             Across every project, the mission is the same: create digital tools that help
-            people explore faith, freedom, the frontier, the farlands, fandom, and the future with
+            people explore faith, freedom, the frontier, the farlands, and the future with
             clarity and creativity.
           </p>
         </div>

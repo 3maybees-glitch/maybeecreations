@@ -6,7 +6,7 @@ import {
   SHOP_SECONDARY_EMAIL,
   SHOP_SUPPORT_EMAIL,
 } from "@/lib/shopContact";
-import { PAYHIP_SHOP_URL, SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
+import { SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
 
 const Refund = () => {
   return (
@@ -90,24 +90,6 @@ const Refund = () => {
         </p>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-bold mb-4">Payhip and other stores</h2>
-        <p className="text-muted-foreground leading-relaxed">
-          Fans / Legend Land titles that check out on{" "}
-          <a
-            href={PAYHIP_SHOP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent hover:underline"
-          >
-            Payhip
-          </a>{" "}
-          follow this same spirit: we replace or refund a file that never
-          arrived or will not open. Payhip may also apply its own checkout
-          rules. Use the same email addresses above and include your Payhip
-          receipt.
-        </p>
-      </section>
     </PolicyPageLayout>
   );
 };

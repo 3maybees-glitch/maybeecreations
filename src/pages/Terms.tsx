@@ -6,7 +6,7 @@ import {
   POLICY_LAST_UPDATED,
   SHOP_SUPPORT_EMAIL,
 } from "@/lib/shopContact";
-import { PAYHIP_SHOP_URL, SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
+import { SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
 
 const Terms = () => {
   return (
@@ -40,20 +40,11 @@ const Terms = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">The products</h2>
         <p className="text-muted-foreground leading-relaxed">
-          Maybee Creations sells printable educational discovery maps and
-          adventure guidebooks for Faith, Freedom, Frontier, Farlands, Fans, and
-          Future. Shopify is the checkout for Faith, Freedom, Frontier, Farlands, and
-          Future. Fans / Legend Land titles may check out on{" "}
-          <a
-            href={PAYHIP_SHOP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-accent hover:underline"
-          >
-            Payhip
-          </a>
-          . Files are delivered instantly after payment. We do not ship
-          physical goods unless a future listing says so.
+          Maybee Creations sells printable study maps and adventure guidebooks
+          for Faith, Freedom, Frontier, Farlands, and Future. Shopify is the
+          checkout. Files are delivered instantly after payment. Laminate a
+          map when you want to use it again. We do not ship physical goods
+          unless a future listing says so.
         </p>
       </section>
 
@@ -79,7 +70,7 @@ const Terms = () => {
       <section>
         <h2 className="text-2xl font-bold mb-4">Accounts and checkout</h2>
         <p className="text-muted-foreground leading-relaxed">
-          Shopify and Payhip process payments. You are responsible for
+          Shopify processes payments. You are responsible for
           providing an accurate email so the download can be delivered and
           for keeping your account credentials private. Prices are shown at
           checkout in US dollars unless the storefront displays another

@@ -55,7 +55,7 @@ const Farlands = () => {
   return (
     <CategoryPageLayout
       category={meta}
-      explorerLabel="Destination Explorer"
+      explorerLabel="Farlands Explorer"
       intro="Farlands Explorer country kits — an illustrated fantasy map, guidebook, and audio tour for each destination."
     >
       <section className="py-8 px-4">
@@ -77,7 +77,7 @@ const Farlands = () => {
       </section>
 
       <CategorySection
-        eyebrow="Destination Explorer"
+        eyebrow="Farlands Explorer"
         title={`${farlandsMaps.length} Farlands Explorer Maps`}
       >
         <p className="text-center text-base md:text-lg text-muted-foreground italic max-w-3xl mx-auto -mt-4 mb-8">

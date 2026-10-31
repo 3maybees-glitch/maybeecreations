@@ -18,11 +18,10 @@ const featured = [
     path: "/faith",
   },
   {
-    title: "Yankees Legend Land",
-    subtitle: "Fans · Baseball map",
-    image:
-      "https://pe56d.s3.amazonaws.com/o_b7afd7ab0a9b497ea2da1d3a.jpg",
-    path: "/fans",
+    title: "Japan",
+    subtitle: "Farlands · Farlands Explorer kit",
+    image: "/maps/farlands/japan.webp",
+    path: "/farlands",
   },
   {
     title: "George Washington",
@@ -46,7 +45,7 @@ export const FeaturedShowcase = () => {
           <div className="ink-divider w-32 mx-auto mb-4" />
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto">
             Creatively Crafted educational discovery world maps — Bible cartography, liberty
-            maps, expeditions, fan legend lands, and AI kingdoms.
+            maps, expeditions, Farlands Explorer kits, and AI kingdoms.
           </p>
         </div>
 

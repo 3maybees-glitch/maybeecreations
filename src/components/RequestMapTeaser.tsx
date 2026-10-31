@@ -16,7 +16,7 @@ export const RequestMapTeaser = () => {
           </h2>
           <div className="ink-divider w-24 mx-auto mb-6" />
           <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto mb-8 leading-relaxed">
-            Have a team, era, book, or AI frontier you want mapped? Submit your idea to the
+            Have a place, era, book, or AI frontier you want mapped? Submit your idea to the
             Mapmaker&apos;s Ledger. Approved requests appear publicly — no voting, just community
             inspiration.
           </p>

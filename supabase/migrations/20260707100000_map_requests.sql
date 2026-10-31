@@ -1,6 +1,6 @@
 -- Customer map requests: moderated public ledger (V1 — submit only, no voting)
 
-CREATE TYPE public.map_request_realm AS ENUM ('faith', 'freedom', 'fans', 'future');
+CREATE TYPE public.map_request_realm AS ENUM ('faith', 'freedom', 'future');
 CREATE TYPE public.map_request_status AS ENUM ('pending', 'approved', 'declined');
 
 CREATE TABLE public.map_requests (

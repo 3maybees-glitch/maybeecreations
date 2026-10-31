@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Analytics } from "@vercel/analytics/react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
@@ -15,7 +15,6 @@ import Faith from "./pages/Faith";
 import Freedom from "./pages/Freedom";
 import Frontier from "./pages/Frontier";
 import Farlands from "./pages/Farlands";
-import Fans from "./pages/Fans";
 import Future from "./pages/Future";
 import SitemapPage from "./pages/SitemapPage";
 import Stories from "./pages/Stories";
@@ -36,7 +35,7 @@ const App = () => (
           <Route path="/freedom" element={<Freedom />} />
           <Route path="/frontier" element={<Frontier />} />
           <Route path="/farlands" element={<Farlands />} />
-          <Route path="/fans" element={<Fans />} />
+          <Route path="/fans" element={<Navigate to="/" replace />} />
           <Route path="/future" element={<Future />} />
           <Route path="/stories" element={<Stories />} />
           <Route path="/stories/:slug" element={<StoryPost />} />

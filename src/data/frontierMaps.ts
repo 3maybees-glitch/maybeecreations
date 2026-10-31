@@ -186,7 +186,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Nature’s Encyclopedia Continents",
     tagline: "The life and thought of Aristotle — the desire to know written across a world.",
     image: card("aristotle"),
-    url: "https://shop.maybeecreations.com/products/aristotle-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478093",
+    url: "https://shop.maybeecreations.com/products/aristotle-famous-author-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -367,7 +367,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "The Bard’s Realms",
     tagline: "The life and works of William Shakespeare — such stuff as dreams are made on.",
     image: card("shakespeare"),
-    url: "https://shop.maybeecreations.com/products/william-shakespeare-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478158",
+    url: "https://shop.maybeecreations.com/products/william-shakespeare-famous-author-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -387,7 +387,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Iliad and Odyssey Continents",
     tagline: "The world of Homer — bronze-age war, the wine-dark sea, and the first epic maps.",
     image: card("homer"),
-    url: "https://shop.maybeecreations.com/products/homer-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478166",
+    url: "https://shop.maybeecreations.com/products/homer-famous-author-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -397,7 +397,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Three Realms of the Comedy",
     tagline: "The life of Dante — Inferno, Purgatorio, Paradiso, and a dark wood in mid-journey.",
     image: card("dante"),
-    url: "https://shop.maybeecreations.com/products/dante-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478103",
+    url: "https://shop.maybeecreations.com/products/dante-famous-author-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -427,7 +427,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "War and Peace Continents",
     tagline: "The life of Leo Tolstoy — changing the self before changing the world.",
     image: card("tolstoy"),
-    url: "https://shop.maybeecreations.com/products/leo-tolstoy-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478083",
+    url: "https://shop.maybeecreations.com/products/leo-tolstoy-famous-author-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -437,7 +437,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Fog and Factory Continents",
     tagline: "The life of Charles Dickens — the best of times, the worst of times.",
     image: card("dickens"),
-    url: "https://shop.maybeecreations.com/products/charles-dickens-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478076",
+    url: "https://shop.maybeecreations.com/products/charles-dickens-famous-author-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -467,7 +467,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Canterbury Road Continents",
     tagline: "The life and poetry of Geoffrey Chaucer — a pilgrimage mapped in April rain.",
     image: card("chaucer"),
-    url: "https://shop.maybeecreations.com/products/geoffrey-chaucer-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478095",
+    url: "https://shop.maybeecreations.com/products/geoffrey-chaucer-famous-author-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -477,7 +477,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Yoknapatawpha Continents",
     tagline: "The world of William Faulkner — a county of memory, family, and the South.",
     image: card("faulkner"),
-    url: "https://shop.maybeecreations.com/products/william-faulkner-discovery-map-guidebook-famous-author-wall-art-frontier-explorer-printable-435478171",
+    url: "https://shop.maybeecreations.com/products/william-faulkner-famous-author-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -487,7 +487,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Harmony of the Spheres",
     tagline: "The life and music of J.S. Bach — glory to God and refreshment of the soul.",
     image: card("bach"),
-    url: "https://shop.maybeecreations.com/products/j-s-bach-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478151",
+    url: "https://shop.maybeecreations.com/products/js-bach-music-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -497,7 +497,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Magic Flute Continents",
     tagline: "The life of Mozart — melody as the essence of music.",
     image: card("mozart"),
-    url: "https://shop.maybeecreations.com/products/mozart-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478122",
+    url: "https://shop.maybeecreations.com/products/mozart-music-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -507,7 +507,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Eroica Symphony Continents",
     tagline: "The life of Beethoven — fate seized by the throat and written in nine symphonies.",
     image: card("beethoven"),
-    url: "https://shop.maybeecreations.com/products/beethoven-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478116",
+    url: "https://shop.maybeecreations.com/products/beethoven-music-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -517,7 +517,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Lieder Continents",
     tagline: "The life and songs of Franz Schubert — melody, friendship, and unfinished symphonies.",
     image: card("schubert"),
-    url: "https://shop.maybeecreations.com/products/franz-schubert-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478169",
+    url: "https://shop.maybeecreations.com/products/franz-schubert-music-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -527,7 +527,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Clair de Lune Continents",
     tagline: "The life and music of Claude Debussy — works of art that make the rules.",
     image: card("debussy"),
-    url: "https://shop.maybeecreations.com/products/claude-debussy-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478086",
+    url: "https://shop.maybeecreations.com/products/claude-debussy-music-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -537,7 +537,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Rite of Spring Continents",
     tagline: "The life of Igor Stravinsky — music felt before it is understood.",
     image: card("stravinsky"),
-    url: "https://shop.maybeecreations.com/products/igor-stravinsky-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478081",
+    url: "https://shop.maybeecreations.com/products/igor-stravinsky-music-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -547,7 +547,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Resurrection Continents",
     tagline: "The life and music of Gustav Mahler — a symphony that must contain the world.",
     image: card("mahler"),
-    url: "https://shop.maybeecreations.com/products/gustav-mahler-discovery-map-guidebook-music-history-wall-art-frontier-explorer-printable-435478098",
+    url: "https://shop.maybeecreations.com/products/gustav-mahler-music-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -637,7 +637,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Sons of Liberty Continents",
     tagline: "The life of Samuel Adams — liberties worth defending at all hazards.",
     image: card("samuel-adams"),
-    url: "https://shop.maybeecreations.com/products/samuel-adams-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478111",
+    url: "https://shop.maybeecreations.com/products/samuel-adams-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -647,7 +647,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Midnight Ride Continents",
     tagline: "The life of Paul Revere — a silversmith, a signal, and a ride that woke a countryside.",
     image: card("revere"),
-    url: "https://shop.maybeecreations.com/products/paul-revere-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478168",
+    url: "https://shop.maybeecreations.com/products/paul-revere-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -657,7 +657,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Federalist Justice Continents",
     tagline: "The life of John Jay — diplomacy, the Court, and property no power may take.",
     image: card("john-jay"),
-    url: "https://shop.maybeecreations.com/products/john-jay-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478114",
+    url: "https://shop.maybeecreations.com/products/john-jay-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -667,7 +667,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Bold Signature Continents",
     tagline: "The life of John Hancock — a name written large enough for a king to read.",
     image: card("hancock"),
-    url: "https://shop.maybeecreations.com/products/john-hancock-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478075",
+    url: "https://shop.maybeecreations.com/products/john-hancock-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -677,7 +677,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Liberty or Death Continents",
     tagline: "The life of Patrick Henry — give me liberty, or give me death.",
     image: card("henry"),
-    url: "https://shop.maybeecreations.com/products/patrick-henry-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478077",
+    url: "https://shop.maybeecreations.com/products/patrick-henry-history-study-map-guidebook",
     price: PRICE,
   },
   {
@@ -687,7 +687,7 @@ export const frontierMaps: FrontierMap[] = [
     subtitle: "Common Sense Continents",
     tagline: "The life and writings of Thomas Paine — times that try men’s souls.",
     image: card("paine"),
-    url: "https://shop.maybeecreations.com/products/thomas-paine-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478094",
+    url: "https://shop.maybeecreations.com/products/thomas-paine-history-study-map-guidebook",
     price: PRICE,
   },
 ];

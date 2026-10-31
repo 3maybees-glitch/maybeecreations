@@ -1,7 +1,10 @@
 {
   "redirects": [
     { "source": "/quest", "destination": "/request-a-map", "permanent": true },
-    { "source": "/quest/:path*", "destination": "/request-a-map", "permanent": true }
+    { "source": "/quest/:path*", "destination": "/request-a-map", "permanent": true },
+    { "source": "/fans", "destination": "/", "permanent": true },
+    { "source": "/fans/:path*", "destination": "/", "permanent": true },
+    { "source": "/stories/san-francisco-giants-legend-land", "destination": "/stories", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }

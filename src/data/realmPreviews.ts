@@ -19,12 +19,6 @@ export const frontierPreviews: MapPreview[] = [
   { name: "Wolfgang Amadeus Mozart", image: "/realm-previews/frontier-mozart.jpg" },
   { name: "William Shakespeare", image: "/realm-previews/frontier-shakespeare.jpg" },
 ];
-export const fansPreviews: MapPreview[] = [
-  { name: "Dallas Cowboys", image: "/realm-previews/fans-cowboys.jpg" },
-  { name: "Denver Broncos", image: "/realm-previews/fans-broncos.jpg" },
-  { name: "Detroit Lions", image: "/realm-previews/fans-lions.jpg" },
-  { name: "Green Bay Packers", image: "/realm-previews/fans-packers.jpg" },
-];
 export const futurePreviews = toPreviews(realms);
 
 /** Four country maps that stand in for the Farlands collection */
@@ -41,9 +35,9 @@ export const heroMapStrip: MapPreview[] = [
   { name: freedomMaps[2].name, image: freedomMaps[2].image },
   { name: "Albert Einstein", image: "/realm-previews/frontier-einstein.jpg" },
   { name: "Norway", image: "/maps/farlands/norway.webp" },
-  { name: "Arizona Diamondbacks", image: "/realm-previews/hero-diamondbacks.jpg" },
+  { name: "Japan", image: "/maps/farlands/japan.webp" },
   { name: realms[0].name, image: realms[0].image },
   { name: bibleMaps[6].name, image: bibleMaps[6].image },
   { name: "The Odyssey", image: "/realm-previews/frontier-odyssey.jpg" },
-  { name: "Baltimore Orioles", image: "/realm-previews/hero-orioles.jpg" },
+  { name: "Egypt", image: "/maps/farlands/egypt.webp" },
 ];

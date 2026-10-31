@@ -32,10 +32,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
 ];
 
-import { PAYHIP_SHOP_URL, SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
+import { SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
 
 export const SOCIAL_SAME_AS = [
   SHOPIFY_SHOP_URL,
-  PAYHIP_SHOP_URL,
   ...SOCIAL_LINKS.map((link) => link.href),
 ];
