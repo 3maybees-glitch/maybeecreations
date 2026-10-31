@@ -8,8 +8,8 @@
     "dev": "vite",
     "prebuild": "npx tsx scripts/generate-sitemap.ts",
     "build": "vite build",
-    "pull-payhip": "npx tsx scripts/pull-payhip-products.ts",
     "build:dev": "vite build --mode development",
+    "check:shop-links": "node scripts/check-shop-links.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },

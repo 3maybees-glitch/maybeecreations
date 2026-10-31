@@ -1,9 +1,5 @@
 import { bibleMaps } from "@/data/bibleMaps";
 import { lifeOfMaps } from "@/data/lifeOfMaps";
-import { baseballLegendLands } from "@/data/baseballLands";
-import { collegeFootballLegendLands } from "@/data/collegeFootballLands";
-import { nflLegendLands } from "@/data/nflLands";
-import { tennisLegendLands } from "@/data/tennisLegendLands";
 import { freedomMaps } from "@/data/freedomMaps";
 import { frontierMaps } from "@/data/frontierMaps";
 import { farlandsMaps } from "@/data/farlandsMaps";
@@ -13,7 +9,6 @@ import {
   freedomPreviewMaps,
   frontierPreviews,
   farlandsPreviews,
-  fansPreviews,
   futurePreviews,
   type MapPreview,
 } from "@/data/realmPreviews";
@@ -23,7 +18,6 @@ export type CategoryKey =
   | "freedom"
   | "frontier"
   | "farlands"
-  | "fans"
   | "future";
 export type MapRequestRealm = Exclude<CategoryKey, "frontier">;
 
@@ -79,26 +73,14 @@ export const categories: CategoryMeta[] = [
   {
     key: "farlands",
     name: "Farlands",
-    explorerName: "Expedition Explorer",
+    explorerName: "Farlands Explorer",
     path: "/farlands",
-    tagline: "Set out for distant horizons — expedition maps for educational discovery.",
+    tagline: "Set out for distant horizons — country kits for educational discovery.",
     blurb:
-      "Expedition Explorer maps charting far shores, trails, and atlases of wonder — printable worlds for families who learn by exploring.",
-    count: `${farlandsMaps.length} Expedition Explorer maps & guides`,
+      "Farlands Explorer country kits — an illustrated study map, guidebook, and audio tour. Print and laminate them for repeated use.",
+    count: `${farlandsMaps.length} Farlands Explorer kits`,
     mapPreviews: farlandsPreviews,
     accentVar: "farlands",
-  },
-  {
-    key: "fans",
-    name: "Fans",
-    explorerName: "Legend Explorer",
-    path: "/fans",
-    tagline: "Step into legendary stadiums, ballparks, campuses, and courts you grew up cheering.",
-    blurb:
-      "Legend Explorer fan adventure maps for the NFL, baseball, college football, and tennis — printable worlds built for the people who live the game.",
-    count: `${nflLegendLands.length} NFL · ${baseballLegendLands.length} Baseball · ${collegeFootballLegendLands.length} College Football · ${tennisLegendLands.length} Tennis Legend Lands`,
-    mapPreviews: fansPreviews,
-    accentVar: "fans",
   },
   {
     key: "future",

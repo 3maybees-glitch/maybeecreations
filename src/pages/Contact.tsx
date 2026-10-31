@@ -9,7 +9,7 @@ import {
   SHOP_SUPPORT_PHONE,
   SHOP_SUPPORT_PHONE_TEL,
 } from "@/lib/shopContact";
-import { PAYHIP_SHOP_URL, SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
+import { SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
 
 const Contact = () => {
   return (
@@ -84,17 +84,6 @@ const Contact = () => {
               className="text-accent hover:underline"
             >
               {SHOPIFY_SHOP_URL}
-            </a>
-          </li>
-          <li>
-            Fans / Legend Land maps:{" "}
-            <a
-              href={PAYHIP_SHOP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-accent hover:underline"
-            >
-              {PAYHIP_SHOP_URL}
             </a>
           </li>
         </ul>

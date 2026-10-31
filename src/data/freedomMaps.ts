@@ -19,7 +19,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Trace the life of the indispensable man — from Mount Vernon and Valley Forge to Yorktown and the presidency.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7fu7ldg6v1kec2rqd61o9s15.png",
-    url: "https://shop.maybeecreations.com/products/george-washington-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478237",
+    url: "https://shop.maybeecreations.com/products/george-washington-history-study-map-guidebook",
     price: "$7.77",
   },
   {
@@ -29,7 +29,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Explore liberty, learning, and the early republic — from Monticello to the Declaration and beyond.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7kt71119pk9vtkug1s2ict515.png",
-    url: "https://shop.maybeecreations.com/products/thomas-jefferson-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478235",
+    url: "https://shop.maybeecreations.com/products/thomas-jefferson-history-study-map-guidebook",
     price: "$7.77",
   },
   {
@@ -39,7 +39,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Walk the story of the Constitution’s architect — public service, republican government, and civic principle.",
     image: madisonMap,
-    url: "https://shop.maybeecreations.com/products/james-madison-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478236",
+    url: "https://shop.maybeecreations.com/products/james-madison-history-study-map-guidebook",
     price: "$7.77",
   },
   {
@@ -49,7 +49,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Chart the rise of a founding visionary — finance, federalism, and the fight to shape a new nation.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7h9csl1o401l2b1a901dl41oi315.png",
-    url: "https://shop.maybeecreations.com/products/alexander-hamilton-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478200",
+    url: "https://shop.maybeecreations.com/products/alexander-hamilton-history-study-map-guidebook",
     price: "$7.77",
   },
   {
@@ -59,7 +59,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Follow the polymath patriot — invention, diplomacy, virtue, and the spirit of American ingenuity.",
     image: "https://pe56d.s3.amazonaws.com/o_1jr7jcuru1gq21ki91p0c17gojff15.png",
-    url: "https://shop.maybeecreations.com/products/benjamin-franklin-history-map-guidebook-founding-father-wall-art-liberty-explorer-printable-435478173",
+    url: "https://shop.maybeecreations.com/products/benjamin-franklin-history-study-map-guidebook",
     price: "$7.77",
   },
   {
@@ -169,7 +169,7 @@ export const freedomMaps: FreedomMap[] = [
     tagline:
       "Celebrate 250 years of American history — the people, inventions, victories, and milestones that shaped a nation.",
     image: "https://pe56d.s3.amazonaws.com/o_1js3uj1lt1ujn1mfo32n1s9s1miv17.png",
-    url: "https://shop.maybeecreations.com/products/america-250-history-map-guidebook-patriotic-classroom-art-liberty-explorer-printable-435478193",
+    url: "https://shop.maybeecreations.com/products/america-250-history-map-guidebook-patriotic-classroom-art-liberty-explorer-printable-435478271",
     price: "$7.77",
   },
 ];

@@ -24,7 +24,17 @@ export function useApprovedMapRequests() {
         throw error;
       }
 
-      return (data ?? []) as MapRequest[];
+      const visibleRealms = new Set(["faith", "freedom", "farlands", "future"]);
+
+      return (data ?? [])
+        .filter((row) => visibleRealms.has(row.realm))
+        .map((row) => ({
+          id: row.id,
+          realm: row.realm as MapRequest["realm"],
+          title: row.title,
+          description: row.description,
+          created_at: row.created_at,
+        }));
     },
     staleTime: 60_000,
   });

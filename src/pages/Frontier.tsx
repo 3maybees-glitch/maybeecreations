@@ -74,7 +74,7 @@ const Frontier = () => {
               <div className="text-center mt-12 space-y-4">
                 <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
                   {frontierMaps.length} Frontier Explorer titles spanning science, literature,
-                  music, faith, and freedom. NFL Legend Lands live on the Fans page.
+                  music, faith, and freedom.
                 </p>
                 <div className="max-w-2xl mx-auto rounded-sm border border-[hsl(var(--frontier))]/30 bg-[hsl(var(--frontier))]/10 p-6">
                   <p className="text-base md:text-lg text-muted-foreground mb-4">

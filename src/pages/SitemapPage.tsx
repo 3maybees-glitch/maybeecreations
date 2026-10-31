@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import { Map, Home, FileText, List, BookOpen, Share2 } from "lucide-react";
 import { storiesSorted } from "@/data/stories";
 import { SOCIAL_LINKS } from "@/lib/socialLinks";
-import { PAYHIP_SHOP_URL, SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
+import { SHOPIFY_SHOP_URL } from "@/lib/shopLinks";
 
 import { Link } from "react-router-dom";
 
@@ -55,9 +55,7 @@ const sections: SitemapSection[] = [
 
       { label: "Frontier — Frontier Explorer science, literature, music, and liberty maps", path: "/frontier" },
 
-      { label: "Farlands — Expedition Explorer educational discovery maps", path: "/farlands" },
-
-      { label: "Fans — Legend Explorer NFL, baseball, college football, and tennis Legend Lands", path: "/fans" },
+      { label: "Farlands — Farlands Explorer country kits", path: "/farlands" },
 
       { label: "Future — Tomorrow Explorer AI maps & Adventure Packs", path: "/future" },
 
@@ -119,7 +117,6 @@ const sections: SitemapSection[] = [
     icon: <Share2 className="h-5 w-5" />,
     links: [
       { label: "Shop (Shopify)", path: SHOPIFY_SHOP_URL },
-      { label: "Fans shop (Payhip)", path: PAYHIP_SHOP_URL },
       ...SOCIAL_LINKS.map((link) => ({
         label: link.shortLabel,
         path: link.href,
