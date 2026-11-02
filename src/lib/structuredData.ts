@@ -22,6 +22,7 @@ export interface ItemListEntry {
   name: string;
   url: string;
   description?: string;
+  image?: string | string[];
 }
 
 function absoluteUrl(path: string) {
@@ -101,6 +102,7 @@ export function itemListSchema(name: string, items: ItemListEntry[]) {
       name: item.name,
       url: item.url,
       ...(item.description ? { description: item.description } : {}),
+      ...(item.image ? { image: item.image } : {}),
     })),
   };
 }
@@ -178,12 +180,14 @@ export function categoryPageSchemas(
   title: string,
   description: string,
   breadcrumb: BreadcrumbItem[],
+  list?: { name: string; items: ItemListEntry[] },
 ) {
   return buildGraph([
     organizationSchema(),
     webSiteSchema(),
     webPageSchema({ title, description, path }),
     breadcrumbSchema(breadcrumb),
+    ...(list ? [itemListSchema(list.name, list.items)] : []),
   ]);
 }
 

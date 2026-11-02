@@ -5,10 +5,28 @@ export interface FreedomMap {
   category: string;
   subtitle: string;
   tagline: string;
+  /** Card image. Desk cover when the kit also has a flat study map. */
   image: string;
-  /** Checkout URL on Shopify (Liberty Explorer) */
+  /** Flat printable study map, alongside the desk cover. */
+  mapImage?: string;
+  imageAlt?: string;
+  /** Checkout URL on Shopify. Matches mapUrl and bundleUrl when sold as one product. */
   url?: string;
+  /** Study map listing. May match bundleUrl when the map and guide are one product. */
+  mapUrl?: string;
+  /** Companion guide or bundle. May match mapUrl when sold together. */
+  bundleUrl?: string;
   price?: string;
+  /** Separate study-map price, used when mapUrl and bundleUrl differ. */
+  mapPrice?: string;
+  /** Separate guide or bundle price, used when mapUrl and bundleUrl differ. */
+  bundlePrice?: string;
+  collection?: "Liberty Explorer" | "Freedom Explorer";
+}
+
+/** Shop link for a kit: the bundle when the map and guide are sold together. */
+export function freedomShopUrl(map: FreedomMap) {
+  return map.bundleUrl ?? map.mapUrl ?? map.url;
 }
 
 export const freedomMaps: FreedomMap[] = [
@@ -172,4 +190,115 @@ export const freedomMaps: FreedomMap[] = [
     url: "https://shop.maybeecreations.com/products/america-250-history-map-guidebook-patriotic-classroom-art-liberty-explorer-printable-435478271",
     price: "$7.77",
   },
+  {
+    name: "United States Coast Guard",
+    category: "Military History",
+    collection: "Freedom Explorer",
+    subtitle: "Coast Guard Printable Study Map",
+    tagline:
+      "Trace the Coast Guard from New York Harbor and the Bering Sea to rescue stations, Pearl Harbor, and Arctic patrols.",
+    image: "/maps/freedom/coast-guard-desk.jpg",
+    mapImage: "/maps/freedom/coast-guard-map.jpg",
+    imageAlt:
+      "United States Coast Guard Freedom Explorer printable study map and companion guide on a desk",
+    url: "https://shop.maybeecreations.com/products/united-states-coast-guard-printable-study-map-companion-guide-freedom-explorer",
+    mapUrl:
+      "https://shop.maybeecreations.com/products/united-states-coast-guard-printable-study-map-companion-guide-freedom-explorer",
+    bundleUrl:
+      "https://shop.maybeecreations.com/products/united-states-coast-guard-printable-study-map-companion-guide-freedom-explorer",
+    price: "$7.77",
+  },
+  {
+    name: "United States Army",
+    category: "Military History",
+    collection: "Freedom Explorer",
+    subtitle: "Army Printable Study Map",
+    tagline:
+      "Follow the Army from Valley Forge and West Point through Meuse-Argonne, Normandy, and the posts that trained a continental force.",
+    image: "/maps/freedom/army-desk.jpg",
+    mapImage: "/maps/freedom/army-map.jpg",
+    imageAlt: "United States Army Freedom Explorer printable study map and companion guide on a desk",
+    url: "https://shop.maybeecreations.com/products/united-states-army-printable-study-map-companion-guide-freedom-explorer",
+    mapUrl:
+      "https://shop.maybeecreations.com/products/united-states-army-printable-study-map-companion-guide-freedom-explorer",
+    bundleUrl:
+      "https://shop.maybeecreations.com/products/united-states-army-printable-study-map-companion-guide-freedom-explorer",
+    price: "$7.77",
+  },
+  {
+    name: "United States Air Force",
+    category: "Military History",
+    collection: "Freedom Explorer",
+    subtitle: "Air Force Printable Study Map",
+    tagline:
+      "Chart American air power from Kitty Hawk and Wright Field through the Doolittle Raid, the Air Force Academy, and the jet age.",
+    image: "/maps/freedom/air-force-desk.jpg",
+    mapImage: "/maps/freedom/air-force-map.jpg",
+    imageAlt:
+      "United States Air Force Freedom Explorer printable study map and companion guide on a desk",
+    url: "https://shop.maybeecreations.com/products/united-states-air-force-printable-study-map-companion-guide-freedom-explorer",
+    mapUrl:
+      "https://shop.maybeecreations.com/products/united-states-air-force-printable-study-map-companion-guide-freedom-explorer",
+    bundleUrl:
+      "https://shop.maybeecreations.com/products/united-states-air-force-printable-study-map-companion-guide-freedom-explorer",
+    price: "$7.77",
+  },
+  {
+    name: "United States Marines",
+    category: "Military History",
+    collection: "Freedom Explorer",
+    subtitle: "Marines Printable Study Map",
+    tagline:
+      "Walk the Marines from Tun Tavern and the shores of Tripoli through Belleau Wood, Tarawa, and Iwo Jima.",
+    image: "/maps/freedom/marines-desk.jpg",
+    mapImage: "/maps/freedom/marines-map.jpg",
+    imageAlt:
+      "United States Marines Freedom Explorer printable study map and companion guide on a desk",
+    url: "https://shop.maybeecreations.com/products/united-states-marines-printable-study-map-companion-guide-freedom-explorer",
+    mapUrl:
+      "https://shop.maybeecreations.com/products/united-states-marines-printable-study-map-companion-guide-freedom-explorer",
+    bundleUrl:
+      "https://shop.maybeecreations.com/products/united-states-marines-printable-study-map-companion-guide-freedom-explorer",
+    price: "$7.77",
+  },
+  {
+    name: "U.S. Special Forces",
+    category: "Military History",
+    collection: "Freedom Explorer",
+    subtitle: "Special Forces Printable Study Map",
+    tagline:
+      "Follow special operations from the OSS and the First Special Service Force through Pointe du Hoc, Coronado, and USSOCOM.",
+    image: "/maps/freedom/special-forces-desk.jpg",
+    mapImage: "/maps/freedom/special-forces-map.jpg",
+    imageAlt: "U.S. Special Forces Freedom Explorer printable study map and companion guide on a desk",
+    url: "https://shop.maybeecreations.com/products/u-s-special-forces-printable-study-map-companion-guide-freedom-explorer",
+    mapUrl:
+      "https://shop.maybeecreations.com/products/u-s-special-forces-printable-study-map-companion-guide-freedom-explorer",
+    bundleUrl:
+      "https://shop.maybeecreations.com/products/u-s-special-forces-printable-study-map-companion-guide-freedom-explorer",
+    price: "$7.77",
+  },
+  {
+    name: "United States Navy",
+    category: "Military History",
+    collection: "Freedom Explorer",
+    subtitle: "Navy Printable Study Map",
+    tagline:
+      "Sail the Navy from the Philadelphia waterfront and Lake Erie to Hampton Roads, Pearl Harbor, Midway, and Leyte Gulf.",
+    image: "/maps/freedom/navy-desk.jpg",
+    mapImage: "/maps/freedom/navy-map.jpg",
+    imageAlt: "United States Navy Freedom Explorer printable study map and companion guide on a desk",
+    url: "https://shop.maybeecreations.com/products/united-states-navy-printable-study-map-companion-guide-freedom-explorer",
+    mapUrl:
+      "https://shop.maybeecreations.com/products/united-states-navy-printable-study-map-companion-guide-freedom-explorer",
+    bundleUrl:
+      "https://shop.maybeecreations.com/products/united-states-navy-printable-study-map-companion-guide-freedom-explorer",
+    price: "$7.77",
+  },
 ];
+
+export function freedomCatalogCount() {
+  const explorerKits = freedomMaps.filter((map) => map.collection === "Freedom Explorer").length;
+  const libertyMaps = freedomMaps.length - explorerKits;
+  return `${libertyMaps} Liberty Explorer maps & ${explorerKits} Freedom Explorer study maps`;
+}
