@@ -1,6 +1,6 @@
 import { bibleMaps } from "@/data/bibleMaps";
 import { lifeOfMaps } from "@/data/lifeOfMaps";
-import { freedomMaps } from "@/data/freedomMaps";
+import { freedomCatalogCount } from "@/data/freedomMaps";
 import { frontierMaps } from "@/data/frontierMaps";
 import { farlandsMaps } from "@/data/farlandsMaps";
 import { realms } from "@/data/realms";
@@ -53,8 +53,8 @@ export const categories: CategoryMeta[] = [
     path: "/freedom",
     tagline: "Chart the birth of a republic and the fight to keep it free.",
     blurb:
-      "Liberty Explorer maps honoring founders, turning points, and the principles of self-government.",
-    count: `${freedomMaps.length} Liberty Explorer maps & guides`,
+      "Liberty Explorer maps honoring founders, turning points, and the principles of self-government, plus Freedom Explorer printable study maps of U.S. military history.",
+    count: freedomCatalogCount(),
     mapPreviews: freedomPreviewMaps,
     accentVar: "freedom",
   },

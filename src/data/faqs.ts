@@ -8,7 +8,7 @@ import {
 export const homeFaqs: FaqItem[] = [
   {
     question: "What is Maybee Creations?",
-    answer: `${SITE_NAME} is a digital creation studio that makes Creatively Crafted ${SEO_PHRASE.toLowerCase()} and adventure guides across five worlds: ${PILLARS}. Products include printable Bible study maps, Liberty Explorer civics maps, Frontier Explorer science and story maps, Farlands Explorer country kits, and Tomorrow Explorer AI learning maps. Print them and laminate them for repeated use.`,
+    answer: `${SITE_NAME} is a digital creation studio that makes Creatively Crafted ${SEO_PHRASE.toLowerCase()} and adventure guides across five worlds: ${PILLARS}. Products include printable Bible study maps, Liberty Explorer civics maps, Freedom Explorer military study maps, Frontier Explorer science and story maps, Farlands Explorer country kits, and Tomorrow Explorer AI learning maps. Print them and laminate them for repeated use.`,
   },
   {
     question: "What are educational discovery world maps?",
@@ -18,7 +18,7 @@ export const homeFaqs: FaqItem[] = [
   {
     question: "What are the five realms on maybeecreations.com?",
     answer:
-      "Faith (Soul Explorer Bible maps), Freedom (Liberty Explorer civics and history maps), Frontier (Frontier Explorer science, literature, music, missionary, and liberty maps such as Einstein, the Odyssey, and Mozart), Farlands (Farlands Explorer country kits — illustrated study maps, guidebooks, and audio tours), and Future (Tomorrow Explorer AI realm maps with Adventure Pack tutorials for ChatGPT, Claude, Gemini, and more).",
+      "Faith (Soul Explorer Bible maps), Freedom (Liberty Explorer civics and history maps, and Freedom Explorer printable study maps of U.S. military history), Frontier (Frontier Explorer science, literature, music, missionary, and liberty maps such as Einstein, the Odyssey, and Mozart), Farlands (Farlands Explorer country kits — illustrated study maps, guidebooks, and audio tours), and Future (Tomorrow Explorer AI realm maps with Adventure Pack tutorials for ChatGPT, Claude, Gemini, and more).",
   },
   {
     question: "Who are Maybee Creations maps designed for?",

@@ -51,7 +51,7 @@ const sections: SitemapSection[] = [
 
       { label: "Faith — Bible book & Life Of character maps & Soul Explorer guides", path: "/faith" },
 
-      { label: "Freedom — Liberty Explorer world maps", path: "/freedom" },
+      { label: "Freedom — Liberty Explorer world maps and Freedom Explorer study maps", path: "/freedom" },
 
       { label: "Frontier — Frontier Explorer science, literature, music, and liberty maps", path: "/frontier" },
 
