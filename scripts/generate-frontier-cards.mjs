@@ -125,7 +125,7 @@ for (const [slug, name, series] of maps) {
   <text x="400" y="360" text-anchor="middle" fill="${accent}" font-family="Georgia, 'Times New Roman', serif" font-size="16" letter-spacing="5" font-weight="700">FRONTIER EXPLORER</text>
   <text x="400" y="${y1}" text-anchor="middle" fill="#fff8ea" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700">${escapeXml(lines[0])}</text>
   ${line2}
-  <text x="400" y="530" text-anchor="middle" fill="${accent}" font-family="Georgia, 'Times New Roman', serif" font-size="16" letter-spacing="3">MAYBEE CREATIONS · $7.77 ON ETSY</text>
+  <text x="400" y="530" text-anchor="middle" fill="${accent}" font-family="Georgia, 'Times New Roman', serif" font-size="16" letter-spacing="3">SHOP.MAYBEECREATIONS.COM · $7.77</text>
 </svg>
 `;
   writeFileSync(join(outDir, `${slug}.svg`), svg);
