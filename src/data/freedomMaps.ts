@@ -295,6 +295,24 @@ export const freedomMaps: FreedomMap[] = [
       "https://shop.maybeecreations.com/products/united-states-navy-printable-study-map-companion-guide-freedom-explorer",
     price: "$7.77",
   },
+  {
+    name: "United States Space Force",
+    category: "Military History",
+    collection: "Freedom Explorer",
+    subtitle: "Space Force Printable Study Map",
+    tagline:
+      "Explore guardians of the high frontier — from Cape Canaveral and Vandenberg to Colorado Springs, launch ranges, and the story of American military space operations.",
+    image: "/maps/freedom/space-force-desk.jpg",
+    mapImage: "/maps/freedom/space-force-map.jpg",
+    imageAlt:
+      "United States Space Force Freedom Explorer printable study map and companion guide on a desk",
+    url: "https://shop.maybeecreations.com/products/united-states-space-force-printable-study-map-companion-guide-freedom-explorer",
+    mapUrl:
+      "https://shop.maybeecreations.com/products/united-states-space-force-printable-study-map-companion-guide-freedom-explorer",
+    bundleUrl:
+      "https://shop.maybeecreations.com/products/united-states-space-force-printable-study-map-companion-guide-freedom-explorer",
+    price: "$7.77",
+  },
 ];
 
 export function freedomCatalogCount() {
